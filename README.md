@@ -51,28 +51,27 @@ Por ejemplo, se deben generar las siguientes listas:
 
 Consultas: 
 
-•	Dado un partido y una ciudad, mostrar la lista de sus candidatos al Concejo y el candidato a la alcaldía (nombre, edad, sexo).
-•	Dado un partido mostrar la lista de candidatos a alcaldías de cada una de las diferentes ciudades (ciudad, nombre del candidato, sexo, edad).
-•	Dado un partido mostrar las listas de candidatos a cada uno de los diferentes concejos. (ciudad: Nombre del candidato, edad, ciudad, de nacimiento, estado civil).
-•	Dada una ciudad, mostrar por cada partido, el candidato a la alcaldía y los candidatos al concejo.
-•	Dada una ciudad, mostrar el tarjetón de candidatos a la alcaldía. Incluye voto en blanco. (0.voto en blanco, 1. Candidato uno, 2. Candidato dos,…..)
-•	Dada una ciudad, mostrar el tarjetón de candidatos al concejo, incluye voto en blanco. Suponga que todas las listas aplican voto preferente. (0.voto en blanco, 1. Partido 1, 1.1. Candidato 1 del partido 1, etc. 2. Partido 2, 2.1 candidato 1 del partido 2, 2.2. candidato 2 del partido 2 , 3. Partido 3 …).
-•	Censo electoral. Por cada ciudad, mostrar la cantidad de personas habilitadas para votar.
-•	El programa debe estar en capacidad de calcular la edad de cada una de las personas, no es un atributo. 
-
+•	Dado un partido y una ciudad, mostrar la lista de sus candidatos al Concejo y el candidato a la alcaldía (nombre, edad, sexo).<br>
+•	Dado un partido mostrar la lista de candidatos a alcaldías de cada una de las diferentes ciudades (ciudad, nombre del candidato, sexo, edad).<br>
+•	Dado un partido mostrar las listas de candidatos a cada uno de los diferentes concejos. (ciudad: Nombre del candidato, edad, ciudad, de nacimiento, estado civil).<br>
+•	Dada una ciudad, mostrar por cada partido, el candidato a la alcaldía y los candidatos al concejo.<br>
+•	Dada una ciudad, mostrar el tarjetón de candidatos a la alcaldía. Incluye voto en blanco. (0.voto en blanco, 1. Candidato uno, 2. Candidato dos,…..)<br>
+•	Dada una ciudad, mostrar el tarjetón de candidatos al concejo, incluye voto en blanco. Suponga que todas las listas aplican voto preferente. (0.voto en blanco, 1. Partido 1, 1.1. Candidato 1 del partido 1, etc. 2. Partido 2, 2.1 candidato 1 del partido 2, 2.2. candidato 2 del partido 2 , 3. Partido 3 …).<br>
+•	Censo electoral. Por cada ciudad, mostrar la cantidad de personas habilitadas para votar.<br>
+•	El programa debe estar en capacidad de calcular la edad de cada una de las personas, no es un atributo.<br>
 Simulación de elecciones.
 
-•	Creará las estructuras en memoria principal a partir de los archivos planos.
-•	Permitirá modificar los datos en memoria principal. Retirar un registro, agregar uno nuevo, modificar uno existente.
-•	Simulará el proceso electoral, generando aleatoriamente la cantidad de votos que obtiene cada candidato, incluyendo voto en blanco, votos nulos y  abstención. La suma total no puede superar el censo electoral.
-•	Para cada ciudad mostrará los resultados:
-Para alcaldía: votos por cada candidato, porcentaje. Votos en blanco, porcentaje. Votos nulos, porcentaje. GANADOR.
-Para concejo: un reporte: Nombre del candidato, partido, número de votos, porcentaje. Voto en blanco: cantidad y porcentaje, al igual para votos nulos.
-•	Estadísticas:
-	Reporte por ciudad: Total votos, total votos en blanco, total votos nulos, total abstención. En cantidad y porcentaje.
-	Por consejo: Totales por partido, totales hombres y totales mujeres. En número y porcentaje.
-	Totales nacional: Totales por partido, totales hombres y totales mujeres. En número y porcentaje.
-•	Finalizada la simulación actualizará los archivos planos con los cambios realizados en memoria principal. Lo cual permitirá nuevos procesos de simulación. Tenga en cuenta que una vez iniciada la simulación de las votaciones, no podrá eliminarse ni agregarse ningún candidato.
+•	Creará las estructuras en memoria principal a partir de los archivos planos.<br>
+•	Permitirá modificar los datos en memoria principal. Retirar un registro, agregar uno nuevo, modificar uno existente.<br>
+•	Simulará el proceso electoral, generando aleatoriamente la cantidad de votos que obtiene cada candidato, incluyendo voto en blanco, votos nulos y  abstención. La suma total no puede superar el censo electoral.<br>
+•	Para cada ciudad mostrará los resultados:<br>
+Para alcaldía: votos por cada candidato, porcentaje. Votos en blanco, porcentaje. Votos nulos, porcentaje. GANADOR.<br>
+Para concejo: un reporte: Nombre del candidato, partido, número de votos, porcentaje. Voto en blanco: cantidad y porcentaje, al igual para votos nulos.<br>
+•	Estadísticas:<br>
+	Reporte por ciudad: Total votos, total votos en blanco, total votos nulos, total abstención. En cantidad y porcentaje.<br>
+	Por consejo: Totales por partido, totales hombres y totales mujeres. En número y porcentaje.<br>
+	Totales nacional: Totales por partido, totales hombres y totales mujeres. En número y porcentaje.<br>
+•	Finalizada la simulación actualizará los archivos planos con los cambios realizados en memoria principal. Lo cual permitirá nuevos procesos de simulación. Tenga en cuenta que una vez iniciada la simulación de las votaciones, no podrá eliminarse ni agregarse ningún candidato.<br>
 
 Contará con los menús y submenús que faciliten la realización de cada una de las consultas y la simulación.
 
