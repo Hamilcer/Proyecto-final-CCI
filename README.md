@@ -8,7 +8,7 @@ Se obtendrán los resultados de los escrutinios y resultados estadísticos de in
 
 ESTRUCTURA DE DATOS
 
-En memoria secundaria:
+**`En memoria secundaria:`**
 
 La información deberá estar almacenada, de manera permanente, en archivos planos los cuales deben ser actualizados al final de la ejecución, dado que, por ejemplo, durante el proceso puede ser excluido o incluido un candidato. Debe tenerse la posibilidad de modificar la información ya sea agregando, eliminando o cambiando registros.
 
@@ -32,7 +32,7 @@ CANDIDATOS:
 •	Partido.
 
 
-En memoria Principal:
+**`En memoria Principal:`**
 
 Con el fin de optimizar las búsquedas deberán utilizarse listas, multilistas, arreglos, pilas, colas o árboles en memoria principal. Para la realización de dichas búsquedas, deberá evitarse la utilización total de la información. Es decir se espera que apliquen los criterios y conocimientos correspondientes a la eficiencia de los algoritmos. Complejidad en tiempo y memoria. 
 
@@ -47,7 +47,7 @@ Por ejemplo, se deben generar las siguientes listas:
 7.	Por cada partido, la lista de candidatos a los consejos. 
 8.	Por cada partido, la lista de candidatos a las alcaldías. .
 
-REQUERIMIENTOS FUNCIONALES.
+**`REQUERIMIENTOS FUNCIONALES:`**
 
 Consultas: 
 
