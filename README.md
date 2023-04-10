@@ -1,6 +1,6 @@
 IDE C++ = DEV C++ 5.11
 
-Enunciado del problema.
+**`Enunciado del problema.`**
 La Registraduría Nacional del Estado Civil, requiere de un software más robusto para el proceso de elecciones regionales. Por lo tanto ha pensado en usted y su grupo de trabajo para realizar este proyecto.
 Se espera que su desarrollo en general pueda: generar aleatoriamente los tarjetones para cada ciudad, alcaldía y concejo, incluyendo voto en blanco.
 Debe realizar una simulación del proceso electoral, de forma tal que la entidad quede convencida de la calidad de su desarrollo y los beneficios que logrará con este software.
