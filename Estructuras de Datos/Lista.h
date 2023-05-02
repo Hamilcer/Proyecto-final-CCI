@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// Definición de la clase Nodo
+// Definiciï¿½n de la clase Nodo
 template<typename T>
 class Nodo {
 public:
@@ -20,7 +20,7 @@ public:
     }
 };
 
-// Definición de la clase Lista
+// Definiciï¿½n de la clase Lista
 template<typename T>
 class Lista {
 private:
@@ -48,30 +48,30 @@ public:
         }
     }
 
-    // Método para insertar un elemento al final de la lista
+    // Mï¿½todo para insertar un elemento al final de la lista
     void insertar_final(T valor) {
         Nodo<T>* nuevo = new Nodo<T>(valor);
 
-        // Si la lista está vacía, el nuevo nodo será tanto el primero como el último
+        // Si la lista estï¿½ vacï¿½a, el nuevo nodo serï¿½ tanto el primero como el ï¿½ltimo
         if (inicio == nullptr) {
             inicio = nuevo;
             fin = nuevo;
         }
-        // Si no, se agrega el nuevo nodo después del último
+        // Si no, se agrega el nuevo nodo despuï¿½s del ï¿½ltimo
         else {
             fin->siguiente = nuevo;
             fin = nuevo;
         }
 
-        // Se aumenta el tamaño de la lista
+        // Se aumenta el tamaï¿½o de la lista
         tam++;
     }
 
-    // Método para insertar un elemento al inicio de la lista
+    // Mï¿½todo para insertar un elemento al inicio de la lista
     void insertar_inicio(T valor) {
         Nodo<T>* nuevo = new Nodo<T>(valor);
 
-        // Si la lista está vacía, el nuevo nodo será tanto el primero como el último
+        // Si la lista estï¿½ vacï¿½a, el nuevo nodo serï¿½ tanto el primero como el ï¿½ltimo
         if (inicio == nullptr) {
             inicio = nuevo;
             fin = nuevo;
@@ -82,27 +82,27 @@ public:
             inicio = nuevo;
         }
 
-        // Se aumenta el tamaño de la lista
+        // Se aumenta el tamaï¿½o de la lista
         tam++;
     }
 
-    // Método para insertar un elemento en una posición específica de la lista
+    // Mï¿½todo para insertar un elemento en una posiciï¿½n especï¿½fica de la lista
     void insertar(T valor, int pos) {
-        // Se verifica que la posición sea válida
+        // Se verifica que la posiciï¿½n sea vï¿½lida
         if (pos > tam || pos < 0) {
             cout << "Posicion invalida" << endl;
             return;
         }
 
-        // Si la posición es 0, se inserta al inicio de la lista
+        // Si la posiciï¿½n es 0, se inserta al inicio de la lista
         if (pos == 0) {
             insertar_inicio(valor);
         }
-        // Si la posición es igual al tamaño de la lista, se inserta al final
+        // Si la posiciï¿½n es igual al tamaï¿½o de la lista, se inserta al final
         else if (pos == tam) {
             insertar_final(valor);
         }
-        // Si no, se busca el nodo anterior a la posición deseada y se inserta después de él
+        // Si no, se busca el nodo anterior a la posiciï¿½n deseada y se inserta despuï¿½s de ï¿½l
         else {
             Nodo<T>* nuevo = new Nodo<T>(valor);
             Nodo<T>* actual = inicio;
@@ -116,16 +116,16 @@ public:
     }
 
 	void modificar(T valor, int pos) {
-	    if (pos >= tam || pos < 0) { // Verificar si la posición es válida
+	    if (pos >= tam || pos < 0) { // Verificar si la posiciï¿½n es vï¿½lida
 	        cout << "Posicion invalida" << endl;
 	        return;
 	    }
 	
 	    Nodo<T>* actual = inicio;
-	    for (int i = 0; i < pos; i++) { // Recorrer la lista hasta llegar a la posición indicada
+	    for (int i = 0; i < pos; i++) { // Recorrer la lista hasta llegar a la posiciï¿½n indicada
 	        actual = actual->siguiente;
 	    }
-	    actual->valor = valor; // Modificar el valor del nodo en la posición indicada
+	    actual->valor = valor; // Modificar el valor del nodo en la posiciï¿½n indicada
 	}
 
     void borrar(int pos) {
@@ -168,7 +168,7 @@ public:
 
     T buscar(int pos) {
         if (pos < 0 || pos >= tam) {
-	        cout<<"Posición invalida al buscar"<<endl;
+	        cout<<"Posiciï¿½n invalida al buscar"<<endl;
 	    }
 	
 	    Nodo<T> *actual = inicio;
