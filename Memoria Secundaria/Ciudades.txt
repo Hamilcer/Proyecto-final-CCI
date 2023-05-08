@@ -1,2 +1,4 @@
 Villavicencio,Meta,15,30
-Bogotá,Cundinamarca,15,20
+Bogota,Cundinamarca,15,20
+Villavicencio,Meta,15,30
+Bogota,Cundinamarca,15,20
