@@ -33,15 +33,15 @@ void Simulacion::Menu(){
 								
 								break;
 							}
-						case 2{
+						case 2:{
 							
 							break;
 						}
-						case 3{
+						case 3:{
 							
 							break;
 						}
-						case 4{
+						case 4:{
 							
 							break;
 						}
@@ -74,15 +74,15 @@ void Simulacion::Menu(){
 								
 								break;
 							}
-						case 2{
+						case 2:{
 							
 							break;
 						}
-						case 3{
+						case 3:{
 							
 							break;
 						}
-						case 4{
+						case 4:{
 							
 							break;
 						}
@@ -110,11 +110,11 @@ void Simulacion::Menu(){
 								
 								break;
 							}
-						case 2{
+						case 2:{
 							
 							break;
 						}
-						case 3{
+						case 3:{
 							
 							break;
 						}
@@ -133,11 +133,11 @@ void Simulacion::Menu(){
 					break;
 				}
 			
-		}
-		
+			}
+	  	}	
+	  }
 	}
 }
-
 void Simulacion::MostrarMenu(){
 	cout<<"Registraduria Nacional del Estado Civil"<<endl;
 	cout<<"Menu Principal"<<endl;
