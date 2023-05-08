@@ -12,7 +12,7 @@ int main(){
 	cout<<"Inicializando .."<<endl;
 	Simulacion simulacion;
 	
-	simulacion.MostrarMenu();
+	simulacion.Menu();
 	
 	
 	/*

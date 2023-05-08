@@ -1,83 +1,181 @@
+#include <stdlib.h>  //Libreria para limpiar pantalla
 
-#include "Archivos.h"
-#include "Simulacion.cpp"
+class Simulacion{
+	private:
 
-#include "Clases Principales/Candidato.h"
-#include "Estructuras de Datos/PilaDinamica.h"
-#include "Estructuras de Datos/Multilista.h"
+	public:
+		
+		int Opcion;
+		
+		void MostrarMenu();
+		void SubMenuListas();
+		void SubMenuConsultas();
+		void SubMenuEstadisticas();
+		
+		void Menu();
+};
 
-
-int main(){
+void Simulacion::Menu(){
 	
-	cout<<"Inicializando .."<<endl;
-	Simulacion simulacion;
-	
-	simulacion.MostrarMenu();
-	
-	
-	/*
-	
-	//Creaciï¿½n de las listas
-	Pila<Ciudad> listaCiudades;
-	Pila<Partido> listaPartidos;
-	Pila<Candidato> listaCandidatos;
-	
-	//Creaciï¿½n de los archivos
-	
-	Archivos Ciudades("Ciudades");
-	Archivos Partidos("Partidos");
-	Archivos Candidatos("Candidatos");
-	
-	//Creaciï¿½n de Ciudades
-	Ciudad Bogota("Bogota","Cundinamarca",15,20);
-	Ciudad Villavicencio("Villavicencio","Meta",15,30);
-	
-	//Creaciï¿½n de Partidos
-	Partido Conservador("Conservador","Juan Carrillo");
-	Partido Liberal("Liberal","Maria Fernanda");
-
-	//Creacion candidatos
-	Candidato Manuel("Manuel", "Rodriguez", "Alcalde", "1", 'M', "Casado", "15/06/2013", Bogota, Bogota, Liberal);
-	Candidato Johan("Johan", "Rodriguez", "Consejo", "2", 'M', "Casado", "15/06/2013", Bogota, Villavicencio, Liberal);
-	Candidato Marino("Marino", "Rodriguez", "Consejo", "3", 'M', "Casado", "15/06/2013", Bogota, Bogota, Conservador);
-	Candidato Benigno("Benigno", "Rodriguez", "Consejo", "4", 'M', "Casado", "15/06/2013", Bogota, Villavicencio, Conservador);
-	Candidato Fuensanta("Fuensanta", "Rodriguez", "Consejo", "5", 'M', "Casado", "15/06/2013", Bogota, Bogota, Liberal);
-	Candidato Jesica("Jesica", "Rodriguez", "Consejo", "6", 'M', "Casado", "15/06/2013", Bogota, Villavicencio, Liberal);
-	Candidato Amanda("Amanda", "Rodriguez", "Consejo", "7", 'M', "Casado", "15/06/2013", Bogota, Bogota, Conservador);
-	Candidato Eloisa("Eloisa", "Rodriguez", "Alcalde", "8", 'M', "Casado", "15/06/2013", Bogota, Villavicencio, Conservador);
-	Candidato Iker("Iker", "Rodriguez", "Consejo", "9", 'M', "Casado", "15/06/2013", Bogota, Bogota, Liberal);
-	Candidato Consuelo("Consuelo", "Rodriguez", "Consejo", "10", 'M', "Casado", "15/06/2013", Bogota, Villavicencio, Liberal);
-	
-	//Aï¿½adir las ciudades y partidos en las listas
-	
-	listaCiudades.meter(Bogota);
-	listaCiudades.meter(Villavicencio);
-	
-	listaPartidos.meter(Conservador);
-	listaPartidos.meter(Liberal);
-	
-	while(listaCiudades.estaVacia() != true){
-		Ciudades.escribir(listaCiudades.sacar().toString());
+	while(true){ // Bucle infinito del programa
+		system("cls");
+		MostrarMenu();
+		cin>>Opcion;
+		
+		switch(Opcion){
+			case 1:
+				{	
+					system("cls");
+					SubMenuListas();
+					cin>>Opcion;
+					switch(Opcion){
+						case 1:{
+								
+								break;
+							}
+						case 2{
+							
+							break;
+						}
+						case 3{
+							
+							break;
+						}
+						case 4{
+							
+							break;
+						}
+						case 5:{
+							
+							break;
+						}
+						case 6:{
+							
+							break;
+						}
+						case 7:{
+							
+							break;
+						}
+						case 8:{
+							
+							break;
+						}
+					}
+					break;
+				}
+			case 2:
+				{
+					system("cls");
+					SubMenuConsultas();
+					cin>>Opcion;
+					switch(Opcion){
+						case 1:{
+								
+								break;
+							}
+						case 2{
+							
+							break;
+						}
+						case 3{
+							
+							break;
+						}
+						case 4{
+							
+							break;
+						}
+						case 5:{
+							
+							break;
+						}
+						case 6:{
+							
+							break;
+						}
+						case 7:{
+							
+							break;
+						}
+					break;
+				}
+			case 3:
+				{
+					system("cls");
+					SubMenuEstadisticas();
+					cin>>Opcion;
+					switch(Opcion){
+						case 1:{
+								
+								break;
+							}
+						case 2{
+							
+							break;
+						}
+						case 3{
+							
+							break;
+						}
+					break;	
+				}
+			case 4:
+				{
+					system("cls");
+					//REALIZAR SIMULACION 1. SIMULAR 2. TODOS LOS VOTOS DE LA SIMULACION SE REINICIAN
+					break;
+				}
+			case 5:
+				{
+					system("cls");
+					//FINALIZAR Y GUARDAR EN LOS ARCHIVOS PLANOS
+					break;
+				}
+			
+		}
+		
 	}
+}
 
-	//cout << ("2">"a");
+void Simulacion::MostrarMenu(){
+	cout<<"Registraduria Nacional del Estado Civil"<<endl;
+	cout<<"Menu Principal"<<endl;
+	cout<<"--------------------------------------------------"<<endl;
+	cout<<"1. Buscar listas por categoria"<<endl;
+	cout<<"2. Realizar consultas"<<endl;
+	cout<<"3. Obtener Estadisticas"<<endl;
+	cout<<"4. Simular Proceso electoral"<<endl;
+	cout<<"5. Finalizar Simulacion y guardar"<<endl;
+	cout<<"6. Salir"<<endl;
+}
+
+void Simulacion::SubMenuListas(){
+	cout<<"Buscar Listas por categoria"<<endl;
+	cout<<"1. Ciudades para las cuales se realizará el proceso electoral."<<endl;
+	cout<<"2. Partidos legalmente reconocidos."<<endl;
+	cout<<"3. Todos los candidatos al concejo de una ciudad."<<endl;
+	cout<<"4. Todos los candidatos a la alcaldía de una ciudad."<<endl;
+	cout<<"5. Candidatos a cada una de las alcaldías, por partido."<<endl;
+	cout<<"6. Candidatos a cada uno de los concejos, por partido."<<endl;
+	cout<<"7. Por cada partido, la lista de candidatos a los consejos."<<endl;
+	cout<<"8. Por cada partido, la lista de candidatos a las alcaldías."<<endl;
 	
-	Multilista1 ml(10, 10);
+}
+void Simulacion::SubMenuConsultas(){
+	cout<<"Realizar una consulta"<<endl;
+	cout<<"1. Dado un partido y una ciudad, mostrar la lista de sus candidatos al Concejo y el candidato a la alcaldía."<<endl;
+	cout<<"2. Dado un partido mostrar la lista de candidatos a alcaldías de cada una de las diferentes ciudades."<<endl;
+	cout<<"3. Dado un partido mostrar las listas de candidatos a cada uno de los diferentes concejos."<<endl;
+	cout<<"4. Dada una ciudad, mostrar por cada partido, el candidato a la alcaldía y los candidatos al concejo"<<endl;
+	cout<<"5. Dada una ciudad, mostrar el tarjetón de candidatos a la alcaldía."<<endl;
+	cout<<"6. Dada una ciudad, mostrar el tarjetón de candidatos al concejo."<<endl;
+	cout<<"7. Censo electoral. Por cada ciudad, mostrar la cantidad de personas habilitadas para votar."<<endl;
+}
 
-	ml.insertar(Manuel);
-    ml.insertar(Johan);
-    ml.insertar(Marino);
-    ml.insertar(Benigno);
-    ml.insertar(Fuensanta);
-    ml.insertar(Jesica);
-    ml.insertar(Amanda); 
-    ml.insertar(Eloisa);
-    ml.insertar(Iker);
-    ml.insertar(Consuelo);
-
-	ml.imprimir("Alcalde");
-
-	
-	*/
-	return 0;
+void Simulacion::SubMenuEstadisticas(){
+	cout<<"Estadisticas"<<endl;
+	cout<<"1. Ver el reporte por ciudad"<<endl;
+	cout<<"2. Ver el reporte por consejo"<<endl;
+	cout<<"3. Ver el reporte total nacional"<<endl;
 }
