@@ -1,4 +1,6 @@
 #include <stdlib.h>  //Libreria para limpiar pantalla
+#include "OpcionesListas.cpp"
+
 
 class Simulacion{
 	private:
@@ -16,8 +18,9 @@ class Simulacion{
 };
 
 void Simulacion::Menu(){
+	bool programa = true;
 	
-	while(true){ // Bucle infinito del programa
+	while(programa){ // Bucle infinito del programa
 		system("cls");
 		MostrarMenu();
 		cin>>Opcion;
@@ -25,40 +28,57 @@ void Simulacion::Menu(){
 		switch(Opcion){
 			case 1:
 				{	
-					system("cls");
-					SubMenuListas();
+					OpcionesListas opcionLista; // Inicializa el objeto de la clase Opciones Listas
+					opcionLista.leerArchivos(); // Lee los archivos e inicializa las listas
+					
+					system("cls"); // Limpia pantalla
+					SubMenuListas(); // Muestra menú
 					cin>>Opcion;
 					switch(Opcion){
 						case 1:{
-								
-								break;
-							}
+							opcionLista.mostrarCiudades(); 
+							break;
+						}
 						case 2:{
-							
+							opcionLista.mostrarPartidos();
 							break;
 						}
 						case 3:{
+							string ciudad;
+							cout<<"Ingrese la ciudad en la que desea buscar candidatos al consejo"<<endl;
+							cin>>ciudad;
+							opcionLista.candidatosConcejo(ciudad);
 							
 							break;
 						}
 						case 4:{
-							
+							string ciudad;
+							cout<<"Ingrese la ciudad en la que desea buscar candidatos a la alcaldia"<<endl;
+							cin>>ciudad;
+							opcionLista.candidatosAlcaldia(ciudad);
 							break;
 						}
 						case 5:{
-							
+							string partido;
+							cout<<"Ingrese el partido en la que desea buscar candidatos a la alcaldia"<<endl;
+							cin>>partido;
+							opcionLista.candidatosAlcaldiaConsejoPartido(partido, "Alcaldia");
 							break;
 						}
 						case 6:{
+							string partido;
+							cout<<"Ingrese el partido en la que desea buscar candidatos al Consejo"<<endl;
+							cin>>partido;
+							opcionLista.candidatosAlcaldiaConsejoPartido(partido, "Consejo");
 							
 							break;
 						}
 						case 7:{
-							
+							opcionLista.candidatosAlcaldiaConsejoPartidoLista("Consejo");
 							break;
 						}
 						case 8:{
-							
+							opcionLista.candidatosAlcaldiaConsejoPartidoLista("Alcaldia");
 							break;
 						}
 					}
@@ -99,6 +119,7 @@ void Simulacion::Menu(){
 							break;
 						}
 					break;
+					}
 				}
 			case 3:
 				{
@@ -119,6 +140,7 @@ void Simulacion::Menu(){
 							break;
 						}
 					break;	
+					}
 				}
 			case 4:
 				{
@@ -132,10 +154,12 @@ void Simulacion::Menu(){
 					//FINALIZAR Y GUARDAR EN LOS ARCHIVOS PLANOS
 					break;
 				}
-			
-			}
-	  	}	
-	  }
+			case 6:
+				{
+					programa = false;
+					break;
+				}
+		}
 	}
 }
 void Simulacion::MostrarMenu(){

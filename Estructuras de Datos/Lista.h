@@ -1,4 +1,3 @@
-#include <cstddef>
 #ifndef LISTA_H
 #define LISTA_H
 
@@ -48,72 +47,25 @@ public:
         }
     }
 
-    // Mï¿½todo para insertar un elemento al final de la lista
-    void insertar_final(T valor) {
-        Nodo<T>* nuevo = new Nodo<T>(valor);
 
-        // Si la lista estï¿½ vacï¿½a, el nuevo nodo serï¿½ tanto el primero como el ï¿½ltimo
-        if (inicio == nullptr) {
-            inicio = nuevo;
-            fin = nuevo;
-        }
-        // Si no, se agrega el nuevo nodo despuï¿½s del ï¿½ltimo
-        else {
-            fin->siguiente = nuevo;
-            fin = nuevo;
-        }
 
-        // Se aumenta el tamaï¿½o de la lista
-        tam++;
-    }
-
-    // Mï¿½todo para insertar un elemento al inicio de la lista
-    void insertar_inicio(T valor) {
-        Nodo<T>* nuevo = new Nodo<T>(valor);
-
-        // Si la lista estï¿½ vacï¿½a, el nuevo nodo serï¿½ tanto el primero como el ï¿½ltimo
-        if (inicio == nullptr) {
-            inicio = nuevo;
-            fin = nuevo;
-        }
-        // Si no, se agrega el nuevo nodo antes del primero
-        else {
-            nuevo->siguiente = inicio;
-            inicio = nuevo;
-        }
-
-        // Se aumenta el tamaï¿½o de la lista
-        tam++;
-    }
-
-    // Mï¿½todo para insertar un elemento en una posiciï¿½n especï¿½fica de la lista
-    void insertar(T valor, int pos) {
-        // Se verifica que la posiciï¿½n sea vï¿½lida
-        if (pos > tam || pos < 0) {
-            cout << "Posicion invalida" << endl;
-            return;
-        }
-
-        // Si la posiciï¿½n es 0, se inserta al inicio de la lista
-        if (pos == 0) {
-            insertar_inicio(valor);
-        }
-        // Si la posiciï¿½n es igual al tamaï¿½o de la lista, se inserta al final
-        else if (pos == tam) {
-            insertar_final(valor);
-        }
-        // Si no, se busca el nodo anterior a la posiciï¿½n deseada y se inserta despuï¿½s de ï¿½l
-        else {
-            Nodo<T>* nuevo = new Nodo<T>(valor);
-            Nodo<T>* actual = inicio;
-            for (int i = 0; i < pos - 1; i++) {
-                actual = actual->siguiente;
-            }
-            nuevo->siguiente = actual->siguiente;
-            actual->siguiente = nuevo;
-            tam++;
-        }
-    }
+	void insertar(T valor) {
+	    Nodo<T>* nuevo = new Nodo<T>(valor);
+	
+	    // Si la lista está vacía, el nuevo nodo será tanto el primero como el último
+	    if (inicio == nullptr) {
+	        inicio = nuevo;
+	        fin = nuevo;
+	    }
+	    // Si no, se agrega el nuevo nodo después del último
+	    else {
+	        fin->siguiente = nuevo;
+	        fin = nuevo;
+	    }
+	
+	    // Se aumenta el tamaño de la lista
+	    tam++;
+	}
 
 	void modificar(T valor, int pos) {
 	    if (pos >= tam || pos < 0) { // Verificar si la posiciï¿½n es vï¿½lida
@@ -166,19 +118,31 @@ public:
         return (tam == 0);
     }
 
-    T buscar(int pos) {
-        if (pos < 0 || pos >= tam) {
-	        cout<<"Posiciï¿½n invalida al buscar"<<endl;
+	T buscar(int pos) {
+	    if (pos < 0 || pos >= tam) {
+	        cout << "Posición inválida al buscar" << endl;
+	        // Aquí puedes retornar un valor predeterminado o lanzar una excepción, según tus necesidades
 	    }
-	
-	    Nodo<T> *actual = inicio;
+	    
+	    Nodo<T>* actual = this->inicio;
+		
 	    for (int i = 0; i < pos; i++) {
 	        actual = actual->siguiente;
 	    }
-	
+	    
 	    return actual->valor;
-    }
-    
+	}
+	
+	bool existe(T valor) {
+	    Nodo<T>* actual = inicio;
+	    while (actual != nullptr) {
+	        if (actual->valor == valor) {
+	            return true;
+	        }
+	        actual = actual->siguiente;
+	    }
+	    return false;
+	} 
 };
 
 #endif

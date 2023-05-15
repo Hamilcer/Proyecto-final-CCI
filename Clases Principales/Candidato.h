@@ -1,5 +1,4 @@
 #include <string>
-
 #include "Ciudad.h"
 #include "Partido.h"
 
@@ -44,6 +43,7 @@ class Candidato {
         // M�todos getter para acceder a los atributos
         std::string getNombre() { return nombre; }
         std::string getApellido() { return apellido; }
+        std::string getNombreCompleto() { return nombre+" "+apellido; }
         std::string getPuesto() { return puesto; }
         std::string getNumIdentificacion() { return numIdentificacion; }
         char getSexo() { return sexo; }
@@ -55,9 +55,6 @@ class Candidato {
         
         // M�todo toString para la clase Candidato
 	    std::string toString() {
-	        std::stringstream ss;
-	        ss << nombre << "," << apellido << "," << puesto << ", " << numIdentificacion << "," << sexo << "," << estadoCivil << ","
-	           << fechaNacimiento << "," << ciudadNacimiento.getNombre() << "," << ciudadResidencia.getNombre() << "," << partido.toString();
-	        return ss.str();
+
 	    }
 };

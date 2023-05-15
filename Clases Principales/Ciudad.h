@@ -1,5 +1,4 @@
 #include <string>
-#include <sstream>
 
 class Ciudad {
     private:
@@ -26,9 +25,9 @@ class Ciudad {
         int getCensoElectoral() { return censoElectoral; }
         
         // Método toString para la clase Ciudad
-	    std::string toString() {
-	        std::stringstream ss;
-	        ss << nombre << "," << departamento << "," << tamConcejo << "," << censoElectoral;
-	        return ss.str();
-	    }
+		std::string toString() {
+		    std::string datos;
+		    datos = getNombre() + "," + getDepartamento() + "," + std::to_string(getTamConcejo()) + "," + std::to_string(getCensoElectoral());
+		    return datos;
+		}	
 };
