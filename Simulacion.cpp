@@ -1,4 +1,6 @@
 #include <stdlib.h>  //Libreria para limpiar pantalla
+#include "OpcionesListas.cpp"
+
 
 class Simulacion{
 	private:
@@ -16,8 +18,9 @@ class Simulacion{
 };
 
 void Simulacion::Menu(){
+	bool programa = true;
 	
-	while(true){ // Bucle infinito del programa
+	while(programa){ // Bucle infinito del programa
 		system("cls");
 		MostrarMenu();
 		cin>>Opcion;
@@ -25,40 +28,57 @@ void Simulacion::Menu(){
 		switch(Opcion){
 			case 1:
 				{	
-					system("cls");
-					SubMenuListas();
+					OpcionesListas opcionLista; // Inicializa el objeto de la clase Opciones Listas
+					opcionLista.leerArchivos(); // Lee los archivos e inicializa las listas
+					
+					system("cls"); // Limpia pantalla
+					SubMenuListas(); // Muestra menï¿½
 					cin>>Opcion;
 					switch(Opcion){
 						case 1:{
-								
-								break;
-							}
+							opcionLista.mostrarCiudades(); 
+							break;
+						}
 						case 2:{
-							
+							opcionLista.mostrarPartidos();
 							break;
 						}
 						case 3:{
+							string ciudad;
+							cout<<"Ingrese la ciudad en la que desea buscar candidatos al consejo"<<endl;
+							cin>>ciudad;
+							opcionLista.candidatosConcejo(ciudad);
 							
 							break;
 						}
 						case 4:{
-							
+							string ciudad;
+							cout<<"Ingrese la ciudad en la que desea buscar candidatos a la alcaldia"<<endl;
+							cin>>ciudad;
+							opcionLista.candidatosAlcaldia(ciudad);
 							break;
 						}
 						case 5:{
-							
+							string partido;
+							cout<<"Ingrese el partido en la que desea buscar candidatos a la alcaldia"<<endl;
+							cin>>partido;
+							opcionLista.candidatosAlcaldiaConsejoPartido(partido, "Alcaldia");
 							break;
 						}
 						case 6:{
+							string partido;
+							cout<<"Ingrese el partido en la que desea buscar candidatos al Consejo"<<endl;
+							cin>>partido;
+							opcionLista.candidatosAlcaldiaConsejoPartido(partido, "Consejo");
 							
 							break;
 						}
 						case 7:{
-							
+							opcionLista.candidatosAlcaldiaConsejoPartidoLista("Consejo");
 							break;
 						}
 						case 8:{
-							
+							opcionLista.candidatosAlcaldiaConsejoPartidoLista("Alcaldia");
 							break;
 						}
 					}
@@ -99,6 +119,7 @@ void Simulacion::Menu(){
 							break;
 						}
 					break;
+					}
 				}
 			case 3:
 				{
@@ -119,6 +140,7 @@ void Simulacion::Menu(){
 							break;
 						}
 					break;	
+					}
 				}
 			case 4:
 				{
@@ -132,10 +154,12 @@ void Simulacion::Menu(){
 					//FINALIZAR Y GUARDAR EN LOS ARCHIVOS PLANOS
 					break;
 				}
-			
-			}
-	  	}	
-	  }
+			case 6:
+				{
+					programa = false;
+					break;
+				}
+		}
 	}
 }
 void Simulacion::MostrarMenu(){
@@ -152,24 +176,24 @@ void Simulacion::MostrarMenu(){
 
 void Simulacion::SubMenuListas(){
 	cout<<"Buscar Listas por categoria"<<endl;
-	cout<<"1. Ciudades para las cuales se realizará el proceso electoral."<<endl;
+	cout<<"1. Ciudades para las cuales se realizarï¿½ el proceso electoral."<<endl;
 	cout<<"2. Partidos legalmente reconocidos."<<endl;
 	cout<<"3. Todos los candidatos al concejo de una ciudad."<<endl;
-	cout<<"4. Todos los candidatos a la alcaldía de una ciudad."<<endl;
-	cout<<"5. Candidatos a cada una de las alcaldías, por partido."<<endl;
+	cout<<"4. Todos los candidatos a la alcaldï¿½a de una ciudad."<<endl;
+	cout<<"5. Candidatos a cada una de las alcaldï¿½as, por partido."<<endl;
 	cout<<"6. Candidatos a cada uno de los concejos, por partido."<<endl;
 	cout<<"7. Por cada partido, la lista de candidatos a los consejos."<<endl;
-	cout<<"8. Por cada partido, la lista de candidatos a las alcaldías."<<endl;
+	cout<<"8. Por cada partido, la lista de candidatos a las alcaldï¿½as."<<endl;
 	
 }
 void Simulacion::SubMenuConsultas(){
 	cout<<"Realizar una consulta"<<endl;
-	cout<<"1. Dado un partido y una ciudad, mostrar la lista de sus candidatos al Concejo y el candidato a la alcaldía."<<endl;
-	cout<<"2. Dado un partido mostrar la lista de candidatos a alcaldías de cada una de las diferentes ciudades."<<endl;
+	cout<<"1. Dado un partido y una ciudad, mostrar la lista de sus candidatos al Concejo y el candidato a la alcaldï¿½a."<<endl;
+	cout<<"2. Dado un partido mostrar la lista de candidatos a alcaldï¿½as de cada una de las diferentes ciudades."<<endl;
 	cout<<"3. Dado un partido mostrar las listas de candidatos a cada uno de los diferentes concejos."<<endl;
-	cout<<"4. Dada una ciudad, mostrar por cada partido, el candidato a la alcaldía y los candidatos al concejo"<<endl;
-	cout<<"5. Dada una ciudad, mostrar el tarjetón de candidatos a la alcaldía."<<endl;
-	cout<<"6. Dada una ciudad, mostrar el tarjetón de candidatos al concejo."<<endl;
+	cout<<"4. Dada una ciudad, mostrar por cada partido, el candidato a la alcaldï¿½a y los candidatos al concejo"<<endl;
+	cout<<"5. Dada una ciudad, mostrar el tarjetï¿½n de candidatos a la alcaldï¿½a."<<endl;
+	cout<<"6. Dada una ciudad, mostrar el tarjetï¿½n de candidatos al concejo."<<endl;
 	cout<<"7. Censo electoral. Por cada ciudad, mostrar la cantidad de personas habilitadas para votar."<<endl;
 }
 
