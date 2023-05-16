@@ -1,5 +1,5 @@
-Juan,Garcia,Consejo,1003516421,M,Soltero,09/02/2002,Fusagasuga,Bogota,Conservador
-Jose,Aljure,Consejo,1205416421,M,Soltero,07/04/2003,Cali,Bogota,Liberal
-Lina,Carrillo,Alcaldia,2303516443,F,Soltera,05/07/2001,Medellin,Medellin,Conservador
-Sara,Cardona,Consejo,3563516421,F,Soltera,12/12/1986,Santa Marta,Fusagasuga,Liberal
+Juan,Garcia,Consejo,1003516421,M,Soltero,09/02/2002,Fusagasuga,Bogota,Conservador, 0
+Jose,Aljure,Consejo,1205416421,M,Soltero,07/04/2003,Cali,Bogota,Liberal, 0
+Lina,Carrillo,Alcaldia,2303516443,F,Soltera,05/07/2001,Medellin,Medellin,Conservador, 0
+Sara,Cardona,Consejo,3563516421,F,Soltera,12/12/1986,Santa Marta,Fusagasuga,Liberal, 0
 

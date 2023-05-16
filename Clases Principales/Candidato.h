@@ -14,6 +14,7 @@ class Candidato {
         Ciudad ciudadNacimiento;
         Ciudad ciudadResidencia;
         Partido partido;
+        int votos;
 
     public:
     	Candidato() {
@@ -23,11 +24,12 @@ class Candidato {
 		    sexo = 'N';
 		    estadoCivil = "";
 		    fechaNacimiento = "";
+            votos = 0;
 		}
 		
         Candidato(std::string nombre, std::string apellido, std::string puesto, std::string numIdentificacion,
                   char sexo, std::string estadoCivil, std::string fechaNacimiento,
-                  Ciudad ciudadNacimiento, Ciudad ciudadResidencia, Partido partido) {
+                  Ciudad ciudadNacimiento, Ciudad ciudadResidencia, Partido partido, int votos) {
             this->nombre = nombre;
             this->apellido = apellido;
             this->puesto = puesto;
@@ -38,6 +40,7 @@ class Candidato {
             this->ciudadNacimiento = ciudadNacimiento;
             this->ciudadResidencia = ciudadResidencia;
             this->partido = partido;
+            this->votos = votos;
         }
 
         // M�todos getter para acceder a los atributos
@@ -52,9 +55,56 @@ class Candidato {
         Ciudad getCiudadNacimiento() { return ciudadNacimiento; }
         Ciudad getCiudadResidencia() { return ciudadResidencia; }
         Partido getPartido() { return partido; }
+        int getVotos(){return votos;}
         
         // M�todo toString para la clase Candidato
 	    std::string toString() {
 
 	    }
+
+    void setNombre(const string &nombre) {
+        Candidato::nombre = nombre;
+    }
+
+    void setApellido(const string &apellido) {
+        Candidato::apellido = apellido;
+    }
+
+    void setPuesto(const string &puesto) {
+        Candidato::puesto = puesto;
+    }
+
+    void setNumIdentificacion(const string &numIdentificacion) {
+        Candidato::numIdentificacion = numIdentificacion;
+    }
+
+    void setSexo(char sexo) {
+        Candidato::sexo = sexo;
+    }
+
+    void setEstadoCivil(const string &estadoCivil) {
+        Candidato::estadoCivil = estadoCivil;
+    }
+
+    void setFechaNacimiento(const string &fechaNacimiento) {
+        Candidato::fechaNacimiento = fechaNacimiento;
+    }
+
+    void setCiudadNacimiento(const Ciudad &ciudadNacimiento) {
+        Candidato::ciudadNacimiento = ciudadNacimiento;
+    }
+
+    void setCiudadResidencia(const Ciudad &ciudadResidencia) {
+        Candidato::ciudadResidencia = ciudadResidencia;
+    }
+
+    void setPartido(const Partido &partido) {
+        Candidato::partido = partido;
+    }
+
+    void setVotos(int votos) {
+        Candidato::votos = votos;
+    }
 };
+
+

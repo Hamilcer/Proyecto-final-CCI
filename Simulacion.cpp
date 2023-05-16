@@ -1,5 +1,6 @@
 #include <stdlib.h>  //Libreria para limpiar pantalla
 #include "OpcionesListas.cpp"
+#include "OpcionesSimulacion.cpp"
 
 
 class Simulacion{
@@ -13,6 +14,10 @@ class Simulacion{
 		void SubMenuListas();
 		void SubMenuConsultas();
 		void SubMenuEstadisticas();
+        void SubMenuSimulacion();
+        void SubMenuAgregarRegistro();
+        void SubMenuEliminarRegistro();
+        void SubMenuModificarRegistro();
 		
 		void Menu();
 };
@@ -143,9 +148,78 @@ void Simulacion::Menu(){
 					}
 				}
 			case 4:
-				{
-					system("cls");
+            {
 					//REALIZAR SIMULACION 1. SIMULAR 2. TODOS LOS VOTOS DE LA SIMULACION SE REINICIAN
+                    OpcionesSimulacion opcionSimulacion;
+                    system("cls");
+                    SubMenuSimulacion();
+                    cin>>Opcion;
+                    switch(Opcion){
+                        case 1:{
+                            system("cls");
+                            SubMenuAgregarRegistro();
+                            cin>>Opcion;
+                            switch(Opcion){
+                                case 1:{
+                                    opcionSimulacion.agregarCandidatos();
+                                    break;
+                                }
+                                case 2:{
+
+                                    break;
+                                }
+                                case 3:{
+
+                                    break;
+                                }
+                            }
+                            break;
+                        }
+                        case 2:{
+                            system("cls");
+                            SubMenuModificarRegistro();
+                            cin>>Opcion;
+                            switch(Opcion){
+                                case 1:{
+
+                                    break;
+                                }
+                                case 2:{
+
+                                    break;
+                                }
+                                case 3:{
+
+                                    break;
+                                }
+                            }
+                            break;
+                        }
+                        case 3:{
+                            system("cls");
+                            SubMenuEliminarRegistro();
+                            cin>>Opcion;
+                            switch(Opcion){
+                                case 1:{
+
+                                    break;
+                                }
+                                case 2:{
+
+                                    break;
+                                }
+                                case 3:{
+
+                                    break;
+                                }
+                            }
+                            break;
+                        }
+                        case 4:{
+                            break;
+                        }
+
+                    }
 					break;
 				}
 			case 5:
@@ -202,4 +276,33 @@ void Simulacion::SubMenuEstadisticas(){
 	cout<<"1. Ver el reporte por ciudad"<<endl;
 	cout<<"2. Ver el reporte por consejo"<<endl;
 	cout<<"3. Ver el reporte total nacional"<<endl;
+}
+
+void Simulacion::SubMenuSimulacion(){
+    cout<<" Simulacion"<<endl;
+    cout<<"1. Agregar registro"<<endl;
+    cout<<"2. Modificar registro"<<endl;
+    cout<<"3. Eliminar registro"<<endl;
+    cout<<"4. Simulacion proceso electoral"<<endl;
+}
+
+void Simulacion::SubMenuAgregarRegistro() {
+    cout<<" Agregar registro"<<endl;
+    cout<<"1. Agregar candidato"<<endl;
+    cout<<"2. Agregar ciudad"<<endl;
+    cout<<"3. Agregar partido "<<endl;
+}
+
+void Simulacion::SubMenuModificarRegistro() {
+    cout<<" Modificar registro"<<endl;
+    cout<<"1. Modificar candidato"<<endl;
+    cout<<"2. Modificar ciudad"<<endl;
+    cout<<"3. Modificar partido "<<endl;
+}
+
+void Simulacion::SubMenuEliminarRegistro() {
+    cout<<" Eliminar registro"<<endl;
+    cout<<"1. Eliminar candidato"<<endl;
+    cout<<"2. Eliminar ciudad"<<endl;
+    cout<<"3. Eliminar partido "<<endl;
 }

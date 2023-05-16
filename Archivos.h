@@ -1,12 +1,15 @@
+#ifndef ARCHIVOS_H
+#define ARCHIVOS_H
 
 #include <fstream>
 #include <sstream>
+
 
 #include "Estructuras de Datos/Lista.h"
 #include "Clases Principales/Candidato.h"
 
 
-class Archivos {
+class Archivos{
     private:
         string nombreArchivo;
         string rutaArchivo;
@@ -145,22 +148,25 @@ class Archivos {
 	    string linea;
 	    while (getline(archivo, linea)) {
 	        std::stringstream ss(linea);
-	        std::string nombre, apellido, puesto, numIdentificacion, sexoStr, estadoCivil, fechaNacimiento, ciudadNacimientoNombre, ciudadNacimientoDepartamento, ciudadResidenciaNombre, ciudadResidenciaDepartamento, partidoNombre;
+	        std::string nombre, apellido, puesto, numIdentificacion, sexoStr, estadoCivil, fechaNacimiento, ciudadNacimientoNombre, ciudadNacimientoDepartamento, ciudadResidenciaNombre, ciudadResidenciaDepartamento, partidoNombre, votos;
 	
-	        if (std::getline(ss, nombre, ',') && std::getline(ss, apellido, ',') &&
+
+            if (std::getline(ss, nombre, ',') && std::getline(ss, apellido, ',') &&
 	            std::getline(ss, puesto, ',') && std::getline(ss, numIdentificacion, ',') &&
 	            std::getline(ss, sexoStr, ',') && std::getline(ss, estadoCivil, ',') &&
 	            std::getline(ss, fechaNacimiento, ',') && std::getline(ss, ciudadNacimientoNombre, ',') &&
-				std::getline(ss, ciudadResidenciaNombre, ',') && std::getline(ss, partidoNombre)) {
+				std::getline(ss, ciudadResidenciaNombre, ',') && std::getline(ss, partidoNombre,',') &&
+                std::getline(ss, votos)) {
 	            if (!nombre.empty() && !apellido.empty() && !puesto.empty() && !numIdentificacion.empty() &&
 	                !sexoStr.empty() && !estadoCivil.empty() && !fechaNacimiento.empty() &&
-	                !ciudadNacimientoNombre.empty() && !ciudadResidenciaNombre.empty() && !partidoNombre.empty()) {
+	                !ciudadNacimientoNombre.empty() && !ciudadResidenciaNombre.empty() && !partidoNombre.empty() && !votos.empty()) {
 	
 	                char sexo = sexoStr[0];
 	                Ciudad ciudadNacimiento(ciudadNacimientoNombre, " ", 0,0);
 	                Ciudad ciudadResidencia(ciudadResidenciaNombre, " ",0,0);
 	                Partido partido(partidoNombre," ");
-	                
+
+                    int cantVotos = stoi(votos);//lo vuelve entero
 	                /*
 	                //Si no existen las ciudades, las escribimos en el archivo de ciudades sin representante legal
 	                if(!ciudades->existe(ciudadNacimiento)){
@@ -174,7 +180,7 @@ class Archivos {
 	                
 					//inicializa el candidato y lo añade en la lista
 	                Candidato candidato(nombre, apellido, puesto, numIdentificacion, sexo, estadoCivil,
-	                                    fechaNacimiento, ciudadNacimiento, ciudadResidencia, partido);
+	                                    fechaNacimiento, ciudadNacimiento, ciudadResidencia, partido, cantVotos);
 	                                    
 	                candidatos->insertar(candidato);
 	            }
@@ -186,3 +192,4 @@ class Archivos {
 	}
 
 };
+#endif
