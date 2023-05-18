@@ -24,7 +24,7 @@ class Archivos {
         }
 
         void escribir(string texto) {
-            ofstream archivo(rutaArchivo, ios::app);
+            ofstream archivo(rutaArchivo, ios::trunc);
             archivo << texto << endl;
             archivo.close();
         }
