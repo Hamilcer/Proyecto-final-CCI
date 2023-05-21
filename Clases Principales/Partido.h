@@ -20,8 +20,8 @@ class Partido {
         
         // Método toString para la clase Partido
 	    std::string toString() {
-	        std::stringstream ss;
-	        ss << nombre << "," << representanteLegal;
-	        return ss.str();
+	        std::string datos;
+	        datos = getNombre()+ "," + getRepresentanteLegal();
+	        return datos;
 	    }
 };
