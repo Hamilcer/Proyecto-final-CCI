@@ -1,41 +1,200 @@
-Miguel Ángel,López,Alcaldia,1889799923,M,Soltero,15/11/1991,Barranquilla,Santa Marta,Cambio Radical
-Miguel,Sánchez,Alcaldia,1114215146,M,Soltero,09/05/1996,Cúcuta,Pereira,Nuevo Liberalismo
-Daniel,Rodríguez,Alcaldia,1416106610,M,Casado,24/08/1970,Barranquilla,Cúcuta,Colombia Humana
-Antonio,López,Alcaldia,1790151871,M,Casado,27/02/1971,Bucaramanga,Cúcuta,Liberal Colombiano
-José,Flores,Alcaldia,1209999991,M,Casado,23/08/1974,Bogota,Manizales,Conservador Colombiano
-Manuel,Hernández,Alcaldia,1310292969,M,Casado,18/11/1999,Pereira,Manizales,Centro Democrático
-David,González,Alcaldia,1863545064,M,Casado,26/11/1999,Barranquilla,Bucaramanga,Unión Patriótica
-Rene,Perez,Consejo,1114215147,M,Soltero,09/05/1996,Cúcuta,Pereira,Nuevo Liberalismo
-Francisco,Rodríguez,Consejo,1150905202,M,Soltero,02/05/1991,Barranquilla,Cali,Centro Democrático
-Juan,Rodríguez,Consejo,1389004485,M,Soltero,22/03/1964,Villavicencio,Cúcuta,Unión Patriótica
-José Antonio,Hernández,Consejo,1458159020,M,Casado,25/06/1998,Villavicencio,Medellín,Centro Democrático
-Javier,Flores,Consejo,1635343030,M,Soltero,05/02/1987,Cúcuta,Villavicencio,Conservador Colombiano
-José Luis,Rodríguez,Consejo,1904715074,M,Casado,20/10/1981,Villavicencio,Cali,Unión Patriótica
-Francisco Javier,López,Consejo,1847332079,M,Casado,05/06/1996,Manizales,Santa Marta,Liberal Colombiano
-Carlos,Pérez,Consejo,1869944568,M,Soltero,04/07/1980,Bucaramanga,Cali,Unión Patriótica
-Jesús,Martínez,Consejo,1413444600,M,Soltero,15/07/1966,Manizales,Santa Marta,Liberal Colombiano
-Alejandro,García,Consejo,1483805787,M,Soltero,28/07/1981,Pereira,Manizales,Centro Democrático
-José Manuel,Flores,Consejo,1844751366,M,Soltero,06/07/1963,Pereira,Bucaramanga,Conservador Colombiano
-Rafael,Cruz,Consejo,1260851685,M,Soltero,19/08/1993,Cúcuta,Pereira,Centro Democrático
-Pedro,Sánchez,Consejo,1866447447,M,Casado,23/07/1996,Bucaramanga,Barranquilla,Cambio Radical
-Ángel,Gómez,Consejo,1714624665,M,Soltero,09/09/1994,Bogota,Pereira,Unión Patriótica
-María Carmen,Martínez,Consejo,1765427876,F,Casado,05/05/1963,Villavicencio,Santa Marta,Cambio Radical
-María,Gómez,Consejo,1843531131,F,Casado,04/11/1980,Bucaramanga,Bucaramanga,Centro Democrático
-Carmen,Martínez,Consejo,1627795498,F,Soltero,15/01/1972,Cúcuta,Manizales,Conservador Colombiano
-Josefa,Gómez,Consejo,1199015669,F,Soltero,17/06/1977,Cúcuta,Santa Marta,Colombia Humana
-Ana María,Hernández,Consejo,1632558694,F,Soltero,22/12/1976,Villavicencio,Cali,Cambio Radical
-Isabel,Flores,Consejo,1643405683,F,Casado,01/04/1976,Medellín,Villavicencio,Centro Democrático
-María Pilar,González,Consejo,1812827427,F,Soltero,20/03/1980,Pereira,Pereira,Cambio Radical
-María Dolores,Ramírez,Consejo,1255272159,F,Casado,09/07/1987,Manizales,Cúcuta,Cambio Radical
-Laura,Pérez,Consejo,1807377014,F,Casado,21/01/1982,Barranquilla,Barranquilla,Unión Patriótica
-María Teresa,Hernández,Consejo,1606121871,F,Soltero,27/10/2000,Santa Marta,Barranquilla,Centro Democrático
-Ana,Sánchez,Consejo,1891645399,F,Soltero,05/02/1978,Cali,Bogota,Colombia Humana
-Cristina,Ramírez,Consejo,1742272233,F,Casado,01/08/1975,Cúcuta,Medellín,Liberal Colombiano
-María Ángeles,Sánchez,Consejo,1082126076,F,Soltero,11/12/2002,Pereira,Manizales,Liberal Colombiano
-Marta,González,Consejo,1781988750,F,Soltero,04/05/1979,Barranquilla,Cali,Centro Democrático
-Francisca,Ramírez,Consejo,1154352310,F,Casado,15/06/1982,Manizales,Medellín,Cambio Radical
-Antonia,Sánchez,Consejo,1145359126,F,Soltero,05/01/1987,Cúcuta,Barranquilla,Liberal Colombiano
-María Isabel,Flores,Consejo,1705644079,F,Soltero,22/03/1991,Bucaramanga,Cali,Unión Patriótica
-María José,Pérez,Consejo,1263237122,F,Soltero,16/02/1976,Barranquilla,Santa Marta,Conservador Colombiano
-Lucia,Hernández,Consejo,1728604317,F,Soltero,12/04/1967,Barranquilla,Cúcuta,Conservador Colombiano
-Dolores,Gómez,Consejo,1533902054,F,Casado,17/02/1995,Manizales,Cúcuta,Centro Democrático
+Pedro,Sánchez,Alcaldia,1144712521,M,Soltero,28/06/2003,Medellín,Cali,Liberal Colombiano
+Rafael,Hernández,Alcaldia,1756765344,M,Casado,08/11/2000,Bogota,Santa Marta,Centro Democrático
+José Antonio,Cruz,Consejo,1251143921,M,Casado,27/07/1997,Santa Marta,Pereira,Colombia Humana  
+José Antonio,López,Consejo,1414248750,M,Soltero,15/02/1970,Cali,Medellín,Nuevo Liberalismo
+José,Gómez,Alcaldia,1616558227,M,Soltero,23/03/2003,Villavicencio,Barranquilla,Nuevo Liberalismo
+Manuel,López,Consejo,1278579226,M,Casado,05/03/1981,Villavicencio,Bogota,Conservador Colombiano
+José Luis,Martínez,Consejo,1947031111,M,Soltero,18/05/1970,Santa Marta,Medellín,Unión Patriótica
+Miguel Ángel,Sánchez,Consejo,1480170038,M,Casado,27/03/1998,Cúcuta,Bogota,Conservador Colombiano
+Antonio,Sánchez,Consejo,1157762929,M,Casado,07/06/1980,Manizales,Santa Marta,Cambio Radical
+Antonio,Rodríguez,Alcaldia,1968676630,M,Casado,05/05/1963,Barranquilla,Santa Marta,Unión Patriótica
+Daniel,Cruz,Consejo,1637580584,M,Casado,05/02/1995,Villavicencio,Santa Marta,Nuevo Liberalismo
+Francisco,González,Consejo,1659858568,M,Soltero,24/07/1989,Santa Marta,Villavicencio,Unión Patriótica
+Miguel,Ramírez,Alcaldia,1807568114,M,Casado,02/07/1968,Manizales,Villavicencio,Liberal Colombiano
+José Antonio,García,Alcaldia,1203906860,M,Casado,25/01/1966,Pereira,Manizales,Cambio Radical
+Antonio,Hernández,Alcaldia,1383865513,M,Casado,25/09/1980,Cúcuta,Santa Marta,Liberal Colombiano
+Miguel Ángel,Flores,Alcaldia,1736609521,M,Soltero,22/08/1979,Medellín,Barranquilla,Colombia Humana
+José Manuel,López,Consejo,1896762506,M,Soltero,15/10/1976,Santa Marta,Pereira,Cambio Radical
+Francisco Javier,García,Alcaldia,1154220926,M,Casado,21/08/1978,Santa Marta,Bogota,Nuevo Liberalismo
+José Antonio,Gómez,Consejo,1849953469,M,Soltero,21/04/1993,Villavicencio,Barranquilla,Nuevo Liberalismo
+José Luis,Hernández,Alcaldia,1076312773,M,Soltero,18/02/1971,Medellín,Cúcuta,Liberal Colombiano
+José Antonio,Cruz,Alcaldia,1628937669,M,Soltero,14/12/1981,Barranquilla,Medellín,Colombia Humana
+Javier,López,Alcaldia,1340895474,M,Casado,11/04/1986,Barranquilla,Santa Marta,Conservador Colombiano
+José Antonio,Hernández,Alcaldia,1257500110,M,Soltero,19/07/1972,Bucaramanga,Cali,Centro Democrático
+Alejandro,González,Alcaldia,1877090584,M,Soltero,15/12/2003,Cúcuta,Manizales,Liberal Colombiano
+David,Rodríguez,Consejo,1794626586,M,Casado,17/04/2000,Manizales,Bogota,Colombia Humana
+Pedro,Ramírez,Alcaldia,1152552166,M,Soltero,24/04/1979,Pereira,Bucaramanga,Unión Patriótica
+Miguel,Martínez,Consejo,1482864439,M,Casado,23/10/1985,Bucaramanga,Manizales,Unión Patriótica
+Francisco Javier,Flores,Consejo,1601655204,M,Casado,23/08/1991,Bucaramanga,Medellín,Colombia Humana
+Daniel,Cruz,Alcaldia,1324774380,M,Casado,15/11/1981,Cali,Villavicencio,Nuevo Liberalismo
+José Luis,Martínez,Consejo,1705925293,M,Soltero,17/02/1995,Barranquilla,Villavicencio,Unión Patriótica
+Manuel,López,Consejo,1275822070,M,Soltero,18/03/1990,Medellín,Villavicencio,Conservador Colombiano
+Antonio,López,Alcaldia,1486126276,M,Casado,07/04/1978,Cali,Manizales,Cambio Radical
+José Antonio,Rodríguez,Alcaldia,1181919385,M,Soltero,05/11/1968,Bucaramanga,Pereira,Unión Patriótica
+José Manuel,Cruz,Alcaldia,1711661544,M,Casado,24/02/1979,Medellín,Medellín,Cambio Radical
+Carlos,Hernández,Alcaldia,1708851294,M,Casado,24/12/1990,Barranquilla,Pereira,Centro Democrático
+José Manuel,Pérez,Alcaldia,1432866141,M,Casado,16/01/2001,Villavicencio,Villavicencio,Colombia Humana
+Manuel,Gómez,Consejo,1747557793,M,Soltero,14/08/1984,Cali,Bucaramanga,Cambio Radical
+Manuel,Flores,Consejo,1784472112,M,Soltero,07/12/1984,Bucaramanga,Medellín,Colombia Humana
+Francisco Javier,Rodríguez,Consejo,1751466787,M,Casado,22/04/2001,Medellín,Bogota,Liberal Colombiano
+Rafael,Cruz,Consejo,1984150474,M,Soltero,12/09/1963,Villavicencio,Bogota,Unión Patriótica
+David,González,Alcaldia,1129689962,M,Soltero,10/02/1996,Barranquilla,Cali,Cambio Radical
+Alejandro,Pérez,Consejo,1995336002,M,Casado,04/06/2003,Medellín,Cali,Centro Democrático
+Javier,Flores,Alcaldia,1746693963,M,Casado,03/05/1984,Manizales,Cúcuta,Conservador Colombiano
+Rafael,Gómez,Alcaldia,1461692153,M,Casado,24/09/1979,Manizales,Bogota,Cambio Radical
+Jesús,Sánchez,Consejo,1151382035,M,Soltero,11/12/1987,Pereira,Bucaramanga,Colombia Humana
+Manuel,Martínez,Consejo,1963859696,M,Casado,03/03/1969,Bogota,Santa Marta,Liberal Colombiano
+José Manuel,Gómez,Alcaldia,1027454940,M,Soltero,12/09/1979,Bogota,Cúcuta,Colombia Humana
+Alejandro,Flores,Alcaldia,1638007069,M,Casado,12/06/1999,Bogota,Pereira,Colombia Humana
+José,Ramírez,Alcaldia,1313706238,M,Soltero,10/06/1969,Medellín,Cali,Colombia Humana
+Miguel Ángel,Sánchez,Consejo,1697127804,M,Casado,10/12/1968,Pereira,Cúcuta,Colombia Humana
+Carlos,Ramírez,Consejo,1647744170,M,Soltero,02/10/1990,Barranquilla,Cali,Colombia Humana
+Alejandro,Ramírez,Alcaldia,1284166325,M,Casado,05/08/1976,Villavicencio,Pereira,Conservador Colombiano
+Rafael,Ramírez,Consejo,1543059283,M,Soltero,06/04/1968,Medellín,Manizales,Nuevo Liberalismo
+José Luis,Pérez,Alcaldia,1929906573,M,Soltero,25/04/1992,Manizales,Medellín,Cambio Radical
+Ángel,Cruz,Consejo,1416158798,M,Casado,15/05/1987,Cali,Villavicencio,Nuevo Liberalismo
+Alejandro,Flores,Consejo,1995114151,M,Soltero,28/04/1998,Bogota,Cali,Nuevo Liberalismo
+Francisco,Cruz,Consejo,1542927846,M,Soltero,11/04/1982,Cali,Bogota,Centro Democrático
+Javier,Martínez,Alcaldia,1704674758,M,Soltero,08/04/1975,Manizales,Bucaramanga,Liberal Colombiano
+Carlos,García,Consejo,1223996859,M,Soltero,06/01/1993,Medellín,Medellín,Liberal Colombiano
+José,Flores,Consejo,1853366702,M,Soltero,20/11/1979,Villavicencio,Manizales,Cambio Radical
+Miguel Ángel,Pérez,Consejo,1709311184,M,Soltero,19/02/1983,Medellín,Bucaramanga,Centro Democrático
+Miguel,Sánchez,Alcaldia,1501510225,M,Casado,05/06/1989,Santa Marta,Medellín,Liberal Colombiano
+Miguel,González,Consejo,1207355293,M,Casado,21/04/1987,Barranquilla,Pereira,Colombia Humana
+Juan,González,Alcaldia,1650163120,M,Soltero,25/01/1997,Medellín,Bucaramanga,Cambio Radical
+Manuel,Sánchez,Alcaldia,1117384868,M,Soltero,11/08/1987,Villavicencio,Bucaramanga,Nuevo Liberalismo
+Jesús,Ramírez,Consejo,1876678546,M,Soltero,16/07/1996,Cúcuta,Cúcuta,Nuevo Liberalismo
+Juan,Hernández,Alcaldia,1132593731,M,Soltero,09/01/1977,Medellín,Cúcuta,Cambio Radical
+Alejandro,López,Alcaldia,1081995385,M,Soltero,07/12/1976,Bogota,Pereira,Unión Patriótica
+Antonio,Flores,Alcaldia,1916061072,M,Soltero,02/03/1966,Villavicencio,Bogota,Centro Democrático
+Jesús,Rodríguez,Alcaldia,1746288374,M,Casado,28/01/1994,Cali,Manizales,Centro Democrático
+José,Martínez,Alcaldia,1872667072,M,Casado,08/03/1968,Bogota,Cúcuta,Liberal Colombiano
+José Antonio,Rodríguez,Consejo,1145556465,M,Soltero,15/01/1974,Villavicencio,Manizales,Cambio Radical
+David,Flores,Alcaldia,1934894612,M,Casado,21/02/1994,Manizales,Medellín,Conservador Colombiano
+Miguel Ángel,Martínez,Alcaldia,1765953544,M,Casado,09/02/1989,Villavicencio,Cali,Unión Patriótica
+Carlos,Pérez,Alcaldia,1265611814,M,Casado,05/03/1990,Medellín,Medellín,Nuevo Liberalismo
+José Antonio,Hernández,Alcaldia,1564153279,M,Casado,02/08/2001,Cali,Villavicencio,Centro Democrático
+Miguel Ángel,Pérez,Alcaldia,1853141802,M,Casado,23/12/1996,Cúcuta,Villavicencio,Conservador Colombiano
+José Luis,García,Alcaldia,1435972339,M,Casado,14/12/1990,Villavicencio,Barranquilla,Conservador Colombiano
+Manuel,Rodríguez,Consejo,1370872372,M,Soltero,09/05/1981,Villavicencio,Manizales,Colombia Humana
+Pedro,García,Alcaldia,1963446907,M,Soltero,02/05/1992,Manizales,Cúcuta,Conservador Colombiano
+Rafael,López,Alcaldia,1440699529,M,Casado,19/07/1999,Cúcuta,Villavicencio,Nuevo Liberalismo
+José Luis,Gómez,Alcaldia,1875778089,M,Soltero,16/07/1984,Medellín,Barranquilla,Liberal Colombiano
+Javier,Rodríguez,Alcaldia,1381721664,M,Casado,09/10/1991,Cali,Cúcuta,Liberal Colombiano
+Jesús,López,Alcaldia,1353892509,M,Soltero,02/08/1965,Pereira,Villavicencio,Colombia Humana
+Carlos,González,Alcaldia,1179625082,M,Soltero,15/10/1987,Bucaramanga,Cúcuta,Liberal Colombiano
+Francisco,Hernández,Consejo,1770692164,M,Soltero,24/03/1987,Santa Marta,Bucaramanga,Unión Patriótica
+José Luis,Flores,Alcaldia,1269365466,M,Casado,23/12/1995,Medellín,Santa Marta,Cambio Radical
+José Antonio,García,Consejo,1682270404,M,Soltero,14/04/1977,Cúcuta,Cali,Cambio Radical
+Carlos,Pérez,Alcaldia,1540478790,M,Soltero,22/05/1983,Manizales,Villavicencio,Conservador Colombiano
+José Antonio,Gómez,Alcaldia,1793066979,M,Soltero,08/01/1993,Bucaramanga,Bucaramanga,Cambio Radical
+Pedro,Rodríguez,Alcaldia,1741714929,M,Soltero,23/02/1965,Villavicencio,Villavicencio,Nuevo Liberalismo
+Miguel,Sánchez,Consejo,1282202385,M,Casado,11/02/1998,Cali,Cúcuta,Centro Democrático
+José Luis,Gómez,Consejo,1529384320,M,Casado,19/11/2001,Barranquilla,Villavicencio,Colombia Humana
+Francisco Javier,Flores,Alcaldia,1582796037,M,Soltero,16/11/1984,Cali,Cúcuta,Conservador Colombiano
+Javier,González,Alcaldia,1105654264,M,Casado,19/03/1971,Bogota,Barranquilla,Unión Patriótica
+José,Martínez,Alcaldia,1441542023,M,Casado,11/08/2001,Manizales,Cali,Cambio Radical
+Jesús,López,Alcaldia,1916598361,M,Casado,03/08/1994,Bogota,Villavicencio,Liberal Colombiano
+Rafael,Gómez,Consejo,1541590053,M,Soltero,04/02/1973,Medellín,Medellín,Centro Democrático
+José Antonio,Pérez,Alcaldia,1630058554,M,Soltero,20/08/1968,Manizales,Manizales,Conservador Colombiano
+Miguel,López,Consejo,1192106436,M,Soltero,01/01/1968,Medellín,Cali,Colombia Humana
+Lucia,Ramírez,Alcaldia,1418840402,F,Soltero,08/08/1977,Santa Marta,Villavicencio,Nuevo Liberalismo
+Ana María,Flores,Alcaldia,1316166207,F,Soltero,17/03/1965,Bucaramanga,Barranquilla,Centro Democrático
+Josefa,Martínez,Alcaldia,1443430074,F,Casado,22/05/1972,Manizales,Cúcuta,Liberal Colombiano
+Josefa,López,Consejo,1521629108,F,Casado,26/07/1972,Barranquilla,Pereira,Liberal Colombiano
+Carmen,Hernández,Alcaldia,1119793297,F,Soltero,07/05/1991,Santa Marta,Villavicencio,Liberal Colombiano
+María Ángeles,Martínez,Consejo,1101873678,F,Soltero,17/04/1999,Barranquilla,Medellín,Unión Patriótica
+María Carmen,López,Alcaldia,1378319251,F,Casado,06/10/1970,Barranquilla,Pereira,Conservador Colombiano
+Francisca,Gómez,Alcaldia,1839925672,F,Soltero,28/10/1975,Cúcuta,Villavicencio,Liberal Colombiano
+María Dolores,Hernández,Consejo,1485972468,F,Soltero,01/07/1985,Santa Marta,Cúcuta,Colombia Humana
+Isabel,Cruz,Consejo,1517725581,F,Casado,05/02/1993,Santa Marta,Barranquilla,Centro Democrático
+Cristina,Gómez,Alcaldia,1904357349,F,Soltero,22/10/1982,Bogota,Bogota,Cambio Radical
+María Isabel,Flores,Consejo,1563993937,F,Casado,15/09/1978,Pereira,Bucaramanga,Centro Democrático
+Lucia,Ramírez,Consejo,1929776595,F,Casado,14/01/1989,Bucaramanga,Villavicencio,Liberal Colombiano
+Antonia,González,Alcaldia,1657933684,F,Soltero,06/08/1988,Cúcuta,Manizales,Nuevo Liberalismo
+Marta,Sánchez,Alcaldia,1787086794,F,Casado,18/10/1988,Pereira,Villavicencio,Centro Democrático
+Dolores,Flores,Consejo,1451466544,F,Casado,11/12/1994,Cali,Santa Marta,Centro Democrático
+María Ángeles,García,Alcaldia,1214915152,F,Casado,04/05/1968,Santa Marta,Bucaramanga,Conservador Colombiano
+Carmen,Gómez,Consejo,1273609192,F,Casado,17/03/1971,Cúcuta,Barranquilla,Cambio Radical
+Laura,González,Consejo,1312836817,F,Casado,23/12/1987,Barranquilla,Bogota,Liberal Colombiano
+Antonia,Rodríguez,Alcaldia,1407265046,F,Casado,23/02/1974,Santa Marta,Medellín,Cambio Radical
+Josefa,Flores,Consejo,1423747097,F,Casado,20/08/1982,Barranquilla,Medellín,Unión Patriótica
+Ana,Pérez,Consejo,1331942916,F,Soltero,03/05/1990,Pereira,Santa Marta,Conservador Colombiano
+Dolores,López,Consejo,1164823725,F,Soltero,03/07/2000,Cúcuta,Manizales,Unión Patriótica
+María Teresa,Sánchez,Consejo,1648517630,F,Soltero,08/03/1974,Bucaramanga,Santa Marta,Nuevo Liberalismo
+María Ángeles,Cruz,Alcaldia,1045519244,F,Casado,10/03/1997,Bogota,Barranquilla,Unión Patriótica
+Francisca,Hernández,Consejo,1941847150,F,Soltero,21/04/1972,Pereira,Villavicencio,Unión Patriótica
+Antonia,González,Consejo,1366240016,F,Soltero,14/01/1970,Bucaramanga,Villavicencio,Colombia Humana
+María Teresa,Rodríguez,Alcaldia,1209477578,F,Casado,07/11/1989,Cali,Pereira,Centro Democrático
+Ana,Flores,Consejo,1181364076,F,Casado,10/04/1963,Cali,Bogota,Colombia Humana
+Dolores,López,Alcaldia,1963701453,F,Casado,16/08/1989,Villavicencio,Barranquilla,Liberal Colombiano
+María Teresa,López,Consejo,1113300005,F,Casado,24/02/1983,Cúcuta,Cali,Unión Patriótica
+María José,González,Consejo,1593954111,F,Casado,08/04/1983,Manizales,Cúcuta,Conservador Colombiano
+Ana María,Ramírez,Consejo,1187495495,F,Casado,08/09/1987,Barranquilla,Villavicencio,Cambio Radical
+Cristina,Sánchez,Alcaldia,1136813407,F,Soltero,09/08/2003,Pereira,Villavicencio,Unión Patriótica
+Josefa,García,Consejo,1300000950,F,Casado,26/09/1989,Villavicencio,Cali,Colombia Humana
+Carmen,López,Alcaldia,1794746354,F,Casado,17/01/1965,Medellín,Villavicencio,Cambio Radical
+Josefa,Ramírez,Alcaldia,1750249939,F,Casado,19/03/1975,Manizales,Barranquilla,Cambio Radical
+Francisca,Hernández,Alcaldia,1129814081,F,Soltero,05/04/1968,Bogota,Bogota,Centro Democrático
+María José,Hernández,Alcaldia,1407710968,F,Soltero,19/01/1978,Medellín,Pereira,Colombia Humana
+María Isabel,Cruz,Alcaldia,1012000893,F,Casado,25/07/1979,Pereira,Santa Marta,Nuevo Liberalismo
+Dolores,Ramírez,Consejo,1986307492,F,Soltero,21/05/1974,Bogota,Santa Marta,Centro Democrático
+María Teresa,García,Consejo,1869380776,F,Soltero,07/12/2001,Villavicencio,Manizales,Centro Democrático
+Carmen,López,Consejo,1647771621,F,Soltero,19/02/1964,Barranquilla,Villavicencio,Nuevo Liberalismo
+Lucia,Martínez,Alcaldia,1532680783,F,Casado,20/01/1973,Cúcuta,Cali,Cambio Radical
+María José,Gómez,Consejo,1024720277,F,Casado,07/09/1989,Barranquilla,Santa Marta,Cambio Radical
+María Teresa,Pérez,Alcaldia,1814936678,F,Casado,03/12/2000,Bogota,Barranquilla,Conservador Colombiano
+Cristina,Pérez,Consejo,1903542910,F,Soltero,11/06/1996,Barranquilla,Cúcuta,Nuevo Liberalismo
+Josefa,Martínez,Consejo,1361525572,F,Casado,24/01/1982,Manizales,Cali,Liberal Colombiano
+Isabel,López,Alcaldia,1845175692,F,Casado,23/09/1970,Manizales,Cúcuta,Colombia Humana
+María,García,Consejo,1426386941,F,Soltero,15/12/1995,Cúcuta,Bogota,Colombia Humana
+Carmen,González,Consejo,1717213967,F,Casado,17/01/1963,Bogota,Cali,Nuevo Liberalismo
+María Carmen,Pérez,Consejo,1559620195,F,Casado,17/12/1994,Bogota,Bucaramanga,Colombia Humana
+María Dolores,Sánchez,Alcaldia,1297159247,F,Casado,24/09/1980,Manizales,Barranquilla,Conservador Colombiano
+Carmen,Pérez,Consejo,1595649128,F,Soltero,07/05/1979,Bucaramanga,Bogota,Liberal Colombiano
+Marta,Martínez,Consejo,1707499074,F,Casado,21/01/1990,Pereira,Medellín,Nuevo Liberalismo
+María José,Cruz,Alcaldia,1267939670,F,Soltero,01/07/2000,Bucaramanga,Bucaramanga,Cambio Radical
+María Pilar,Martínez,Alcaldia,1994189176,F,Casado,15/01/1981,Cali,Cali,Cambio Radical
+María,Martínez,Alcaldia,1526707891,F,Casado,28/04/1997,Cúcuta,Medellín,Liberal Colombiano
+María Pilar,Martínez,Alcaldia,1912380271,F,Casado,16/12/2003,Santa Marta,Medellín,Cambio Radical
+Cristina,Martínez,Consejo,1047666670,F,Casado,10/02/1997,Bogota,Cali,Conservador Colombiano
+María Dolores,García,Alcaldia,1244877065,F,Soltero,09/11/1995,Cali,Cali,Unión Patriótica
+Cristina,Cruz,Alcaldia,1310338078,F,Casado,07/02/1985,Cali,Cali,Colombia Humana
+Laura,Sánchez,Consejo,1348823102,F,Soltero,19/06/1970,Bogota,Santa Marta,Unión Patriótica
+Ana,Gómez,Consejo,1082157868,F,Soltero,28/04/1985,Santa Marta,Cúcuta,Conservador Colombiano
+María Isabel,López,Consejo,1265314813,F,Soltero,23/12/1989,Cúcuta,Bucaramanga,Liberal Colombiano
+María Dolores,Ramírez,Alcaldia,1494168822,F,Soltero,14/03/2001,Pereira,Barranquilla,Conservador Colombiano
+Dolores,Pérez,Consejo,1260316216,F,Soltero,11/09/1982,Cúcuta,Cúcuta,Conservador Colombiano
+Ana,Flores,Consejo,1214904998,F,Casado,21/06/1995,Cali,Villavicencio,Unión Patriótica
+Josefa,Flores,Alcaldia,1867841657,F,Casado,26/08/1971,Villavicencio,Bucaramanga,Conservador Colombiano
+Laura,González,Consejo,1447279338,F,Soltero,22/04/1970,Barranquilla,Pereira,Conservador Colombiano
+Dolores,Gómez,Consejo,1222437444,F,Soltero,12/08/1976,Cali,Manizales,Liberal Colombiano
+María Isabel,Cruz,Consejo,1773681644,F,Casado,28/09/2002,Barranquilla,Bucaramanga,Conservador Colombiano
+María Isabel,López,Consejo,1364363469,F,Soltero,14/07/1965,Cúcuta,Bucaramanga,Centro Democrático
+María Ángeles,Cruz,Consejo,1724520509,F,Casado,11/10/1963,Pereira,Medellín,Colombia Humana
+Ana María,Ramírez,Consejo,1199007375,F,Soltero,12/07/1990,Villavicencio,Cúcuta,Conservador Colombiano
+María Teresa,Flores,Consejo,1748616275,F,Casado,26/04/1998,Pereira,Cali,Cambio Radical
+Cristina,Hernández,Consejo,1904543354,F,Soltero,21/02/1985,Villavicencio,Medellín,Colombia Humana
+María Teresa,Martínez,Alcaldia,1213560035,F,Casado,08/04/1981,Bogota,Manizales,Liberal Colombiano
+Ana,García,Consejo,1502616262,F,Soltero,08/12/1974,Santa Marta,Santa Marta,Centro Democrático
+Antonia,Hernández,Alcaldia,1165250532,F,Soltero,19/02/2002,Bogota,Bogota,Conservador Colombiano
+Laura,Flores,Consejo,1072753996,F,Casado,19/11/1964,Pereira,Bogota,Unión Patriótica
+Ana María,Ramírez,Alcaldia,1925880953,F,Casado,20/10/1997,Medellín,Bucaramanga,Conservador Colombiano
+Cristina,Pérez,Alcaldia,1018109265,F,Casado,08/11/1998,Bucaramanga,Barranquilla,Cambio Radical
+María Teresa,Flores,Alcaldia,1973531804,F,Casado,10/12/1964,Bucaramanga,Manizales,Liberal Colombiano
+Ana,Rodríguez,Consejo,1532336391,F,Soltero,26/07/2002,Villavicencio,Bucaramanga,Unión Patriótica
+María,Flores,Alcaldia,1889357209,F,Casado,18/04/1964,Barranquilla,Manizales,Conservador Colombiano
+Ana,Gómez,Alcaldia,1354032027,F,Soltero,22/01/1972,Santa Marta,Manizales,Colombia Humana
+Marta,Rodríguez,Consejo,1424871110,F,Casado,19/05/1984,Pereira,Bogota,Liberal Colombiano
+Laura,Cruz,Consejo,1472292331,F,Soltero,26/07/1987,Medellín,Cúcuta,Cambio Radical
+María,Hernández,Consejo,1111494113,F,Soltero,07/03/1988,Cali,Villavicencio,Liberal Colombiano
+Francisca,García,Alcaldia,1391704634,F,Soltero,18/07/1975,Cúcuta,Villavicencio,Colombia Humana
+María José,Cruz,Alcaldia,1031362578,F,Soltero,12/04/2000,Bogota,Bucaramanga,Liberal Colombiano
+Dolores,Pérez,Alcaldia,1305116558,F,Soltero,05/12/2001,Barranquilla,Barranquilla,Conservador Colombiano
+María Carmen,Martínez,Alcaldia,1616070932,F,Soltero,09/03/1993,Bucaramanga,Bogota,Nuevo Liberalismo
+Cristina,Pérez,Consejo,1678096313,F,Casado,14/03/1990,Manizales,Pereira,Colombia Humana
+Marta,Hernández,Alcaldia,1277165901,F,Casado,16/11/1991,Medellín,Barranquilla,Cambio Radical
+Antonia,Gómez,Consejo,1784870684,F,Casado,04/07/1978,Bucaramanga,Cúcuta,Colombia Humana
+Cristina,Martínez,Alcaldia,1367058680,F,Soltero,06/02/2001,Cali,Bogota,Cambio Radical
+María Pilar,Cruz,Alcaldia,1461083555,F,Casado,01/12/2003,Bogota,Cúcuta,Conservador Colombiano
+Francisca,Pérez,Alcaldia,1475598793,F,Casado,09/07/1967,Santa Marta,Manizales,Cambio Radical

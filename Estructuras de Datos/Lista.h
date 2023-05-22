@@ -52,18 +52,18 @@ public:
 	void insertar(T valor) {
 	    Nodo<T>* nuevo = new Nodo<T>(valor);
 	
-	    // Si la lista está vacía, el nuevo nodo será tanto el primero como el último
+	    // Si la lista estï¿½ vacï¿½a, el nuevo nodo serï¿½ tanto el primero como el ï¿½ltimo
 	    if (inicio == nullptr) {
 	        inicio = nuevo;
 	        fin = nuevo;
 	    }
-	    // Si no, se agrega el nuevo nodo después del último
+	    // Si no, se agrega el nuevo nodo despuï¿½s del ï¿½ltimo
 	    else {
 	        fin->siguiente = nuevo;
 	        fin = nuevo;
 	    }
 	
-	    // Se aumenta el tamaño de la lista
+	    // Se aumenta el tamaï¿½o de la lista
 	    tam++;
 	}
 
@@ -120,15 +120,18 @@ public:
 
 	T buscar(int pos) {
 	    if (pos < 0 || pos >= tam) {
-	        cout << "Posición inválida al buscar" << endl;
-	        // Aquí puedes retornar un valor predeterminado o lanzar una excepción, según tus necesidades
+	        cout << "Posiciï¿½n invï¿½lida al buscar" << endl;
+	        // Aquï¿½ puedes retornar un valor predeterminado o lanzar una excepciï¿½n, segï¿½n tus necesidades
 	    }
 	    
 	    Nodo<T>* actual = this->inicio;
+        if(pos==0)
+            return actual->valor;
 		
 	    for (int i = 0; i < pos; i++) {
 	        actual = actual->siguiente;
 	    }
+
 	    
 	    return actual->valor;
 	}

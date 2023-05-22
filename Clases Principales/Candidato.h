@@ -1,3 +1,6 @@
+#ifndef CANDIDATO_H
+#define CANDIDATO_H
+
 #include <string>
 #include "Ciudad.h"
 #include "Partido.h"
@@ -58,3 +61,5 @@ class Candidato {
 
 	    }
 };
+
+#endif
