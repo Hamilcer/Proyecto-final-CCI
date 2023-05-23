@@ -1,50 +1,52 @@
-#include "Archivos.h"
 #include <string>
+#include "Archivos.h"
+
 
 class OpcionesListas{
 	private:
-		Lista<Ciudad>* ciudades;
-		Lista<Partido>* partidos;
-		Lista<Candidato>* candidatos;
 		
-	public:
-		
-		void leerArchivos(){
-			Archivos Ciudades("Ciudades");
-			Archivos Partidos("Partidos");
-			Archivos Candidatos("Candidatos");
-			
-			ciudades = Ciudades.leerCiudades();
-			partidos = Partidos.leerPartidos();
-			candidatos = Candidatos.leerCandidatos();
-		}
-		
+	public:		
 		//1. Ciudades para las cuales se realizará el proceso electoral.
-		void mostrarCiudades(){
+		void mostrarCiudades(Lista<Ciudad>* ciudades){
 			
 			for (int i = 0; i < ciudades->getTam(); i++) {
-				cout << ciudades->buscar(i).getNombre() << endl;
+				//Guardar la ciudad buscada en una variable y devolver atributo nombre
+				Ciudad ciudad = ciudades->buscar(i);
+				cout <<i<<". "<<ciudad.getNombre() << endl;
 			}
 						        
 			system("Pause"); // Pausa el programa y espera a que se presione una tecla
 		}
 		
 		//2. Partidos legalmente reconocidos.
-		void mostrarPartidos(){
+		void mostrarPartidos(Lista<Partido>* partidos){
 			for (int i = 0; i < partidos->getTam(); i++) {
-				cout << partidos->buscar(i).getNombre() << endl;
+				//Guardar el partido buscado y devolver el atributo nombre y representante Legal
+				Partido partido = partidos->buscar(i);
+				cout << i << ". " << partido.getNombre() << " /--/ Representante Legal = " << partido.getRepresentanteLegal() << endl;
 			}
 						        
 			system("Pause"); // Pausa el programa y espera a que se presione una tecla
 		}
 		
+		void mostrarCandidatos(Lista<Candidato>* candidatos){
+			for(int i = 0; i<candidatos->getTam();i++){
+				//Guardar el candidato y devolver sus atributos
+				Candidato candidato = candidatos->buscar(i);
+				cout<<i<<". "<<candidato.getNombre()<<" "<<candidato.getApellido()<<" "<<candidato.getNumIdentificacion()<<" "<<candidato.getPuesto()<<" "<<candidato.getPartido().getNombre()<<"/n"<<endl;
+			}
+			system("Pause");
+		}
+		
 		//3. Todos los candidatos al concejo de una ciudad.
 		
-		void candidatosConcejo(string ciudad){
+		void candidatosConcejo(string ciudad, Lista<Candidato>* candidatos){
 			int cantidad = 0;
 			for (int i = 0; i < candidatos->getTam(); i++) {
-				if(candidatos->buscar(i).getCiudadResidencia().getNombre() == ciudad && candidatos->buscar(i).getPuesto() == "Consejo"){
-				  cout << candidatos->buscar(i).getNombre()<< endl;
+				//Guardar el candidato buscado y devolver los atributos necesarios dada la validacion
+				Candidato candidato = candidatos->buscar(i);
+				if(candidato.getCiudadResidencia().getNombre() == ciudad && candidato.getPuesto() == "Consejo"){
+				  cout << candidato.getNombre()<< endl;
 				  cantidad++;	
 				}
 			}
@@ -58,10 +60,12 @@ class OpcionesListas{
 		
 		//4. Todos los candidatos a la alcaldía de una ciudad.
 		
-		void candidatosAlcaldia(string ciudad){
+		void candidatosAlcaldia(string ciudad,Lista<Candidato>* candidatos){
 			int cantidad = 0;
 			for (int i = 0; i < candidatos->getTam(); i++) {
-				if(candidatos->buscar(i).getCiudadResidencia().getNombre() == ciudad && candidatos->buscar(i).getPuesto() == "Alcaldia" ){
+				//Guardar el candidato buscado y devolver los atributos necesarios dada la validacion
+				Candidato candidato = candidatos->buscar(i);
+				if(candidato.getCiudadResidencia().getNombre() == ciudad && candidato.getPuesto() == "Alcaldia" ){
 				  cout << candidatos->buscar(i).getNombre() << endl;
 				  cantidad++;	
 				}
@@ -77,10 +81,12 @@ class OpcionesListas{
 		//5. Candidatos a cada una de las alcaldías, por partido.
 		//6. Candidatos a cada uno de los concejos, por partido.
 		
-		void candidatosAlcaldiaConsejoPartido(string partido, string puesto){
+		void candidatosAlcaldiaConsejoPartido(string partido, string puesto,Lista<Candidato>* candidatos){
 			int cantidad = 0;
 			for (int i = 0; i < candidatos->getTam(); i++) {
-				if(candidatos->buscar(i).getPartido().getNombre() == partido &&  candidatos->buscar(i).getPuesto() == puesto ){
+				//Guardar el candidato buscado y devolver los atributos necesarios dada la validacion
+				Candidato candidato = candidatos->buscar(i);
+				if(candidato.getPartido().getNombre() == partido &&  candidato.getPuesto() == puesto ){
 				  cout << candidatos->buscar(i).getNombre() << endl;
 				  cantidad++;	
 				}
@@ -95,11 +101,14 @@ class OpcionesListas{
 		
 		//7. Por cada partido, la lista de candidatos a los consejos.
 		//8. Por cada partido, la lista de candidatos a las alcaldías.
-		void candidatosAlcaldiaConsejoPartidoLista(string cargo){
+		void candidatosAlcaldiaConsejoPartidoLista(string cargo,Lista<Candidato>* candidatos, Lista<Partido>* partidos ){
 			for(int j = 0 ; j < 2; j++){
 				cout<<"Lista de nombres de candidatos del partido "+ partidos->buscar(j).getNombre()+" para el cargo "+cargo<<endl;
 				for (int i = 0; i < candidatos->getTam(); i++) {
-					if(candidatos->buscar(i).getPartido().getNombre() == partidos->buscar(j).getNombre() &&  candidatos->buscar(i).getPuesto() == cargo ){
+					//Guardar el candidato y el partido buscado y devolver los atributos necesarios dada la validacion
+					Candidato candidato = candidatos->buscar(i);
+					Partido partido = partidos->buscar(i);
+					if(candidato.getPartido().getNombre() == partido.getNombre() &&  candidato.getPuesto() == cargo ){
 					  cout << candidatos->buscar(i).getNombre() << endl;
 					}
 			  	}	

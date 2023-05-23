@@ -27,7 +27,7 @@ class Archivos{
         }
 
         void escribir(string texto) {
-            ofstream archivo(rutaArchivo, ios::app);
+            ofstream archivo(rutaArchivo, ios::trunc);
             archivo << texto << endl;
             archivo.close();
         }
@@ -76,7 +76,7 @@ class Archivos{
             rename("temp.txt", rutaArchivo.c_str());
         }
     
-    //Del archivo Ciudades, lee las ciudades, crea los objetos de las ciudades, los añade a la lista y retorna la lista
+    //Del archivo Ciudades, lee las ciudades, crea los objetos de las ciudades, los aï¿½ade a la lista y retorna la lista
 	Lista<Ciudad>* leerCiudades() {
 	    ciudades = new Lista<Ciudad>();
 	    
@@ -106,7 +106,7 @@ class Archivos{
 	    archivo.close();
 	    return ciudades;
 	}
-	//Del archivo Partidos, lee los partidos, crea los objetos de los partidos, los añade a la lista y retorna la lista
+	//Del archivo Partidos, lee los partidos, crea los objetos de los partidos, los aï¿½ade a la lista y retorna la lista
 	Lista<Partido>* leerPartidos() {
 	    partidos = new Lista<Partido>();
 	    
@@ -134,7 +134,7 @@ class Archivos{
 	    return partidos;
 	}
 	
-	//Del archivo Candidatos, lee los candidatos, crea los objetos de los candidatos, los añade a la lista y retorna la lista
+	//Del archivo Candidatos, lee los candidatos, crea los objetos de los candidatos, los aï¿½ade a la lista y retorna la lista
 	
 	Lista<Candidato>* leerCandidatos() {
 	    candidatos = new Lista<Candidato>();
@@ -178,7 +178,7 @@ class Archivos{
 					}
 	                */
 	                
-					//inicializa el candidato y lo añade en la lista
+					//inicializa el candidato y lo aï¿½ade en la lista
 	                Candidato candidato(nombre, apellido, puesto, numIdentificacion, sexo, estadoCivil,
 	                                    fechaNacimiento, ciudadNacimiento, ciudadResidencia, partido, cantVotos);
 	                                    
