@@ -9,15 +9,10 @@ private:
 	Lista<Ciudad> *ciudades;
 	Lista<Partido> *partidos;
 	Lista<Candidato> *candidatos;
-
-public:
-	int Opcion;
+    Lista<Elecciones> *elecciones;
 
 	public:
-		
 		int Opcion;
-		
-		void MostrarMenu();
 		void SubMenuListas();
 		void SubMenuConsultas();
 		void SubMenuEstadisticas();
@@ -25,18 +20,13 @@ public:
         void SubMenuAgregarRegistro();
         void SubMenuEliminarRegistro();
         void SubMenuModificarRegistro();
-		
-		void Menu();
 	// Muestra de Menus
-	void MostrarMenu();
-	void SubMenuListas();
-	void SubMenuConsultas();
-	void SubMenuEstadisticas();
-	void SubMenuInsercion();
-	void EleccionSubMenuInsercion();
+        void MostrarMenu();
+        void SubMenuInsercion();
+        void EleccionSubMenuInsercion();
 
 	// Bloque de ejecuci�n
-	void Menu();
+	    void Menu();
 
 	// Leer Archivos e inicializar Listas
 	void leerArchivos()
@@ -56,10 +46,11 @@ void Simulacion::Menu()
 {
 	bool programa = true;
 
-	OpcionesListas opcionLista; // Inicializa el objeto de la clase Opciones Listas
-	leerArchivos();
-
+    leerArchivos();
+	OpcionesListas opcionLista; // Inicializa el objeto de la clase Opciones Lista
 	OpcionesConsultas opcionConsultas(ciudades, partidos, candidatos); // Inicializa el objeto de la clase Opciones Consultas
+    OpcionesSimulacion opcionesSimulacion;
+
 
 	while (programa)
 	{ // Bucle infinito del programa
@@ -76,63 +67,6 @@ void Simulacion::Menu()
 			switch (Opcion)
 			{
 			case 1:
-				{	
-					OpcionesListas opcionLista; // Inicializa el objeto de la clase Opciones Listas
-					opcionLista.leerArchivos(); // Lee los archivos e inicializa las listas
-					
-					system("cls"); // Limpia pantalla
-					SubMenuListas(); // Muestra men�
-					cin>>Opcion;
-					switch(Opcion){
-						case 1:{
-							opcionLista.mostrarCiudades(); 
-							break;
-						}
-						case 2:{
-							opcionLista.mostrarPartidos();
-							break;
-						}
-						case 3:{
-							string ciudad;
-							cout<<"Ingrese la ciudad en la que desea buscar candidatos al consejo"<<endl;
-							cin>>ciudad;
-							opcionLista.candidatosConcejo(ciudad);
-							
-							break;
-						}
-						case 4:{
-							string ciudad;
-							cout<<"Ingrese la ciudad en la que desea buscar candidatos a la alcaldia"<<endl;
-							cin>>ciudad;
-							opcionLista.candidatosAlcaldia(ciudad);
-							break;
-						}
-						case 5:{
-							string partido;
-							cout<<"Ingrese el partido en la que desea buscar candidatos a la alcaldia"<<endl;
-							cin>>partido;
-							opcionLista.candidatosAlcaldiaConsejoPartido(partido, "Alcaldia");
-							break;
-						}
-						case 6:{
-							string partido;
-							cout<<"Ingrese el partido en la que desea buscar candidatos al Consejo"<<endl;
-							cin>>partido;
-							opcionLista.candidatosAlcaldiaConsejoPartido(partido, "Consejo");
-							
-							break;
-						}
-						case 7:{
-							opcionLista.candidatosAlcaldiaConsejoPartidoLista("Consejo");
-							break;
-						}
-						case 8:{
-							opcionLista.candidatosAlcaldiaConsejoPartidoLista("Alcaldia");
-							break;
-						}
-					}
-					break;
-				}
 			{
 				opcionLista.mostrarCiudades(ciudades);
 				break;
@@ -311,7 +245,7 @@ void Simulacion::Menu()
 		case 3:
 		{
 			system("cls");
-			SubMenuEstadisticas();
+            SubMenuEstadisticas();
 			cin >> Opcion;
 			switch (Opcion)
 			{
@@ -336,8 +270,31 @@ void Simulacion::Menu()
 		case 4:
 		{
 			system("cls");
-			// REALIZAR SIMULACION 1. SIMULAR 2. TODOS LOS VOTOS DE LA SIMULACION SE REINICIAN
-			break;
+			// REALIZAR SIMULACION 1.
+            //SIMULAR 2. TODOS LOS VOTOS DE LA SIMULACION SE REINICIAN
+            int Opcion;
+            opcionLista.mostrarCiudades(ciudades);
+            cout<<"Ingrese la ciudad a la cual desea simular"<<endl;
+            cin>>Opcion;
+            Ciudad ciudadEleccion = ciudades->buscar(Opcion);
+            cout<<"Ingrese el tipo de eleccion: 1.Alcaldia 2.Concejo"<<endl;
+            cin>>Opcion;
+            Lista<Candidato> *listaCandidatos;
+           if (Opcion == 1){
+                listaCandidatos = opcionesSimulacion.candidatosPorCiudadPuesto(ciudadEleccion.getNombre(), candidatos, "Alcaldia");
+            }else if(Opcion == 2){
+                listaCandidatos = opcionesSimulacion.candidatosPorCiudadPuesto(ciudadEleccion.getNombre(), candidatos, "Consejo");
+            }
+
+            for (int i = 0; i < listaCandidatos->getTam(); i++){
+                Candidato candidato = candidatos->buscar(i);
+                cout << candidato.getNombre()<< endl;
+            }
+
+
+            break;
+
+
 		}
 		case 5:
 		{
@@ -454,9 +411,12 @@ void Simulacion::Menu()
 					cout << "Ingrese la fecha de nacimiento de candidato (Ejemplo : 02/01/1980 dia,mes,a�o)" << endl;
 					cin >> fechaNacimiento;
 
+                    //Inicia con 0 votos
+                    int votos=0;
+
 					// Creacion del objeto candidato para a�adirlo en la lista
 
-					Candidato nuevoCandidato(nombre, apellido, puesto, numIdentificacion, sexo, estadoCivil, fechaNacimiento, ciudadNacimiento, ciudadResidencia, partido);
+					Candidato nuevoCandidato(nombre, apellido, puesto, numIdentificacion, sexo, estadoCivil, fechaNacimiento, ciudadNacimiento, ciudadResidencia, partido, votos);
 					// Inserci�n en la lista de candidatos
 					candidatos->insertar(nuevoCandidato);
 					break;

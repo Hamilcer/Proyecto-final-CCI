@@ -7,7 +7,7 @@
 
 #include "Estructuras de Datos/Lista.h"
 #include "Clases Principales/Candidato.h"
-
+#include "Clases Principales/Elecciones.h"
 
 class Archivos{
     private:
