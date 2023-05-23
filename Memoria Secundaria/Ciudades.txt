@@ -8,4 +8,5 @@ Pereira, Risaralda,0,0
 Manizales, Caldas,0,0
 Santa Marta, Magdalena,0,0
 Cúcuta, Norte de Santander,0,0
+BarranCabermeja,Pereira,10,20
 

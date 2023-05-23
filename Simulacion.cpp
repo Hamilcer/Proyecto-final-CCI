@@ -1,11 +1,13 @@
 #include <stdlib.h>  //Libreria para limpiar pantalla
-#include "OpcionesListas.cpp"
+#include "Clases Principales/Inicializar.cpp"
 
 class Simulacion{
 	private:
 		Lista<Ciudad>* ciudades;
 		Lista<Partido>* partidos;
 		Lista<Candidato>* candidatos;
+		
+		Inicializar inicializar;
 	public:
 		
 		int Opcion;
@@ -169,38 +171,6 @@ void Simulacion::Menu(){
 			case 5:
 				{
 					system("cls");
-					//FINALIZAR Y GUARDAR EN LOS ARCHIVOS PLANOS
-					
-					//Escribir en el archivo plano los partidos de la lista
-					Archivos Partidos("Partidos");
-					string textoPartidos;
-					
-					for (int i = 0; i < partidos->getTam(); i++){
-						Partido partido = partidos->buscar(i); // Declaración del partido de la lista para añadir su información al texto plano
-						textoPartidos += partido.getNombre()+","+partido.getRepresentanteLegal()+"\n";
-					}
-					
-					Partidos.escribir(textoPartidos);
-					
-					//Escribir en el archivo plano las ciudades de la lista
-					
-					Archivos Ciudades("Ciudades");
-					string textoCiudades;
-					
-					for (int i = 0; i < ciudades->getTam(); i++){
-						Ciudad ciudad = ciudades->buscar(i);
-						textoCiudades += ciudad.getNombre()+","+ciudad.getDepartamento()+","+to_string(ciudad.getTamConcejo())+","+to_string(ciudad.getCensoElectoral())+"\n";
-					}
-					
-					Ciudades.escribir(textoCiudades);
-					
-					//Escribir en el archivo plano los candidatos de la lista
-					
-					break;
-				}
-			case 6:
-				{
-					system("cls");
 					SubMenuInsercion();
 					cin>>Opcion;
 					
@@ -213,15 +183,9 @@ void Simulacion::Menu(){
 							cin>>Opcion;
 							switch(Opcion){
 								case 1:
-								{  //Insertar Partido
-									string NombrePartido, RepresentanteLegal;
-									cout<<"Ingrese el nombre del Partido"<<endl;
-									cin>>NombrePartido;
-									cout<<"Ingrese el nombre del Representante legal"<<endl;
-									cin>>RepresentanteLegal;
-									
+								{  
 									//Creación del Objeto partido
-									Partido NuevoPartido(NombrePartido,RepresentanteLegal);
+									Partido NuevoPartido = inicializar.inicializarPartido();
 									//Inserción en la lista de partidos
 									partidos->insertar(NuevoPartido);
 									
@@ -230,56 +194,10 @@ void Simulacion::Menu(){
 								}
 								case 2:
 								{ // Insertar Candidato (Se necesita validación de puesto, fecha nacimiento, estado civil)
-									
-									int Opcion;
-									string nombre, apellido, puesto, numIdentificacion, estadoCivil, fechaNacimiento;
-									char sexo;
-									
-									//Buscar el partido perteneciente de la lista de partidos y guardarla en el objeto partido
-									
-									cout<<"De los siguientes partidos constituidos ,¿ cual de ellos pertenece el candidato ?";
-									opcionLista.mostrarPartidos(partidos);
-									cin>>Opcion;
-									
-									Partido partido = partidos->buscar(Opcion);
-									
-									// Buscar la ciudad de nacimiento y residencia de la lista de ciudades y guardarla en los objetos propios
-									
-									cout<<"De las siguientes ciudades, ¿Cual de ella nació el candidato?"<<endl;
-									opcionLista.mostrarCiudades(ciudades);
-									cin>>Opcion;
-									
-									Ciudad ciudadNacimiento = ciudades->buscar(Opcion);
-									
-									cout <<"De las siguientes ciudades, ¿Cual de ellas reside el candidato?"<<endl;
-									opcionLista.mostrarCiudades(ciudades);
-									cin>>Opcion;
-									
-									Ciudad ciudadResidencia = ciudades->buscar(Opcion);
-									
-									// Añadir los demás datos del candidato
-									
-									cout<<"Ingrese el nombre de candidato"<<endl;
-									cin>>nombre;
-									
-									cout<<"Ingrese el apellido del candidato"<<endl;
-									cin>>apellido;
-									
-									cout<<"ingrese el puesto al que el candidato quiere postularse"<<endl;
-									cin>>puesto;
-									
-									cout<<"Ingrese el documento de identidad del candidato"<<endl;
-									cin>>numIdentificacion;
-									
-									cout<<"ingrese el estado civil del candidato"<<endl;
-									cin>>estadoCivil;
-									
-									cout<<"Ingrese la fecha de nacimiento de candidato (Ejemplo : 02/01/1980 dia,mes,año)"<<endl;
-									cin>>fechaNacimiento;
-									
+								
 									//Creacion del objeto candidato para añadirlo en la lista
 									
-									Candidato nuevoCandidato(nombre,apellido,puesto,numIdentificacion,sexo,estadoCivil,fechaNacimiento,ciudadNacimiento,ciudadResidencia,partido);
+									Candidato nuevoCandidato = inicializar.inicializarCandidato(partidos,ciudades);
 									//Inserción en la lista de candidatos
 									candidatos->insertar(nuevoCandidato);
 									break;
@@ -287,19 +205,8 @@ void Simulacion::Menu(){
 								case 3:
 								{
 									//Se ingresan los datos de la nueva ciudad (Se necesita validación cuando la ciudad ya existe)
-									string nombre, departamento;
-									int tamConcejo, censoElectoral;
-									cout<<"Ingrese el nombre de la ciudad"<<endl;
-									cin>>nombre;
-									cout<<"Ingrese el departamento de la ciudad"<<endl;
-									cin>>departamento;
-									cout<<"Ingrese el tamaño del concejo"<<endl;
-									cin>>tamConcejo;
-									cout<<"Ingrese el tamaño el censo electoral"<<endl;
-									cin>>censoElectoral;
-									
 									//Creación del Objeto Ciudad
-									Ciudad NuevaCiudad(nombre,departamento,tamConcejo,censoElectoral);
+									Ciudad NuevaCiudad = inicializar.inicializarCiudad();
 									//Insercion en la lista de ciudades
 									ciudades->insertar(NuevaCiudad);
 									break;
@@ -312,17 +219,14 @@ void Simulacion::Menu(){
 							EleccionSubMenuInsercion();
 							cin>>Opcion;
 							switch(Opcion){
-								case 1:{ //Modificar Partido
+								case 1:{ 
+									//Encontrar el partido a modificar
 									string NombrePartido, RepresentanteLegal;
 									cout<<"¿Que partido deseas modificar?"<<endl;
 									opcionLista.mostrarPartidos(partidos);
 									cin>>Opcion;
-									cout<<"Ingrese el nuevo nombre del partido"<<endl;
-									cin>>NombrePartido;
-									cout<<"Ingrese el nuevo representante legal"<<endl;
-									cin>>RepresentanteLegal;
-									
-									Partido NuevoPartido(NombrePartido,RepresentanteLegal);
+									//Inicializar Partido
+									Partido NuevoPartido = inicializar.inicializarPartido();
 									
 									partidos->modificar(NuevoPartido,Opcion);
 									
@@ -330,13 +234,33 @@ void Simulacion::Menu(){
 								}
 								case 2:{ //Modificar Candidato
 									
+									// Encontrar el candidato a modificar
+									int Opcion;
 									
-							
+									cout << "Selecciona el candidato que deseas modificar" << endl;
+									opcionLista.mostrarCandidatos(candidatos);
+									cin >> Opcion;
 									
+									// Creación del objeto candidato para añadirlo en la lista
+									Candidato nuevoCandidato = inicializar.inicializarCandidato(partidos, ciudades);
+									
+									// Inserción en la lista de candidatos
+									candidatos->modificar(nuevoCandidato, Opcion);
 									break;
 								}
-								case 3:{
+								case 3:{ //Modificar Ciudad
+								
+									//Enconntrar la ciudad a modificar (Se necesita validación cuando la ciudad ya existe)
+									string nombre, departamento;
+									int tamConcejo, censoElectoral, ciudad;
+									cout<<"Selecciona la ciudad que desea modificar"<<endl;
+									opcionLista.mostrarCiudades(ciudades);
+									cin>>ciudad;
 									
+									//Creación del Objeto Ciudad
+									Ciudad NuevaCiudad = inicializar.inicializarCiudad();
+									//Insercion en la lista de ciudades
+									ciudades->modificar(NuevaCiudad,ciudad);
 									break;
 								}
 							}
@@ -383,8 +307,36 @@ void Simulacion::Menu(){
 				  Opcion = 0;
 				  break;	
 				}
-			case 7:
+			case 6:
 				{
+					system("cls");
+					//FINALIZAR Y GUARDAR EN LOS ARCHIVOS PLANOS
+					
+					//Escribir en el archivo plano los partidos de la lista
+					Archivos Partidos("Partidos");
+					string textoPartidos;
+					
+					for (int i = 0; i < partidos->getTam(); i++){
+						Partido partido = partidos->buscar(i); // Declaración del partido de la lista para añadir su información al texto plano
+						textoPartidos += partido.getNombre()+","+partido.getRepresentanteLegal()+"\n";
+					}
+					
+					Partidos.escribir(textoPartidos);
+					
+					//Escribir en el archivo plano las ciudades de la lista
+					
+					Archivos Ciudades("Ciudades");
+					string textoCiudades;
+					
+					for (int i = 0; i < ciudades->getTam(); i++){
+						Ciudad ciudad = ciudades->buscar(i);
+						textoCiudades += ciudad.getNombre()+","+ciudad.getDepartamento()+","+to_string(ciudad.getTamConcejo())+","+to_string(ciudad.getCensoElectoral())+"\n";
+					}
+					
+					Ciudades.escribir(textoCiudades);
+					
+					//Escribir en el archivo plano los candidatos de la lista
+					
 					programa = false;
 					break;
 				}
@@ -399,9 +351,8 @@ void Simulacion::MostrarMenu(){
 	cout<<"2. Realizar consultas"<<endl;
 	cout<<"3. Obtener Estadisticas"<<endl;
 	cout<<"4. Simular Proceso electoral"<<endl;
-	cout<<"5. Finalizar Simulacion y guardar"<<endl;
-	cout<<"6. Insertar, Modificar y Eliminar"<<endl;
-	cout<<"7. Salir"<<endl;
+	cout<<"5. Insertar, Modificar y Eliminar"<<endl;
+	cout<<"6. Salir"<<endl;
 }
 
 void Simulacion::SubMenuListas(){
