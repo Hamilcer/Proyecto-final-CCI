@@ -49,7 +49,7 @@ void Simulacion::Menu()
     leerArchivos();
 	OpcionesListas opcionLista; // Inicializa el objeto de la clase Opciones Lista
 	OpcionesConsultas opcionConsultas(ciudades, partidos, candidatos); // Inicializa el objeto de la clase Opciones Consultas
-    OpcionesSimulacion opcionesSimulacion;
+    OpcionesSimulacion opcionesSimulacion(ciudades, partidos, candidatos);
 
 
 	while (programa)
@@ -88,7 +88,7 @@ void Simulacion::Menu()
 			case 4:
             {
 					//REALIZAR SIMULACION 1. SIMULAR 2. TODOS LOS VOTOS DE LA SIMULACION SE REINICIAN
-                    OpcionesSimulacion opcionSimulacion;
+
                     system("cls");
                     SubMenuSimulacion();
                     cin>>Opcion;
@@ -99,7 +99,6 @@ void Simulacion::Menu()
                             cin>>Opcion;
                             switch(Opcion){
                                 case 1:{
-                                    opcionSimulacion.agregarCandidatos();
                                     break;
                                 }
                                 case 2:{
@@ -272,29 +271,9 @@ void Simulacion::Menu()
 			system("cls");
 			// REALIZAR SIMULACION 1.
             //SIMULAR 2. TODOS LOS VOTOS DE LA SIMULACION SE REINICIAN
-            int Opcion;
-            opcionLista.mostrarCiudades(ciudades);
-            cout<<"Ingrese la ciudad a la cual desea simular"<<endl;
-            cin>>Opcion;
-            Ciudad ciudadEleccion = ciudades->buscar(Opcion);
-            cout<<"Ingrese el tipo de eleccion: 1.Alcaldia 2.Concejo"<<endl;
-            cin>>Opcion;
-            Lista<Candidato> *listaCandidatos;
-           if (Opcion == 1){
-                listaCandidatos = opcionesSimulacion.candidatosPorCiudadPuesto(ciudadEleccion.getNombre(), candidatos, "Alcaldia");
-            }else if(Opcion == 2){
-                listaCandidatos = opcionesSimulacion.candidatosPorCiudadPuesto(ciudadEleccion.getNombre(), candidatos, "Consejo");
-            }
-
-            for (int i = 0; i < listaCandidatos->getTam(); i++){
-                Candidato candidato = candidatos->buscar(i);
-                cout << candidato.getNombre()<< endl;
-            }
-
+            opcionesSimulacion.simularVotos();
 
             break;
-
-
 		}
 		case 5:
 		{
