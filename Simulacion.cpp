@@ -185,7 +185,7 @@ void Simulacion::Menu(){
 								case 1:
 								{  
 									//Creación del Objeto partido
-									Partido NuevoPartido = inicializar.inicializarPartido();
+									Partido NuevoPartido = inicializar.inicializarPartido(partidos);
 									//Inserción en la lista de partidos
 									partidos->insertar(NuevoPartido);
 									
@@ -196,8 +196,7 @@ void Simulacion::Menu(){
 								{ // Insertar Candidato (Se necesita validación de puesto, fecha nacimiento, estado civil)
 								
 									//Creacion del objeto candidato para añadirlo en la lista
-									
-									Candidato nuevoCandidato = inicializar.inicializarCandidato(partidos,ciudades);
+									Candidato nuevoCandidato = inicializar.inicializarCandidato(partidos,ciudades,candidatos);
 									//Inserción en la lista de candidatos
 									candidatos->insertar(nuevoCandidato);
 									break;
@@ -226,7 +225,7 @@ void Simulacion::Menu(){
 									opcionLista.mostrarPartidos(partidos);
 									cin>>Opcion;
 									//Inicializar Partido
-									Partido NuevoPartido = inicializar.inicializarPartido();
+									Partido NuevoPartido = inicializar.inicializarPartido(partidos);
 									
 									partidos->modificar(NuevoPartido,Opcion);
 									
@@ -242,7 +241,7 @@ void Simulacion::Menu(){
 									cin >> Opcion;
 									
 									// Creación del objeto candidato para añadirlo en la lista
-									Candidato nuevoCandidato = inicializar.inicializarCandidato(partidos, ciudades);
+									Candidato nuevoCandidato = inicializar.inicializarCandidato(partidos, ciudades,candidatos);
 									
 									// Inserción en la lista de candidatos
 									candidatos->modificar(nuevoCandidato, Opcion);
@@ -267,7 +266,7 @@ void Simulacion::Menu(){
 							break;
 						}
 						case 3:
-						{ //Opciones para Eliminar
+						{ //Opciones para Eliminar //Validación, Si se eliminan partido, los Candidatos con ese partido quedan sin partido
 							EleccionSubMenuInsercion();
 							cin>>Opcion;
 							switch(Opcion){
@@ -337,6 +336,14 @@ void Simulacion::Menu(){
 					
 					//Escribir en el archivo plano los candidatos de la lista
 					
+					Archivos Candidatos("Candidatos");
+					string textoCandidatos;
+					
+					for(int i =0; i<ciudades->getTam(); i++){
+						Candidato candidato = candidatos->buscar(i);
+						textoCandidatos += candidato.getNombre()+","+candidato.getApellido()+","+candidato.getPuesto()+","+candidato.getNumIdentificacion()+","+candidato.getSexo()+","+candidato.getEstadoCivil()+","+candidato.getFechaNacimiento()+","+candidato.getCiudadNacimiento().getNombre()+","+candidato.getCiudadResidencia().getNombre()+","+candidato.getPartido().getNombre();
+					}
+									
 					programa = false;
 					break;
 				}
