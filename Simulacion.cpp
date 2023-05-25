@@ -3,9 +3,12 @@
 #include "Clases Principales/Inicializar.cpp"
 
 class Simulacion {
-private: Lista < Ciudad > * ciudades;
+private:
+    Lista < Ciudad > * ciudades;
     Lista < Partido > * partidos;
     Lista < Candidato > * candidatos;
+
+    Lista <int> *otrosVotos;
 
     Inicializar inicializar;
 public:
@@ -34,6 +37,8 @@ public:
         partidos = Partidos.leerPartidos();
         candidatos = Candidatos.leerCandidatos();
 
+        otrosVotos = new Lista <int>;
+
     }
 };
 
@@ -44,7 +49,7 @@ void Simulacion::Menu() {
 
     OpcionesListas opcionLista; // Inicializa el objeto de la clase Opciones Listas
     OpcionesConsultas opcionConsultas(ciudades, partidos, candidatos); // Inicializa el objeto de la clase Opciones Consultas
-    OpcionesSimulacion opcionesSimulacion(ciudades, partidos, candidatos);
+    OpcionesSimulacion opcionesSimulacion(ciudades, partidos, candidatos, otrosVotos);
 
     while (programa) { // Bucle infinito del programa
         system("cls");
@@ -147,7 +152,10 @@ void Simulacion::Menu() {
                 cin >> Opcion;
                 switch (Opcion) {
                     case 1: {
-
+                        for (int i = 0; otrosVotos->getTam(); i++){
+                            int actual = otrosVotos->buscar(i);
+                            cout << i+1 << "es : " << actual << endl;
+                        }
                         break;
                     }
                     case 2: {
