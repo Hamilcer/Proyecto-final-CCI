@@ -50,7 +50,8 @@ void Simulacion::Menu()
 	{ // Bucle infinito del programa
 		system("cls");
 		MostrarMenu();
-		cin >> Opcion;
+		// cin >> Opcion;
+		Opcion = 2;
 		switch (Opcion)
 		{
 		case 1:
@@ -121,12 +122,13 @@ void Simulacion::Menu()
 		{
 			system("cls");
 			SubMenuConsultas();
-			cin >> Opcion;
+			// cin >> Opcion;
+			Opcion = 1;
 			switch (Opcion)
 			{
 			case 1:
 			{
-				opcionConsultas.consulta1("Unión Patriótica", "Cali");
+				opcionConsultas.consulta1("Colombia Humana", "Barranquilla");
 				break;
 			}
 			case 2:
