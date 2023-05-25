@@ -6,26 +6,24 @@
 using namespace std;
 
 // Definici�n de la clase Nodo
-template<typename T>
+template < typename T >
 class Nodo {
-public:
-    T valor;              
-    Nodo<T>* siguiente;    
+public: T valor;
+    Nodo < T > * siguiente;
 
     // Constructor de la clase Nodo
     Nodo(T valor) {
-        this->valor = valor;
-        this->siguiente = nullptr;
+        this -> valor = valor;
+        this -> siguiente = nullptr;
     }
 };
 
 // Definici�n de la clase Lista
-template<typename T>
+template < typename T >
 class Lista {
-private:
-    Nodo<T>* inicio;    
-    Nodo<T>* fin;       
-    int tam;            
+private: Nodo < T > * inicio;
+    Nodo < T > * fin;
+    int tam;
 
 public:
     // Constructor de la clase Lista
@@ -37,48 +35,46 @@ public:
 
     // Destructor de la clase Lista
     ~Lista() {
-        Nodo<T>* actual = inicio;
-        Nodo<T>* tmp;
+        Nodo < T > * actual = inicio;
+        Nodo < T > * tmp;
         // Se recorre la lista liberando la memoria de cada nodo
         while (actual != nullptr) {
-            tmp = actual->siguiente;
+            tmp = actual -> siguiente;
             delete actual;
             actual = tmp;
         }
     }
 
+    void insertar(T valor) {
+        Nodo < T > * nuevo = new Nodo < T > (valor);
 
+        // Si la lista est� vac�a, el nuevo nodo ser� tanto el primero como el �ltimo
+        if (inicio == nullptr) {
+            inicio = nuevo;
+            fin = nuevo;
+        }
+            // Si no, se agrega el nuevo nodo despu�s del �ltimo
+        else {
+            fin -> siguiente = nuevo;
+            fin = nuevo;
+        }
 
-	void insertar(T valor) {
-	    Nodo<T>* nuevo = new Nodo<T>(valor);
-	
-	    // Si la lista est� vac�a, el nuevo nodo ser� tanto el primero como el �ltimo
-	    if (inicio == nullptr) {
-	        inicio = nuevo;
-	        fin = nuevo;
-	    }
-	    // Si no, se agrega el nuevo nodo despu�s del �ltimo
-	    else {
-	        fin->siguiente = nuevo;
-	        fin = nuevo;
-	    }
-	
-	    // Se aumenta el tama�o de la lista
-	    tam++;
-	}
+        // Se aumenta el tama�o de la lista
+        tam++;
+    }
 
-	void modificar(T valor, int pos) {
-	    if (pos >= tam || pos < 0) { // Verificar si la posici�n es v�lida
-	        cout << "Posicion invalida" << endl;
-	        return;
-	    }
-	
-	    Nodo<T>* actual = inicio;
-	    for (int i = 0; i < pos; i++) { // Recorrer la lista hasta llegar a la posici�n indicada
-	        actual = actual->siguiente;
-	    }
-	    actual->valor = valor; // Modificar el valor del nodo en la posici�n indicada
-	}
+    void modificar(T valor, int pos) {
+        if (pos >= tam || pos < 0) { // Verificar si la posici�n es v�lida
+            cout << "Posicion invalida" << endl;
+            return;
+        }
+
+        Nodo < T > * actual = inicio;
+        for (int i = 0; i < pos; i++) { // Recorrer la lista hasta llegar a la posici�n indicada
+            actual = actual -> siguiente;
+        }
+        actual -> valor = valor; // Modificar el valor del nodo en la posici�n indicada
+    }
 
     void borrar(int pos) {
         if (pos >= tam || pos < 0) {
@@ -86,22 +82,21 @@ public:
             return;
         }
 
-        Nodo<T>* actual = inicio;
-        Nodo<T>* tmp;
+        Nodo < T > * actual = inicio;
+        Nodo < T > * tmp;
         if (pos == 0) {
-            inicio = actual->siguiente;
+            inicio = actual -> siguiente;
             if (inicio == nullptr) {
                 fin = nullptr;
             }
             delete actual;
-        }
-        else {
+        } else {
             for (int i = 0; i < pos - 1; i++) {
-                actual = actual->siguiente;
+                actual = actual -> siguiente;
             }
-            tmp = actual->siguiente;
-            actual->siguiente = tmp->siguiente;
-            if (actual->siguiente == nullptr) {
+            tmp = actual -> siguiente;
+            actual -> siguiente = tmp -> siguiente;
+            if (actual -> siguiente == nullptr) {
                 fin = actual;
             }
             delete tmp;
@@ -118,34 +113,33 @@ public:
         return (tam == 0);
     }
 
-	T buscar(int pos) {
-	    if (pos < 0 || pos >= tam) {
-	        cout << "Posici�n inv�lida al buscar" << endl;
-	        // Aqu� puedes retornar un valor predeterminado o lanzar una excepci�n, seg�n tus necesidades
-	    }
-	    
-	    Nodo<T>* actual = this->inicio;
-        if(pos==0)
-            return actual->valor;
-		
-	    for (int i = 0; i < pos; i++) {
-	        actual = actual->siguiente;
-	    }
+    T buscar(int pos) {
+        if (pos < 0 || pos >= tam) {
+            cout << "Posición inválida al buscar" << endl;
+            // Aqu� puedes retornar un valor predeterminado o lanzar una excepci�n, seg�n tus necesidades
+        }
 
-	    
-	    return actual->valor;
-	}
-	
-	bool existe(T valor) {
-	    Nodo<T>* actual = inicio;
-	    while (actual != nullptr) {
-	        if (actual->valor == valor) {
-	            return true;
-	        }
-	        actual = actual->siguiente;
-	    }
-	    return false;
-	} 
+        Nodo < T > * actual = this -> inicio;
+        if (pos == 0)
+            return actual -> valor;
+
+        for (int i = 0; i < pos; i++) {
+            actual = actual -> siguiente;
+        }
+
+        return actual -> valor;
+    }
+
+    bool existe(T valor) {
+        Nodo < T > * actual = inicio;
+        while (actual != nullptr) {
+            if (actual -> valor == valor) {
+                return true;
+            }
+            actual = actual -> siguiente;
+        }
+        return false;
+    }
 };
 
 #endif

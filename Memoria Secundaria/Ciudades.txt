@@ -4,7 +4,7 @@ Medellín, Antioquia,0,1000
 Cali, Valle del Cauca,0,1500
 Barranquilla, Atlántico,0,522
 Bucaramanga, Santander,0,400
-Pereira, Risaralda,0,366
+Pereira, Risaralda,01,366
 Manizales, Caldas,0,300
 Santa Marta, Magdalena,0,600
 Cúcuta, Norte de Santander,0,200
