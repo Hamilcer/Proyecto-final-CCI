@@ -95,7 +95,7 @@ void OpcionesConsultas::consulta1(string partido, string ciudad) {
                 cAldalde++;
                 int edad = calcularEdad(auxCandidato);
                 cout << "Candidato alcaldia:" << endl;
-                cout << auxCandidato.getNombre() << " edad: " << edad << " sexo: " << auxCandidato.getSexo() << endl;
+                cout << auxCandidato.getNombre() << " edad: " << edad << " sexo: " << auxCandidato.getSexo() << " - " << auxCandidato.getNumIdentificacion() << endl;
             }
             cout << "Candidatos consejo:" << endl;
 
@@ -104,7 +104,7 @@ void OpcionesConsultas::consulta1(string partido, string ciudad) {
 
                 int edad = calcularEdad(auxCandidato);
 
-                cout << auxCandidato.getNombre() << " edad: " << edad << " sexo: " << auxCandidato.getSexo() << endl;
+                cout << auxCandidato.getNombre() << " edad: " << edad << " sexo: " << auxCandidato.getSexo() << " - " << auxCandidato.getNumIdentificacion() << endl;
             }
         }
     }

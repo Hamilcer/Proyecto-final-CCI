@@ -202,3 +202,553 @@ Antonia,Gómez,Consejo,1784870684,F,Casado,04/07/1978,Bucaramanga,Cúcuta,Colomb
 Cristina,Martínez,Alcaldia,1367058680,F,Soltero,06/02/2001,Cali,Bogota,Cambio Radical,0
 María Pilar,Cruz,Alcaldia,1461083555,F,Casado,01/12/2003,Bogota,Cúcuta,Conservador Colombiano,0
 Francisca,Pérez,Alcaldia,1475598793,F,Casado,09/07/1967,Santa Marta,Manizales,Cambio Radical,0
+Camila Georgina,Pérez Sanchez,Alcaldia,1380171591,F,Soltero,15/12/2000,Bucaramanga,Villavicencio,Conservador Colombiano
+Javier Gerardo,Montoya Sanchez,Alcaldia,1320524003,M,Soltero,06/11/1963,Barranquilla,Villavicencio,Nuevo Liberalismo 
+Manuel Ángel,Gómez Sanchez,Alcaldia,1503639411,M,Soltero,05/07/1991,Bogota,Villavicencio,Cambio Radical
+Juan Gerardo,Pulido Sanchez,Alcaldia,1425208098,M,Soltero,10/08/1987,Manizales,Villavicencio,Colombia Humana
+Angie Antonela,Gómez Mora,Alcaldia,1202873097,F,Soltero,20/11/1987,Bogota,Villavicencio,Centro Democrático
+Aron Miguel,Rodríguez Vargas,Alcaldia,1965138806,M,Soltero,13/04/1984,Manizales,Bogota,Conservador Colombiano
+Nicolas Lucas,González Contreras,Alcaldia,1425500133,M,Casado,28/04/1995,Villavicencio,Bogota,Nuevo Liberalismo
+Pilar José,Sánchez Zambrano,Alcaldia,1019697592,F,Casado,17/06/1985,Manizales,Bogota,Cambio Radical
+Ramiro Miguel,Cruz Puerto,Alcaldia,1411210628,M,Casado,04/12/2002,Barranquilla,Bogota,Colombia Humana
+Teresa Socorro,Rodríguez Zambrano,Alcaldia,1886592151,F,Soltero,07/04/1981,Manizales,Bogota,Centro Democrático
+Laura Rosa,López Pinzon,Alcaldia,1412715105,F,Soltero,25/03/1970,Bucaramanga,Medellín,Conservador Colombiano
+Lilly Jennifer,Martínez Vargas,Alcaldia,1252525949,F,Casado,04/06/1972,Cali,Medellín,Nuevo Liberalismo
+Lilly Ana,Montoya Mora,Alcaldia,1174185874,F,Soltero,16/11/1995,Bucaramanga,Medellín,Cambio Radical
+Sofia Ana,Montoya Castro,Alcaldia,1097947190,F,Casado,09/07/1973,Bogota,Medellín,Colombia Humana
+Lorena ,Ramírez Castillo,Alcaldia,1994473670,F,Casado,22/01/2001,Pereira,Medellín,Centro Democrático
+Gabriela Cristina,Ramírez Sanchez,Alcaldia,1375514780,F,Soltero,24/03/1976,Medellín,Cali,Conservador Colombiano
+Gabriela Cristina,González Rivas,Alcaldia,1158580087,F,Soltero,10/10/2001,Medellín,Cali,Nuevo Liberalismo
+María Antonia,Cruz Sanchez,Alcaldia,1422198214,F,Casado,13/12/1999,Cúcuta,Cali,Cambio Radical
+Catalina Socorro,Cruz Moya,Alcaldia,1308342720,F,Soltero,05/06/1968,Cali,Cali,Colombia Humana
+Valeria Francisca,Flores Castro,Alcaldia,1783037654,F,Soltero,04/08/1991,Cúcuta,Cali,Centro Democrático
+Catalina Dolores,Cruz Rivas,Alcaldia,1863511349,F,Casado,21/03/1966,Cali,Barranquilla,Conservador Colombiano
+Jeronimo Mauricio,Pulido Parra,Alcaldia,1721620814,M,Soltero,06/12/1986,Barranquilla,Barranquilla,Nuevo Liberalismo
+Antonio Andres,García Rivas,Alcaldia,1068974230,M,Casado,28/05/1988,Medellín,Barranquilla,Cambio Radical
+David Felipe,Rodríguez Moya,Alcaldia,1873339885,M,Soltero,23/06/2001,Villavicencio,Barranquilla,Colombia Humana
+Nicolas Jesús,Pulido Puerto,Alcaldia,1930936691,M,Soltero,21/06/1991,Manizales,Barranquilla,Centro Democrático
+Ruben Cristian,Rozo Morales,Alcaldia,1841782573,M,Casado,28/01/1983,Cúcuta,Bucaramanga,Conservador Colombiano
+Angie Jennifer,Cruz Rivas,Alcaldia,1247655950,F,Soltero,01/09/1964,Villavicencio,Bucaramanga,Nuevo Liberalismo
+Sofia Ángeles,López Parra,Alcaldia,1435344174,F,Soltero,24/09/1974,Cúcuta,Bucaramanga,Cambio Radical
+Hamilton Ángel,Sánchez Muñoz,Alcaldia,1180288705,M,Soltero,27/06/1983,Medellín,Bucaramanga,Colombia Humana
+Juan Rafael,González Parra,Alcaldia,1287618764,M,Casado,11/04/1969,Bucaramanga,Bucaramanga,Centro Democrático
+Isabel Vanessa,Pulido Rojas,Alcaldia,1716900769,F,Casado,06/07/1996,Bucaramanga,Pereira,Conservador Colombiano
+Luis ,Flores Muñoz,Alcaldia,1732187446,M,Soltero,06/06/1988,Medellín,Pereira,Nuevo Liberalismo
+Francisco Pedro,Flores Vargas,Alcaldia,1001192851,M,Casado,11/06/2001,Villavicencio,Pereira,Cambio Radical
+Manuel Johan,Gómez Mora,Alcaldia,1185911105,M,Soltero,08/11/1968,Santa Marta,Pereira,Colombia Humana
+Gabriela Cristina,López Pinzon,Alcaldia,1923404001,F,Casado,12/08/1986,Pereira,Pereira,Centro Democrático
+Angie Jennifer,Cruz Vargas,Alcaldia,1792374654,F,Soltero,06/07/1986,Barranquilla,Manizales,Conservador Colombiano
+Teresa Vanessa,Rozo Zambrano,Alcaldia,1437118418,F,Casado,22/02/1997,Manizales,Manizales,Nuevo Liberalismo
+Hamilton Diego,López Rivas,Alcaldia,1599829989,M,Soltero,06/01/1977,Barranquilla,Manizales,Cambio Radical
+Nicolas Lucas,Ramírez Puerto,Alcaldia,1175732098,M,Soltero,02/01/1998,Cali,Manizales,Colombia Humana
+Valeria Lucia,González Rivas,Alcaldia,1365594018,F,Soltero,12/10/1987,Pereira,Manizales,Centro Democrático
+Isabel Rosa,Arredondo Zambrano,Alcaldia,1744145288,F,Casado,12/09/1997,Medellín,Santa Marta,Conservador Colombiano 
+Carmen Dolores,García Moya,Alcaldia,1057647018,F,Soltero,02/09/1989,Villavicencio,Santa Marta,Nuevo Liberalismo
+Pilar Vanessa,Pérez Parra,Alcaldia,1017388902,F,Casado,05/08/1977,Bogota,Santa Marta,Cambio Radical
+Francisco Miguel,Ramírez Morales,Alcaldia,1459856270,M,Casado,10/02/1968,Santa Marta,Santa Marta,Colombia Humana 
+Esteban ,Cruz Suarez,Alcaldia,1212151006,M,Casado,08/02/1967,Santa Marta,Santa Marta,Centro Democrático
+Juliet Dolores,Martínez Zambrano,Alcaldia,1459426428,F,Soltero,19/06/2001,Manizales,Cúcuta,Conservador Colombiano
+Angie Georgina,López Rojas,Alcaldia,1776086063,F,Casado,28/03/1984,Pereira,Cúcuta,Nuevo Liberalismo
+Francisco Lucas,Martínez Morales,Alcaldia,1351718522,M,Soltero,18/01/1973,Pereira,Cúcuta,Cambio Radical
+Juliet ,López Parra,Alcaldia,1987491572,F,Casado,13/07/2001,Cúcuta,Cúcuta,Colombia Humana
+Manuel Jesús,Flores Contreras,Alcaldia,1771653564,M,Casado,06/12/1972,Medellín,Cúcuta,Centro Democrático
+José Joel, Cruz Rojas,Consejo,1142193402,M,Casado,14/08/1966,Cali,Villavicencio,Conservador Colombiano
+Hamilton Jesús, Ramírez Rojas,Consejo,1282884669,M,Casado,22/04/1986,Barranquilla,Villavicencio,Conservador Colombiano 
+Antonio Felipe, Pérez Muñoz,Consejo,1436854945,M,Casado,20/07/1984,Pereira,Villavicencio,Conservador Colombiano
+Javier Andres, Rodríguez Castillo,Consejo,1832749092,M,Soltero,18/09/2000,Pereira,Villavicencio,Conservador Colombiano 
+Manuel Felipe, Rozo Moya,Consejo,1488513499,M,Soltero,14/09/1982,Santa Marta,Villavicencio,Conservador Colombiano
+Juan Miguel, Rozo Castro,Consejo,1189107858,M,Casado,01/11/1970,Villavicencio,Villavicencio,Nuevo Liberalismo
+Jeisson Felipe, García Vargas,Consejo,1292218603,M,Soltero,27/04/1995,Villavicencio,Villavicencio,Nuevo Liberalismo
+Javier Andres, Montoya Rivas,Consejo,1215598497,M,Casado,10/10/1991,Medellín,Villavicencio,Nuevo Liberalismo
+Aron Joel, Rodríguez Vargas,Consejo,1261795615,M,Casado,19/04/1977,Barranquilla,Villavicencio,Nuevo Liberalismo
+Nicolas Ángel, Rozo Vargas,Consejo,1977677507,M,Soltero,27/02/1990,Pereira,Villavicencio,Nuevo Liberalismo
+David Lucas, Arredondo Vargas,Consejo,1986080922,M,Casado,17/08/1999,Santa Marta,Villavicencio,Cambio Radical
+Daniel Gerardo, Rozo Muñoz,Consejo,1173296955,M,Soltero,15/08/1984,Santa Marta,Villavicencio,Cambio Radical
+Ramiro Jesús, González Sanchez,Consejo,1678459327,M,Soltero,07/07/1984,Villavicencio,Villavicencio,Cambio Radical
+José Lionel, Rodríguez Moya,Consejo,1527121573,M,Casado,12/10/1999,Bucaramanga,Villavicencio,Cambio Radical
+José Carlos, Cruz Suarez,Consejo,1509770258,M,Soltero,16/03/1988,Bogota,Villavicencio,Cambio Radical
+Ramiro , Pulido Vargas,Consejo,1928787577,M,Soltero,27/09/1969,Pereira,Villavicencio,Colombia Humana
+Jeronimo Johan, López Zambrano,Consejo,1357611073,M,Soltero,28/09/1989,Cúcuta,Villavicencio,Colombia Humana
+Antonio Joel, Ramírez Contreras,Consejo,1455735423,M,Soltero,04/10/1996,Villavicencio,Villavicencio,Colombia Humana
+Francisco Jesús, Sánchez Morales,Consejo,1585261491,M,Soltero,27/06/1991,Cali,Villavicencio,Colombia Humana
+Daniel Mauricio, Arredondo Moya,Consejo,1860727899,M,Casado,11/07/1981,Santa Marta,Villavicencio,Colombia Humana
+Jeisson Lionel, Rodríguez Castillo,Consejo,1912730339,M,Soltero,25/03/1982,Cúcuta,Villavicencio,Centro Democrático
+Javier Lucas, Espitia Sanchez,Consejo,1865194858,M,Casado,11/06/1979,Cúcuta,Villavicencio,Centro Democrático
+Juan Andres, Arredondo Muñoz,Consejo,1723845094,M,Casado,12/01/2000,Medellín,Villavicencio,Centro Democrático
+Luis Andres, González Castillo,Consejo,1077154183,M,Soltero,18/10/1985,Medellín,Villavicencio,Centro Democrático
+Daniel Rafael, Pérez Vargas,Consejo,1459501196,M,Soltero,01/12/1984,Barranquilla,Villavicencio,Centro Democrático
+Ruben Ángel, Martínez Castillo,Consejo,1754176490,M,Soltero,24/05/1986,Bogota,Bogota,Conservador Colombiano
+Jeronimo Andres, Rodríguez Parra,Consejo,1273585945,M,Casado,22/02/1976,Santa Marta,Bogota,Conservador Colombiano
+Jeronimo Alejandro, Ramírez Parra,Consejo,1465308825,M,Casado,02/01/1998,Barranquilla,Bogota,Conservador Colombiano
+Juan Diego, Cruz Muñoz,Consejo,1638529897,M,Soltero,20/03/1986,Pereira,Bogota,Conservador Colombiano
+José Carlos, Rozo Suarez,Consejo,1897039178,M,Casado,05/02/1971,Pereira,Bogota,Conservador Colombiano
+Hamilton Mauricio, Arredondo Castillo,Consejo,1465295131,M,Casado,27/09/1993,Manizales,Bogota,Nuevo Liberalismo
+Javier Alejandro, Gómez Pinzon,Consejo,1591432601,M,Soltero,28/07/1963,Cúcuta,Bogota,Nuevo Liberalismo
+Antonio Diego, Rodríguez Rivera,Consejo,1741063765,M,Casado,23/12/1998,Cúcuta,Bogota,Nuevo Liberalismo
+Jeisson Miguel, Arredondo Moya,Consejo,1384667794,M,Soltero,23/08/1963,Villavicencio,Bogota,Nuevo Liberalismo
+Antonio Carlos, Rodríguez Puerto,Consejo,1378977303,M,Soltero,04/06/1999,Villavicencio,Bogota,Nuevo Liberalismo
+Luis Joel, Hernández Morales,Consejo,1319360898,M,Casado,10/05/1991,Manizales,Bogota,Cambio Radical
+Ruben Miguel, Ramírez Rivas,Consejo,1920502805,M,Casado,13/06/1969,Medellín,Bogota,Cambio Radical
+Hamilton Alejandro, Arredondo Rivas,Consejo,1291399493,M,Casado,28/03/1985,Villavicencio,Bogota,Cambio Radical
+Daniel Rafael, Cruz Rojas,Consejo,1283075796,M,Soltero,19/02/1970,Bogota,Bogota,Cambio Radical
+José Felipe, Cruz Pinzon,Consejo,1755704884,M,Casado,21/08/2001,Medellín,Bogota,Cambio Radical
+Hamilton Joel, Espitia Parra,Consejo,1151509903,M,Casado,21/11/1984,Bogota,Bogota,Colombia Humana
+Juan Alejandro, Rodríguez Castro,Consejo,1554311270,M,Casado,03/05/1966,Bucaramanga,Bogota,Colombia Humana
+Ruben Joel, Pérez Moya,Consejo,1094129601,M,Casado,14/06/1965,Barranquilla,Bogota,Colombia Humana
+Aron Jesús, Ramírez Morales,Consejo,1494581577,M,Soltero,27/01/1991,Medellín,Bogota,Colombia Humana
+Aron , Montoya Puerto,Consejo,1594250119,M,Soltero,15/04/1987,Cali,Bogota,Colombia Humana
+Ruben Cristian, Montoya Morales,Consejo,1006990515,M,Soltero,17/04/1981,Villavicencio,Bogota,Centro Democrático
+Luis Lionel, Espitia Sanchez,Consejo,1031355465,M,Soltero,04/10/1990,Manizales,Bogota,Centro Democrático
+Daniel Rafael, Gómez Sanchez,Consejo,1769700024,M,Soltero,03/08/1994,Bucaramanga,Bogota,Centro Democrático
+Javier Jesús, Sánchez Sanchez,Consejo,1054565457,M,Casado,06/06/1975,Barranquilla,Bogota,Centro Democrático
+Jeisson Johan, Pérez Castro,Consejo,1914607709,M,Soltero,14/12/1981,Barranquilla,Bogota,Centro Democrático
+Antonio Cristian, García Mora,Consejo,1604030984,M,Casado,21/10/1977,Santa Marta,Medellín,Conservador Colombiano
+José Pedro, Rodríguez Puerto,Consejo,1143997386,M,Casado,21/03/2001,Barranquilla,Medellín,Conservador Colombiano
+Hamilton Andres, Flores Zambrano,Consejo,1709485667,M,Soltero,28/08/1992,Barranquilla,Medellín,Conservador Colombiano
+Antonio Ángel, García Castillo,Consejo,1162190842,M,Casado,27/10/1975,Manizales,Medellín,Conservador Colombiano
+Jeronimo , Arredondo Suarez,Consejo,1089393775,M,Soltero,05/12/1988,Bogota,Medellín,Conservador Colombiano
+Juan Jesús, González Mora,Consejo,1404070816,M,Casado,12/10/1987,Santa Marta,Medellín,Nuevo Liberalismo
+Nicolas Felipe, Martínez Suarez,Consejo,1562171829,M,Casado,26/03/1967,Pereira,Medellín,Nuevo Liberalismo
+Luis Mauricio, Cruz Contreras,Consejo,1992069766,M,Casado,05/12/1996,Bucaramanga,Medellín,Nuevo Liberalismo
+Nicolas , Gómez Moya,Consejo,1200245875,M,Soltero,17/06/1964,Cúcuta,Medellín,Nuevo Liberalismo
+Luis Johan, Martínez Rivas,Consejo,1168523445,M,Casado,19/07/1969,Cúcuta,Medellín,Nuevo Liberalismo
+David Johan, Pulido Contreras,Consejo,1345685090,M,Casado,02/07/1973,Villavicencio,Medellín,Cambio Radical
+Jeronimo Lionel, Ramírez Rojas,Consejo,1549393076,M,Casado,20/05/1966,Pereira,Medellín,Cambio Radical
+Aron Lucas, García Pinzon,Consejo,1390176688,M,Soltero,08/01/2003,Medellín,Medellín,Cambio Radical
+Ruben Carlos, López Puerto,Consejo,1207927183,M,Soltero,01/06/1997,Pereira,Medellín,Cambio Radical
+Hamilton Ángel, Ramírez Morales,Consejo,1928822024,M,Soltero,20/11/1982,Villavicencio,Medellín,Cambio Radical
+Ramiro Cristian, Cruz Rojas,Consejo,1240117933,M,Casado,09/12/1976,Cúcuta,Medellín,Colombia Humana
+Juan Diego, Martínez Pinzon,Consejo,1865744017,M,Casado,02/12/2002,Bucaramanga,Medellín,Colombia Humana
+Ruben Jesús, Rozo Suarez,Consejo,1351602053,M,Soltero,02/11/1975,Cali,Medellín,Colombia Humana
+Jeisson Alejandro, Arredondo Castillo,Consejo,1334028185,M,Casado,10/01/1984,Pereira,Medellín,Colombia Humana
+Esteban Cristian, Espitia Muñoz,Consejo,1693812020,M,Casado,17/10/1999,Manizales,Medellín,Colombia Humana
+Francisco Ángel, Rozo Suarez,Consejo,1718596759,M,Soltero,10/01/1991,Bogota,Medellín,Centro Democrático
+Francisco Lucas, Rodríguez Contreras,Consejo,1981699462,M,Casado,09/07/1972,Cali,Medellín,Centro Democrático
+Javier , Rodríguez Vargas,Consejo,1562784206,M,Casado,15/09/1997,Barranquilla,Medellín,Centro Democrático
+Manuel Cristian, Hernández Sanchez,Consejo,1485345108,M,Casado,25/08/1979,Cúcuta,Medellín,Centro Democrático
+Manuel Miguel, Gómez Zambrano,Consejo,1138015401,M,Casado,17/10/1965,Pereira,Medellín,Centro Democrático
+Daniel Felipe, Rodríguez Mora,Consejo,1512093827,M,Casado,25/10/1970,Cúcuta,Cali,Conservador Colombiano
+Esteban Lucas, Hernández Rojas,Consejo,1124143964,M,Soltero,18/04/1982,Cúcuta,Cali,Conservador Colombiano
+Jeronimo Lucas, Pérez Castro,Consejo,1133589777,M,Soltero,14/10/1990,Santa Marta,Cali,Conservador Colombiano
+Esteban Andres, Montoya Puerto,Consejo,1204259096,M,Casado,10/04/1970,Cúcuta,Cali,Conservador Colombiano
+Aron Jesús, Montoya Castro,Consejo,1291961299,M,Soltero,24/05/1974,Santa Marta,Cali,Conservador Colombiano
+Francisco Pedro, Hernández Rojas,Consejo,1240488509,M,Soltero,10/01/1975,Bogota,Cali,Nuevo Liberalismo
+Esteban Cristian, Flores Zambrano,Consejo,1816415499,M,Casado,16/05/1990,Cúcuta,Cali,Nuevo Liberalismo
+Aron Rafael, Cruz Moya,Consejo,1381429162,M,Soltero,27/07/1983,Santa Marta,Cali,Nuevo Liberalismo
+Daniel Pedro, Sánchez Castro,Consejo,1778254163,M,Soltero,09/02/1992,Bucaramanga,Cali,Nuevo Liberalismo
+Ramiro Alejandro, García Zambrano,Consejo,1827268826,M,Soltero,18/12/1999,Pereira,Cali,Nuevo Liberalismo
+Esteban Alejandro, Martínez Suarez,Consejo,1644497576,M,Casado,09/11/1982,Medellín,Cali,Cambio Radical
+David Rafael, Cruz Morales,Consejo,1304044473,M,Soltero,10/11/1993,Pereira,Cali,Cambio Radical
+Aron Johan, Rodríguez Muñoz,Consejo,1783729276,M,Soltero,06/08/1988,Manizales,Cali,Cambio Radical
+Jeronimo Pedro, Pulido Sanchez,Consejo,1240445115,M,Casado,17/02/1990,Barranquilla,Cali,Cambio Radical
+Esteban Rafael, Rodríguez Parra,Consejo,1892913479,M,Soltero,13/07/1972,Medellín,Cali,Cambio Radical
+Ruben Rafael, Arredondo Parra,Consejo,1223232423,M,Soltero,18/06/1999,Cúcuta,Cali,Colombia Humana
+Jeronimo Jesús, Gómez Puerto,Consejo,1446438831,M,Soltero,28/10/1976,Bucaramanga,Cali,Colombia Humana
+Luis Pedro, Pulido Vargas,Consejo,1385679060,M,Soltero,17/06/1972,Bucaramanga,Cali,Colombia Humana
+Antonio Lionel, Gómez Contreras,Consejo,1480371782,M,Casado,26/01/1967,Cúcuta,Cali,Colombia Humana
+Ramiro Felipe, Arredondo Parra,Consejo,1457344811,M,Soltero,21/08/1965,Pereira,Cali,Colombia Humana
+José Johan, González Vargas,Consejo,1566518212,M,Casado,13/10/1998,Bucaramanga,Cali,Centro Democrático
+Jeisson Felipe, Espitia Puerto,Consejo,1941881028,M,Soltero,04/02/1979,Cúcuta,Cali,Centro Democrático
+David Joel, Martínez Pinzon,Consejo,1851797716,M,Soltero,24/07/1996,Bogota,Cali,Centro Democrático
+Francisco Cristian, Flores Castillo,Consejo,1376933930,M,Soltero,18/05/1979,Villavicencio,Cali,Centro Democrático
+Ramiro Lucas, López Muñoz,Consejo,1767069098,M,Soltero,19/08/2003,Villavicencio,Cali,Centro Democrático
+Esteban Cristian, González Sanchez,Consejo,1588436529,M,Casado,21/07/1995,Santa Marta,Barranquilla,Conservador Colombiano
+Luis , Espitia Pinzon,Consejo,1960197378,M,Casado,09/04/1999,Manizales,Barranquilla,Conservador Colombiano
+Antonio Gerardo, Cruz Sanchez,Consejo,1913719152,M,Soltero,10/06/1993,Villavicencio,Barranquilla,Conservador Colombiano
+Luis Jesús, Pérez Vargas,Consejo,1427622561,M,Soltero,17/10/1982,Bucaramanga,Barranquilla,Conservador Colombiano
+Hamilton Mauricio, Espitia Contreras,Consejo,1361292996,M,Casado,23/08/1997,Barranquilla,Barranquilla,Conservador Colombiano
+Manuel Johan, Martínez Contreras,Consejo,1429454457,M,Casado,09/01/1991,Pereira,Barranquilla,Nuevo Liberalismo
+Juan Lionel, Cruz Sanchez,Consejo,1486376314,M,Casado,18/11/1980,Cúcuta,Barranquilla,Nuevo Liberalismo
+Jeronimo Rafael, Sánchez Parra,Consejo,1808673132,M,Casado,02/08/2000,Bucaramanga,Barranquilla,Nuevo Liberalismo
+Ramiro Diego, Sánchez Sanchez,Consejo,1093426846,M,Soltero,05/07/1994,Villavicencio,Barranquilla,Nuevo Liberalismo
+David Joel, Pérez Zambrano,Consejo,1556446412,M,Soltero,21/11/1978,Bucaramanga,Barranquilla,Nuevo Liberalismo
+Nicolas Mauricio, Espitia Castillo,Consejo,1008826976,M,Soltero,13/07/1988,Pereira,Barranquilla,Cambio Radical
+Aron Diego, Hernández Castro,Consejo,1355068990,M,Soltero,07/06/1965,Santa Marta,Barranquilla,Cambio Radical
+Javier Andres, Sánchez Suarez,Consejo,1118863655,M,Soltero,19/05/1994,Villavicencio,Barranquilla,Cambio Radical
+Ruben Cristian, Martínez Castillo,Consejo,1122475011,M,Casado,07/02/2001,Medellín,Barranquilla,Cambio Radical
+David Lionel, Rodríguez Muñoz,Consejo,1167810824,M,Casado,14/12/1980,Santa Marta,Barranquilla,Cambio Radical
+Ramiro Mauricio, Arredondo Moya,Consejo,1575632927,M,Soltero,25/01/1995,Medellín,Barranquilla,Colombia Humana
+Juan Mauricio, Arredondo Pinzon,Consejo,1305122043,M,Soltero,24/03/1985,Bucaramanga,Barranquilla,Colombia Humana
+Jeronimo Lucas, García Castillo,Consejo,1994358425,M,Soltero,07/09/1996,Santa Marta,Barranquilla,Colombia Humana
+Aron Ángel, Sánchez Rivas,Consejo,1359461266,M,Casado,14/08/1965,Bucaramanga,Barranquilla,Colombia Humana
+Ramiro Johan, Rodríguez Mora,Consejo,1970499687,M,Casado,02/12/1988,Barranquilla,Barranquilla,Colombia Humana
+Antonio Pedro, Arredondo Zambrano,Consejo,1516228929,M,Casado,18/12/1974,Bucaramanga,Barranquilla,Centro Democrático
+Esteban Jesús, Rodríguez Morales,Consejo,1325043159,M,Soltero,26/05/1997,Bucaramanga,Barranquilla,Centro Democrático
+Jeisson Miguel, García Castillo,Consejo,1141951454,M,Soltero,16/04/1972,Bucaramanga,Barranquilla,Centro Democrático
+Juan Cristian, Martínez Vargas,Consejo,1934674907,M,Soltero,28/04/1969,Manizales,Barranquilla,Centro Democrático
+Aron Felipe, Martínez Puerto,Consejo,1052247266,M,Casado,19/06/1989,Villavicencio,Barranquilla,Centro Democrático
+Esteban Cristian, Rozo Rivera,Consejo,1376472675,M,Casado,09/01/1980,Medellín,Bucaramanga,Conservador Colombiano
+Juan Lionel, Pérez Vargas,Consejo,1886056078,M,Casado,21/05/2001,Villavicencio,Bucaramanga,Conservador Colombiano
+Hamilton Alejandro, Flores Vargas,Consejo,1298344598,M,Casado,01/10/1983,Cali,Bucaramanga,Conservador Colombiano
+Aron Jesús, Montoya Parra,Consejo,1091903996,M,Soltero,15/02/1966,Barranquilla,Bucaramanga,Conservador Colombiano
+Esteban Felipe, Flores Suarez,Consejo,1019320313,M,Soltero,07/09/2001,Santa Marta,Bucaramanga,Conservador Colombiano
+José Ángel, González Zambrano,Consejo,1045895970,M,Casado,15/02/1995,Bucaramanga,Bucaramanga,Nuevo Liberalismo
+Ruben Miguel, Hernández Suarez,Consejo,1247233422,M,Casado,13/04/1997,Santa Marta,Bucaramanga,Nuevo Liberalismo
+Aron Andres, Pérez Suarez,Consejo,1328451696,M,Soltero,08/09/1986,Manizales,Bucaramanga,Nuevo Liberalismo
+David Alejandro, Pulido Muñoz,Consejo,1047631959,M,Casado,05/01/1994,Villavicencio,Bucaramanga,Nuevo Liberalismo
+Ruben Lucas, Hernández Vargas,Consejo,1345681208,M,Soltero,17/08/1965,Cúcuta,Bucaramanga,Nuevo Liberalismo
+Luis Johan, Arredondo Contreras,Consejo,1933209998,M,Casado,03/04/1976,Pereira,Bucaramanga,Cambio Radical
+Ruben Carlos, Ramírez Morales,Consejo,1178505916,M,Soltero,18/09/1992,Cali,Bucaramanga,Cambio Radical
+Hamilton Diego, López Muñoz,Consejo,1453619846,M,Soltero,11/10/2002,Cúcuta,Bucaramanga,Cambio Radical
+Hamilton Miguel, Rozo Castro,Consejo,1515182889,M,Soltero,25/10/1994,Bogota,Bucaramanga,Cambio Radical
+Aron Miguel, García Contreras,Consejo,1372429064,M,Casado,01/07/1985,Manizales,Bucaramanga,Cambio Radical
+Luis Johan, Arredondo Castro,Consejo,1092153706,M,Soltero,22/09/1971,Pereira,Bucaramanga,Colombia Humana
+Daniel Carlos, Hernández Morales,Consejo,1920636825,M,Soltero,26/07/1965,Bogota,Bucaramanga,Colombia Humana
+José Felipe, Martínez Rivas,Consejo,1195061657,M,Soltero,09/07/1991,Medellín,Bucaramanga,Colombia Humana
+Hamilton Carlos, García Puerto,Consejo,1408423638,M,Soltero,02/03/1984,Bucaramanga,Bucaramanga,Colombia Humana
+Luis Diego, González Rivera,Consejo,1685996059,M,Casado,14/03/1965,Villavicencio,Bucaramanga,Colombia Humana
+Aron Felipe, Ramírez Rojas,Consejo,1117313872,M,Soltero,16/01/1993,Cali,Bucaramanga,Centro Democrático
+José Lucas, López Pinzon,Consejo,1653270064,M,Casado,11/03/1994,Manizales,Bucaramanga,Centro Democrático
+José Diego, Montoya Muñoz,Consejo,1163453907,M,Soltero,08/04/1986,Manizales,Bucaramanga,Centro Democrático
+Nicolas Lucas, Sánchez Muñoz,Consejo,1712258253,M,Soltero,03/10/1975,Manizales,Bucaramanga,Centro Democrático
+Jeronimo Cristian, González Pinzon,Consejo,1000116194,M,Casado,09/11/1974,Barranquilla,Bucaramanga,Centro Democrático
+Francisco Mauricio, Hernández Suarez,Consejo,1456936201,M,Casado,17/05/1984,Cali,Pereira,Conservador Colombiano
+Ruben Jesús, Espitia Pinzon,Consejo,1941790085,M,Casado,10/06/1975,Villavicencio,Pereira,Conservador Colombiano
+Hamilton Andres, Cruz Morales,Consejo,1995923470,M,Soltero,03/12/2002,Medellín,Pereira,Conservador Colombiano
+Daniel Miguel, Rozo Puerto,Consejo,1490328714,M,Casado,15/11/2001,Santa Marta,Pereira,Conservador Colombiano
+Daniel Andres, González Muñoz,Consejo,1579978874,M,Soltero,03/04/1997,Pereira,Pereira,Conservador Colombiano
+Luis Lucas, López Morales,Consejo,1743906090,M,Casado,16/09/1972,Barranquilla,Pereira,Nuevo Liberalismo
+David Lucas, González Castillo,Consejo,1547212273,M,Casado,08/08/1998,Bucaramanga,Pereira,Nuevo Liberalismo
+Aron Ángel, Martínez Sanchez,Consejo,1073809858,M,Casado,12/07/1996,Villavicencio,Pereira,Nuevo Liberalismo
+Hamilton Andres, Hernández Rivas,Consejo,1374315976,M,Soltero,02/12/1976,Bucaramanga,Pereira,Nuevo Liberalismo
+Esteban Pedro, Rodríguez Castro,Consejo,1906635797,M,Soltero,20/05/1998,Santa Marta,Pereira,Nuevo Liberalismo
+Daniel Diego, Gómez Vargas,Consejo,1532878391,M,Casado,15/10/1971,Bucaramanga,Pereira,Cambio Radical
+Ruben Pedro, Flores Contreras,Consejo,1044186737,M,Soltero,24/09/1972,Cali,Pereira,Cambio Radical
+Ruben Miguel, Flores Morales,Consejo,1102340635,M,Soltero,12/07/2000,Barranquilla,Pereira,Cambio Radical
+Manuel Miguel, Ramírez Rojas,Consejo,1085172514,M,Casado,03/02/1993,Santa Marta,Pereira,Cambio Radical
+Jeisson Cristian, Arredondo Sanchez,Consejo,1414366447,M,Casado,26/11/1975,Barranquilla,Pereira,Cambio Radical
+Manuel Lionel, Pulido Zambrano,Consejo,1459128174,M,Casado,05/08/1967,Villavicencio,Pereira,Colombia Humana
+Francisco Jesús, Rodríguez Pinzon,Consejo,1638409774,M,Casado,27/01/1988,Pereira,Pereira,Colombia Humana
+Juan Miguel, Espitia Puerto,Consejo,1582243807,M,Casado,06/07/1968,Bogota,Pereira,Colombia Humana
+Francisco Cristian, Ramírez Rivas,Consejo,1890230077,M,Soltero,06/08/1996,Bogota,Pereira,Colombia Humana
+Juan Johan, Flores Castro,Consejo,1869504887,M,Soltero,08/11/1965,Santa Marta,Pereira,Colombia Humana
+José Pedro, Espitia Contreras,Consejo,1285858193,M,Casado,13/01/1971,Bogota,Pereira,Centro Democrático
+Javier Jesús, González Castro,Consejo,1184207298,M,Casado,01/02/1975,Medellín,Pereira,Centro Democrático
+Jeronimo Alejandro, López Rojas,Consejo,1994760591,M,Soltero,23/08/1972,Manizales,Pereira,Centro Democrático
+José Cristian, Pérez Parra,Consejo,1017423668,M,Casado,27/10/1986,Cúcuta,Pereira,Centro Democrático
+Esteban Jesús, González Puerto,Consejo,1490827455,M,Casado,17/10/1966,Cúcuta,Pereira,Centro Democrático
+Javier Pedro, Pérez Rivas,Consejo,1634129657,M,Soltero,13/06/1983,Manizales,Manizales,Conservador Colombiano
+Javier Ángel, Pérez Rivas,Consejo,1731619198,M,Soltero,20/02/1978,Bucaramanga,Manizales,Conservador Colombiano
+Juan Carlos, González Rivas,Consejo,1142822883,M,Soltero,28/02/1980,Santa Marta,Manizales,Conservador Colombiano
+Luis Joel, Arredondo Sanchez,Consejo,1070224449,M,Soltero,15/04/1963,Bucaramanga,Manizales,Conservador Colombiano
+Antonio Gerardo, Montoya Suarez,Consejo,1167156292,M,Soltero,08/04/1968,Medellín,Manizales,Conservador Colombiano
+Daniel Alejandro, Flores Rojas,Consejo,1183481728,M,Soltero,06/03/1974,Santa Marta,Manizales,Nuevo Liberalismo
+Daniel Rafael, Cruz Morales,Consejo,1030965491,M,Casado,20/03/1997,Pereira,Manizales,Nuevo Liberalismo
+Nicolas Gerardo, López Sanchez,Consejo,1864608728,M,Soltero,21/03/1992,Bogota,Manizales,Nuevo Liberalismo
+Hamilton Carlos, Rozo Parra,Consejo,1986338231,M,Soltero,22/03/1979,Pereira,Manizales,Nuevo Liberalismo
+Ramiro , Espitia Contreras,Consejo,1662925966,M,Casado,09/10/1994,Medellín,Manizales,Nuevo Liberalismo
+Nicolas Johan, Flores Moya,Consejo,1748900703,M,Casado,15/06/1975,Villavicencio,Manizales,Cambio Radical
+Manuel Carlos, Rozo Muñoz,Consejo,1466791603,M,Casado,15/08/1996,Villavicencio,Manizales,Cambio Radical
+David Lionel, Rodríguez Rivera,Consejo,1106580026,M,Soltero,21/07/1981,Barranquilla,Manizales,Cambio Radical
+Javier Diego, Cruz Zambrano,Consejo,1285207059,M,Soltero,25/07/1997,Santa Marta,Manizales,Cambio Radical
+Ramiro Pedro, García Puerto,Consejo,1696873017,M,Casado,13/07/1984,Cúcuta,Manizales,Cambio Radical
+Ramiro , Martínez Castro,Consejo,1777943255,M,Soltero,22/03/1985,Santa Marta,Manizales,Colombia Humana
+Jeisson Felipe, Sánchez Puerto,Consejo,1132747408,M,Casado,11/03/1992,Bucaramanga,Manizales,Colombia Humana
+Jeronimo Gerardo, Sánchez Castillo,Consejo,1390771523,M,Soltero,17/12/1994,Bogota,Manizales,Colombia Humana
+David Cristian, Flores Sanchez,Consejo,1164860531,M,Casado,19/12/1995,Medellín,Manizales,Colombia Humana
+David Alejandro, López Castro,Consejo,1086815475,M,Soltero,11/02/1994,Cúcuta,Manizales,Colombia Humana
+José Cristian, Cruz Rojas,Consejo,1939359537,M,Casado,07/08/1973,Bogota,Manizales,Centro Democrático
+Ramiro Alejandro, Hernández Castillo,Consejo,1095218030,M,Casado,09/01/1976,Pereira,Manizales,Centro Democrático
+Juan Miguel, Pérez Contreras,Consejo,1483439806,M,Soltero,18/11/2001,Bogota,Manizales,Centro Democrático
+Ruben Alejandro, Flores Mora,Consejo,1514303842,M,Soltero,03/02/1995,Santa Marta,Manizales,Centro Democrático
+Esteban Lucas, Rodríguez Zambrano,Consejo,1456783157,M,Soltero,02/07/1966,Bogota,Manizales,Centro Democrático
+Manuel Felipe, Hernández Rivas,Consejo,1887693559,M,Soltero,22/02/1992,Bogota,Santa Marta,Conservador Colombiano
+Juan Pedro, Arredondo Contreras,Consejo,1014599048,M,Soltero,24/11/1989,Bogota,Santa Marta,Conservador Colombiano
+Ramiro Mauricio, Pulido Mora,Consejo,1953146946,M,Soltero,19/07/1970,Manizales,Santa Marta,Conservador Colombiano
+Ramiro Lucas, Flores Puerto,Consejo,1317970078,M,Casado,21/03/1990,Bogota,Santa Marta,Conservador Colombiano
+Luis Miguel, Ramírez Mora,Consejo,1416166216,M,Soltero,06/11/1992,Manizales,Santa Marta,Conservador Colombiano
+Esteban , López Castillo,Consejo,1286921524,M,Casado,17/08/1972,Medellín,Santa Marta,Nuevo Liberalismo
+Esteban , Rodríguez Puerto,Consejo,1810186454,M,Casado,18/11/1970,Pereira,Santa Marta,Nuevo Liberalismo
+Jeronimo Alejandro, Flores Rivas,Consejo,1741147881,M,Casado,05/03/2000,Pereira,Santa Marta,Nuevo Liberalismo
+David Joel, Cruz Castro,Consejo,1309906584,M,Casado,22/03/1988,Bogota,Santa Marta,Nuevo Liberalismo
+Aron , Arredondo Sanchez,Consejo,1553100197,M,Soltero,09/10/1998,Manizales,Santa Marta,Nuevo Liberalismo
+Manuel Mauricio, Sánchez Castro,Consejo,1330850450,M,Soltero,14/06/1976,Barranquilla,Santa Marta,Cambio Radical
+Jeisson Cristian, Cruz Mora,Consejo,1782531244,M,Casado,21/06/1997,Cali,Santa Marta,Cambio Radical
+Antonio Diego, Ramírez Rivas,Consejo,1900115148,M,Casado,15/03/1966,Cúcuta,Santa Marta,Cambio Radical
+Esteban Lionel, García Rivas,Consejo,1279650637,M,Casado,24/11/1984,Cali,Santa Marta,Cambio Radical
+Ruben Gerardo, Flores Morales,Consejo,1459356109,M,Casado,01/03/1989,Barranquilla,Santa Marta,Cambio Radical
+Jeronimo Alejandro, Sánchez Sanchez,Consejo,1893725860,M,Soltero,28/02/1984,Barranquilla,Santa Marta,Colombia Humana
+Ruben Lionel, Ramírez Moya,Consejo,1243363470,M,Casado,09/11/1965,Cali,Santa Marta,Colombia Humana
+David Cristian, Montoya Suarez,Consejo,1592245521,M,Soltero,26/12/2001,Barranquilla,Santa Marta,Colombia Humana
+Francisco Joel, García Vargas,Consejo,1934584625,M,Soltero,11/07/1977,Cali,Santa Marta,Colombia Humana
+Daniel Johan, Martínez Vargas,Consejo,1967197136,M,Casado,21/02/1971,Pereira,Santa Marta,Colombia Humana
+Ramiro Diego, Martínez Mora,Consejo,1630035162,M,Casado,26/09/1986,Pereira,Santa Marta,Centro Democrático
+Jeisson Rafael, Cruz Suarez,Consejo,1973372963,M,Casado,04/04/1977,Barranquilla,Santa Marta,Centro Democrático
+Antonio Ángel, Espitia Muñoz,Consejo,1277355140,M,Casado,08/01/2001,Barranquilla,Santa Marta,Centro Democrático
+Hamilton Lionel, Sánchez Suarez,Consejo,1341802550,M,Casado,10/06/1994,Cúcuta,Santa Marta,Centro Democrático
+Luis Felipe, Pulido Sanchez,Consejo,1383163777,M,Casado,24/12/1979,Cúcuta,Santa Marta,Centro Democrático
+Javier Mauricio, Gómez Castro,Consejo,1014811232,M,Casado,03/03/2000,Bogota,Cúcuta,Conservador Colombiano
+Jeisson Cristian, Espitia Parra,Consejo,1916334213,M,Soltero,19/10/1998,Villavicencio,Cúcuta,Conservador Colombiano
+Manuel Miguel, Rozo Zambrano,Consejo,1871095647,M,Casado,26/05/1971,Cúcuta,Cúcuta,Conservador Colombiano
+Jeisson Johan, Sánchez Morales,Consejo,1625504587,M,Soltero,04/07/1989,Cali,Cúcuta,Conservador Colombiano
+Aron Rafael, Sánchez Castro,Consejo,1875608922,M,Casado,25/01/1980,Manizales,Cúcuta,Conservador Colombiano
+Ramiro Rafael, Ramírez Puerto,Consejo,1828110195,M,Soltero,16/10/1991,Santa Marta,Cúcuta,Nuevo Liberalismo
+Aron Diego, Espitia Contreras,Consejo,1683111917,M,Casado,18/06/1983,Pereira,Cúcuta,Nuevo Liberalismo
+David Miguel, Rozo Morales,Consejo,1543406613,M,Casado,02/09/1986,Villavicencio,Cúcuta,Nuevo Liberalismo
+Nicolas Felipe, Flores Suarez,Consejo,1595191177,M,Soltero,28/03/1979,Villavicencio,Cúcuta,Nuevo Liberalismo
+Ramiro Cristian, López Vargas,Consejo,1854202244,M,Casado,20/12/1997,Cali,Cúcuta,Nuevo Liberalismo
+José Joel, Gómez Moya,Consejo,1559617769,M,Casado,19/04/1974,Bogota,Cúcuta,Cambio Radical
+Javier Lionel, Rodríguez Rivera,Consejo,1456204330,M,Casado,13/09/1967,Barranquilla,Cúcuta,Cambio Radical
+Hamilton Diego, González Sanchez,Consejo,1936334176,M,Soltero,20/09/1983,Bogota,Cúcuta,Cambio Radical
+José Alejandro, Arredondo Castro,Consejo,1244574222,M,Casado,01/10/1999,Cali,Cúcuta,Cambio Radical
+Antonio Miguel, Cruz Vargas,Consejo,1704527853,M,Casado,02/06/1984,Villavicencio,Cúcuta,Cambio Radical
+Hamilton Diego, Martínez Puerto,Consejo,1339060263,M,Soltero,07/11/1996,Cúcuta,Cúcuta,Colombia Humana
+David Mauricio, Pérez Morales,Consejo,1989840895,M,Casado,27/11/1992,Pereira,Cúcuta,Colombia Humana
+Antonio Rafael, Sánchez Rivas,Consejo,1242659196,M,Casado,22/10/1965,Manizales,Cúcuta,Colombia Humana
+Ruben Jesús, Pérez Zambrano,Consejo,1384327661,M,Soltero,20/11/1978,Barranquilla,Cúcuta,Colombia Humana
+Jeronimo Mauricio, Cruz Sanchez,Consejo,1013321659,M,Casado,16/11/1999,Manizales,Cúcuta,Colombia Humana
+Luis Carlos, Montoya Sanchez,Consejo,1269538385,M,Casado,13/03/1981,Medellín,Cúcuta,Centro Democrático
+Juan Ángel, Martínez Suarez,Consejo,1278059619,M,Casado,13/02/2001,Santa Marta,Cúcuta,Centro Democrático
+Esteban Pedro, Martínez Suarez,Consejo,1353949256,M,Casado,22/07/1980,Medellín,Cúcuta,Centro Democrático
+Antonio Mauricio, Martínez Sanchez,Consejo,1580985499,M,Casado,05/11/1996,Bucaramanga,Cúcuta,Centro Democrático
+Luis Alejandro, González Vargas,Consejo,1736844257,M,Casado,19/05/1967,Cali,Cúcuta,Centro Democrático
+María Jennifer,González Castillo,Consejo,1468475271,F,Soltero,17/07/1995,Villavicencio,Villavicencio,Conservador Colombiano
+Catalina ,López Vargas,Consejo,1559244834,F,Casado,27/08/1977,Barranquilla,Villavicencio,Conservador Colombiano
+Daniela Georgina,Arredondo Puerto,Consejo,1556324199,F,Soltero,11/09/1987,Cúcuta,Villavicencio,Conservador Colombiano
+Josefa Cristina,Sánchez Vargas,Consejo,1916801178,F,Casado,06/09/2001,Villavicencio,Villavicencio,Conservador Colombiano
+Isabel Cristina,Martínez Pinzon,Consejo,1073149958,F,Soltero,28/08/1970,Manizales,Villavicencio,Conservador Colombiano
+Josefa Francisca,López Puerto,Consejo,1944864423,F,Casado,17/12/1975,Bogota,Villavicencio,Nuevo Liberalismo
+Teresa Diana,Espitia Moya,Consejo,1416557212,F,Casado,20/04/1987,Manizales,Villavicencio,Nuevo Liberalismo
+Lilly Socorro,López Vargas,Consejo,1230403652,F,Soltero,16/07/1991,Bucaramanga,Villavicencio,Nuevo Liberalismo
+Pilar Lucia,Espitia Rivas,Consejo,1723300334,F,Soltero,06/10/1967,Cali,Villavicencio,Nuevo Liberalismo
+Laura Diana,Hernández Parra,Consejo,1336166759,F,Soltero,17/01/1977,Santa Marta,Villavicencio,Nuevo Liberalismo
+Daniela Jennifer,Martínez Castro,Consejo,1137883343,F,Soltero,02/02/2001,Manizales,Villavicencio,Cambio Radical
+Laura Lucia,Flores Parra,Consejo,1654571639,F,Soltero,26/09/1980,Santa Marta,Villavicencio,Cambio Radical
+Catalina Marta,García Puerto,Consejo,1716316544,F,Soltero,27/04/1995,Bogota,Villavicencio,Cambio Radical
+Sofia Antonia,González Rivas,Consejo,1417473534,F,Soltero,14/07/1976,Pereira,Villavicencio,Cambio Radical
+Daniela Socorro,Gómez Vargas,Consejo,1163323357,F,Casado,28/02/1982,Bogota,Villavicencio,Cambio Radical
+María Claudia,Rozo Muñoz,Consejo,1270018911,F,Soltero,15/01/2002,Santa Marta,Villavicencio,Colombia Humana
+Catalina Kelly,Cruz Zambrano,Consejo,1717943879,F,Casado,01/04/1968,Pereira,Villavicencio,Colombia Humana
+Lorena Lucia,Ramírez Suarez,Consejo,1471764097,F,Casado,16/12/1982,Pereira,Villavicencio,Colombia Humana
+Lorena Antonela,Martínez Muñoz,Consejo,1056474688,F,Casado,25/12/1974,Bogota,Villavicencio,Colombia Humana
+Laura Cristina,Ramírez Parra,Consejo,1224508391,F,Soltero,08/11/1999,Bucaramanga,Villavicencio,Colombia Humana
+Yeimi Francisca,Espitia Pinzon,Consejo,1344716390,F,Casado,16/06/1996,Bogota,Villavicencio,Centro Democrático
+Daniela Dolores,Gómez Contreras,Consejo,1566773760,F,Casado,14/04/2002,Bogota,Villavicencio,Centro Democrático
+Carmen Rosa,Espitia Morales,Consejo,1147638796,F,Soltero,15/12/2000,Santa Marta,Villavicencio,Centro Democrático
+Valeria Marta,Gómez Castro,Consejo,1889328275,F,Soltero,27/12/1972,Manizales,Villavicencio,Centro Democrático
+Isabel Diana,Rodríguez Moya,Consejo,1920117314,F,Casado,27/03/1974,Barranquilla,Villavicencio,Centro Democrático
+Yeimi Jennifer,López Moya,Consejo,1910840494,F,Casado,24/12/1971,Bucaramanga,Bogota,Conservador Colombiano
+Laura Dolores,Espitia Rojas,Consejo,1099078726,F,Soltero,24/05/2002,Manizales,Bogota,Conservador Colombiano
+Juliet Dolores,Martínez Muñoz,Consejo,1260287972,F,Casado,04/07/1972,Bogota,Bogota,Conservador Colombiano
+Gabriela Antonia,Flores Castillo,Consejo,1286290443,F,Casado,08/09/2001,Bucaramanga,Bogota,Conservador Colombiano
+Sofia Ángeles,Pulido Mora,Consejo,1237550510,F,Soltero,23/06/1974,Villavicencio,Bogota,Conservador Colombiano
+Carmen Dolores,Rozo Vargas,Consejo,1899596522,F,Casado,27/11/1995,Manizales,Bogota,Nuevo Liberalismo
+Catalina José,Montoya Sanchez,Consejo,1621208959,F,Soltero,19/04/1989,Medellín,Bogota,Nuevo Liberalismo
+Valeria Vanessa,González Moya,Consejo,1788823040,F,Soltero,08/08/1972,Bogota,Bogota,Nuevo Liberalismo
+Yeimi Marta,Sánchez Castro,Consejo,1182253578,F,Soltero,18/01/1988,Bogota,Bogota,Nuevo Liberalismo
+Catalina Jennifer,Martínez Mora,Consejo,1464052217,F,Casado,26/05/1987,Medellín,Bogota,Nuevo Liberalismo
+Gabriela Marta,García Rivas,Consejo,1180009380,F,Casado,11/08/1969,Villavicencio,Bogota,Cambio Radical
+Yeimi José,García Suarez,Consejo,1573081699,F,Casado,01/10/1970,Manizales,Bogota,Cambio Radical
+Valeria Claudia,Montoya Puerto,Consejo,1051628329,F,Casado,19/09/2000,Medellín,Bogota,Cambio Radical
+Camila Lucia,Martínez Vargas,Consejo,1725733444,F,Casado,23/09/1986,Santa Marta,Bogota,Cambio Radical
+Sofia Rosa,Gómez Vargas,Consejo,1267353929,F,Casado,21/11/1987,Bucaramanga,Bogota,Cambio Radical
+Gabriela Antonia,Sánchez Castillo,Consejo,1850758837,F,Casado,28/10/1993,Cúcuta,Bogota,Colombia Humana
+Daniela Socorro,Rodríguez Rojas,Consejo,1091804654,F,Soltero,09/09/1983,Bogota,Bogota,Colombia Humana
+Josefa Rosa,Pulido Pinzon,Consejo,1742941857,F,Soltero,03/07/1972,Cúcuta,Bogota,Colombia Humana
+Josefa Ángeles,García Zambrano,Consejo,1341634606,F,Soltero,26/02/1981,Pereira,Bogota,Colombia Humana
+Angie Kelly,Sánchez Parra,Consejo,1386160501,F,Casado,12/11/1971,Santa Marta,Bogota,Colombia Humana
+Teresa Ángeles,Sánchez Rojas,Consejo,1170818964,F,Soltero,22/06/1978,Medellín,Bogota,Centro Democrático
+Sofia Marta,Rozo Parra,Consejo,1118235063,F,Soltero,20/03/1988,Bucaramanga,Bogota,Centro Democrático
+Josefa Antonela,García Moya,Consejo,1768579627,F,Casado,06/04/1967,Pereira,Bogota,Centro Democrático
+Laura Socorro,Montoya Castro,Consejo,1091302923,F,Soltero,16/01/2001,Barranquilla,Bogota,Centro Democrático
+Laura Socorro,Pulido Rivas,Consejo,1363830402,F,Casado,15/10/2002,Manizales,Bogota,Centro Democrático
+Carmen Vanessa,Pérez Rivera,Consejo,1950645835,F,Casado,14/08/1968,Bucaramanga,Medellín,Conservador Colombiano
+Pilar Socorro,Pulido Castillo,Consejo,1712225229,F,Casado,12/07/1978,Medellín,Medellín,Conservador Colombiano
+Josefa Jennifer,Pérez Zambrano,Consejo,1124676012,F,Soltero,23/09/1979,Cali,Medellín,Conservador Colombiano
+Daniela Georgina,Martínez Muñoz,Consejo,1205438856,F,Casado,02/05/2003,Bucaramanga,Medellín,Conservador Colombiano
+Angie Ángeles,Espitia Rojas,Consejo,1921244362,F,Soltero,23/02/1973,Manizales,Medellín,Conservador Colombiano
+Pilar Antonela,Rozo Sanchez,Consejo,1999109294,F,Casado,28/08/1978,Villavicencio,Medellín,Nuevo Liberalismo
+María Cristina,Flores Rojas,Consejo,1342999199,F,Soltero,25/12/1976,Cali,Medellín,Nuevo Liberalismo
+Josefa Antonia,Flores Vargas,Consejo,1181406100,F,Casado,19/02/1966,Cúcuta,Medellín,Nuevo Liberalismo
+Juliet Kelly,Pérez Castillo,Consejo,1327989321,F,Soltero,05/08/1995,Barranquilla,Medellín,Nuevo Liberalismo
+Daniela Rosa,Espitia Parra,Consejo,1978962984,F,Soltero,03/10/1965,Cali,Medellín,Nuevo Liberalismo
+Josefa Rosa,Flores Rivas,Consejo,1492103705,F,Casado,06/04/1965,Santa Marta,Medellín,Cambio Radical
+Daniela Ana,Pérez Castillo,Consejo,1304310172,F,Soltero,18/12/1991,Bucaramanga,Medellín,Cambio Radical
+Juliet Georgina,Hernández Morales,Consejo,1915487073,F,Casado,10/04/1967,Barranquilla,Medellín,Cambio Radical
+Teresa Ángeles,Espitia Muñoz,Consejo,1548532733,F,Casado,15/05/1967,Manizales,Medellín,Cambio Radical
+Teresa Antonia,Rodríguez Castillo,Consejo,1370354025,F,Soltero,20/01/1963,Bucaramanga,Medellín,Cambio Radical
+Lilly Jennifer,Hernández Castro,Consejo,1849864267,F,Casado,18/03/1964,Cali,Medellín,Colombia Humana
+Lilly Georgina,Pérez Pinzon,Consejo,1230234380,F,Soltero,16/09/1979,Cali,Medellín,Colombia Humana
+Sofia ,García Pinzon,Consejo,1224595407,F,Casado,26/03/1968,Pereira,Medellín,Colombia Humana
+Laura Claudia,Flores Sanchez,Consejo,1948887452,F,Soltero,17/07/1986,Cúcuta,Medellín,Colombia Humana
+Laura Rosa,Hernández Castro,Consejo,1611057625,F,Soltero,17/05/1967,Cali,Medellín,Colombia Humana
+Camila Francisca,Espitia Suarez,Consejo,1164740043,F,Soltero,06/01/1994,Pereira,Medellín,Centro Democrático
+Pilar Vanessa,Espitia Suarez,Consejo,1698032340,F,Soltero,07/03/1983,Pereira,Medellín,Centro Democrático
+Pilar ,Espitia Parra,Consejo,1136183596,F,Casado,05/07/1994,Bucaramanga,Medellín,Centro Democrático
+Josefa Jennifer,Pulido Zambrano,Consejo,1045796065,F,Soltero,17/01/1963,Villavicencio,Medellín,Centro Democrático
+Pilar Ángeles,Arredondo Moya,Consejo,1801342238,F,Casado,01/11/1982,Villavicencio,Medellín,Centro Democrático
+Catalina Jennifer,Arredondo Muñoz,Consejo,1625614104,F,Casado,21/09/1999,Villavicencio,Cali,Conservador Colombiano
+Pilar Ana,García Parra,Consejo,1956785190,F,Casado,19/09/1987,Bogota,Cali,Conservador Colombiano
+Daniela Francisca,Flores Castillo,Consejo,1421804862,F,Casado,16/04/1963,Medellín,Cali,Conservador Colombiano
+Josefa Lucia,Rozo Puerto,Consejo,1849228717,F,Casado,17/12/1965,Cúcuta,Cali,Conservador Colombiano
+Josefa ,Arredondo Zambrano,Consejo,1254761779,F,Soltero,26/10/1979,Bucaramanga,Cali,Conservador Colombiano
+Yeimi Ana,Pulido Pinzon,Consejo,1872161832,F,Casado,02/12/1969,Bucaramanga,Cali,Nuevo Liberalismo
+María Antonela,Pulido Morales,Consejo,1234901211,F,Soltero,17/09/2001,Cúcuta,Cali,Nuevo Liberalismo
+Lorena ,Sánchez Castro,Consejo,1435466270,F,Casado,15/03/1964,Santa Marta,Cali,Nuevo Liberalismo
+Sofia Socorro,Rodríguez Rivas,Consejo,1999406745,F,Casado,10/10/1964,Pereira,Cali,Nuevo Liberalismo
+Camila Diana,Sánchez Muñoz,Consejo,1898905097,F,Soltero,01/02/2001,Pereira,Cali,Nuevo Liberalismo
+Lorena Rosa,López Rivera,Consejo,1622177123,F,Soltero,15/10/1971,Santa Marta,Cali,Cambio Radical
+Catalina Rosa,Cruz Zambrano,Consejo,1674401742,F,Soltero,15/03/1976,Barranquilla,Cali,Cambio Radical
+Catalina Cristina,Flores Puerto,Consejo,1024025524,F,Casado,18/04/1983,Santa Marta,Cali,Cambio Radical
+Josefa Kelly,Cruz Contreras,Consejo,1804164500,F,Casado,16/08/1966,Cali,Cali,Cambio Radical
+Yeimi José,Cruz Mora,Consejo,1442667420,F,Casado,18/12/1978,Barranquilla,Cali,Cambio Radical
+Valeria Rosa,Pulido Suarez,Consejo,1408948309,F,Soltero,21/03/1982,Bogota,Cali,Colombia Humana
+Angie Antonia,Flores Morales,Consejo,1598927331,F,Casado,06/12/1970,Manizales,Cali,Colombia Humana
+Valeria Antonela,Ramírez Rojas,Consejo,1483002466,F,Casado,22/07/1984,Manizales,Cali,Colombia Humana
+Juliet Socorro,Gómez Sanchez,Consejo,1148253432,F,Casado,26/09/1977,Cali,Cali,Colombia Humana
+Daniela Cristina,Arredondo Vargas,Consejo,1918035547,F,Casado,23/10/1969,Barranquilla,Cali,Colombia Humana
+Carmen Marta,Hernández Suarez,Consejo,1775159876,F,Soltero,11/07/1980,Medellín,Cali,Centro Democrático
+Angie Socorro,Pérez Rivera,Consejo,1786774594,F,Casado,08/10/1964,Cali,Cali,Centro Democrático
+Catalina Dolores,Montoya Morales,Consejo,1851745529,F,Casado,28/11/1965,Manizales,Cali,Centro Democrático
+Josefa Rosa,Martínez Zambrano,Consejo,1025541458,F,Soltero,20/12/1996,Manizales,Cali,Centro Democrático
+Laura Cristina,Rodríguez Contreras,Consejo,1308109832,F,Casado,11/06/1976,Bogota,Cali,Centro Democrático
+Josefa José,López Rojas,Consejo,1691837716,F,Soltero,03/03/1988,Bucaramanga,Barranquilla,Conservador Colombiano
+Lorena Georgina,Pérez Parra,Consejo,1686295927,F,Casado,24/01/1979,Santa Marta,Barranquilla,Conservador Colombiano
+Laura José,Pérez Muñoz,Consejo,1131176649,F,Casado,20/10/2000,Cúcuta,Barranquilla,Conservador Colombiano
+Daniela Georgina,Hernández Vargas,Consejo,1997810721,F,Soltero,07/01/1982,Pereira,Barranquilla,Conservador Colombiano
+Josefa Jennifer,Montoya Moya,Consejo,1913968391,F,Casado,19/03/1970,Santa Marta,Barranquilla,Conservador Colombiano
+Valeria Rosa,Pulido Pinzon,Consejo,1294711135,F,Soltero,12/04/1996,Cúcuta,Barranquilla,Nuevo Liberalismo
+Sofia ,López Rojas,Consejo,1405122107,F,Soltero,18/01/1980,Barranquilla,Barranquilla,Nuevo Liberalismo
+Yeimi Ana,Pulido Sanchez,Consejo,1107021396,F,Soltero,07/07/1965,Santa Marta,Barranquilla,Nuevo Liberalismo
+Carmen Antonia,Rodríguez Moya,Consejo,1298571939,F,Casado,01/09/1981,Villavicencio,Barranquilla,Nuevo Liberalismo
+Laura Marta,Ramírez Castillo,Consejo,1187609629,F,Casado,06/05/1988,Barranquilla,Barranquilla,Nuevo Liberalismo
+Sofia Ángeles,García Parra,Consejo,1362545330,F,Soltero,26/07/1991,Cali,Barranquilla,Cambio Radical
+Catalina Rosa,Ramírez Rivas,Consejo,1183966127,F,Soltero,19/06/1968,Bucaramanga,Barranquilla,Cambio Radical
+Valeria Socorro,Flores Muñoz,Consejo,1434414333,F,Casado,06/11/1981,Barranquilla,Barranquilla,Cambio Radical
+Camila Socorro,Cruz Rojas,Consejo,1826013075,F,Casado,20/12/1982,Villavicencio,Barranquilla,Cambio Radical
+Angie Dolores,Pérez Rojas,Consejo,1447909467,F,Casado,22/08/1969,Bogota,Barranquilla,Cambio Radical
+Valeria ,Pérez Sanchez,Consejo,1549229873,F,Casado,09/10/1966,Cali,Barranquilla,Colombia Humana
+Pilar José,Rodríguez Rivas,Consejo,1984458742,F,Soltero,16/01/1997,Bogota,Barranquilla,Colombia Humana
+Isabel Marta,García Morales,Consejo,1261387625,F,Casado,16/01/1978,Villavicencio,Barranquilla,Colombia Humana
+Teresa ,Gómez Parra,Consejo,1054424303,F,Casado,22/08/1986,Barranquilla,Barranquilla,Colombia Humana
+Isabel Cristina,Martínez Puerto,Consejo,1426999120,F,Casado,14/01/1980,Cúcuta,Barranquilla,Colombia Humana
+María Claudia,Rodríguez Muñoz,Consejo,1386934911,F,Casado,02/07/1973,Santa Marta,Barranquilla,Centro Democrático
+Catalina Antonia,Arredondo Moya,Consejo,1897194197,F,Soltero,07/09/1963,Villavicencio,Barranquilla,Centro Democrático
+Daniela Kelly,Pulido Contreras,Consejo,1729552319,F,Soltero,01/12/1970,Barranquilla,Barranquilla,Centro Democrático
+Lorena Antonela,López Pinzon,Consejo,1531741930,F,Casado,28/02/1985,Manizales,Barranquilla,Centro Democrático
+Angie Jennifer,Rodríguez Moya,Consejo,1526399275,F,Soltero,22/10/1996,Cúcuta,Barranquilla,Centro Democrático
+Carmen ,Ramírez Puerto,Consejo,1968493303,F,Casado,02/11/1989,Bucaramanga,Bucaramanga,Conservador Colombiano
+Josefa Lucia,Montoya Contreras,Consejo,1531878075,F,Casado,26/04/1964,Villavicencio,Bucaramanga,Conservador Colombiano
+María Marta,Sánchez Rivas,Consejo,1404539820,F,Casado,15/08/2003,Bucaramanga,Bucaramanga,Conservador Colombiano
+Lilly Dolores,Rodríguez Zambrano,Consejo,1405681125,F,Soltero,01/08/1973,Bogota,Bucaramanga,Conservador Colombiano
+Lilly Kelly,Ramírez Castillo,Consejo,1952372323,F,Soltero,25/01/1966,Pereira,Bucaramanga,Conservador Colombiano
+Teresa Georgina,González Vargas,Consejo,1263679429,F,Casado,07/10/1986,Santa Marta,Bucaramanga,Nuevo Liberalismo
+María Dolores,Flores Suarez,Consejo,1478402996,F,Casado,17/02/1991,Manizales,Bucaramanga,Nuevo Liberalismo
+Daniela ,Rodríguez Suarez,Consejo,1163768792,F,Soltero,25/01/2003,Bucaramanga,Bucaramanga,Nuevo Liberalismo
+Valeria Marta,Rozo Rojas,Consejo,1101713079,F,Soltero,09/07/1987,Medellín,Bucaramanga,Nuevo Liberalismo
+Carmen Francisca,Gómez Zambrano,Consejo,1796872922,F,Soltero,06/12/1987,Barranquilla,Bucaramanga,Nuevo Liberalismo
+Lilly Kelly,Espitia Morales,Consejo,1934302262,F,Soltero,15/12/1994,Barranquilla,Bucaramanga,Cambio Radical
+Teresa Claudia,Hernández Muñoz,Consejo,1456291993,F,Soltero,08/04/1991,Santa Marta,Bucaramanga,Cambio Radical
+Isabel José,Ramírez Pinzon,Consejo,1255806578,F,Soltero,18/01/1980,Medellín,Bucaramanga,Cambio Radical
+Carmen Diana,Arredondo Zambrano,Consejo,1260040070,F,Soltero,04/11/1964,Villavicencio,Bucaramanga,Cambio Radical
+Daniela Antonela,García Castro,Consejo,1755199745,F,Soltero,14/04/2003,Bogota,Bucaramanga,Cambio Radical
+Angie ,Pérez Castro,Consejo,1903755316,F,Soltero,03/05/1984,Medellín,Bucaramanga,Colombia Humana
+Juliet Kelly,Montoya Pinzon,Consejo,1195922856,F,Soltero,08/06/1995,Medellín,Bucaramanga,Colombia Humana
+Sofia Ángeles,Pérez Vargas,Consejo,1019475817,F,Soltero,08/05/1991,Santa Marta,Bucaramanga,Colombia Humana
+Valeria José,López Mora,Consejo,1047008223,F,Casado,07/04/2000,Santa Marta,Bucaramanga,Colombia Humana
+Gabriela Diana,Sánchez Rojas,Consejo,1092062057,F,Soltero,26/05/1966,Villavicencio,Bucaramanga,Colombia Humana
+Isabel Cristina,Hernández Puerto,Consejo,1383032774,F,Soltero,15/02/1977,Villavicencio,Bucaramanga,Centro Democrático
+María Kelly,Martínez Parra,Consejo,1086882951,F,Casado,08/02/1971,Barranquilla,Bucaramanga,Centro Democrático
+Carmen Francisca,Cruz Parra,Consejo,1170398607,F,Casado,24/11/1996,Santa Marta,Bucaramanga,Centro Democrático
+Isabel Francisca,Gómez Zambrano,Consejo,1133493006,F,Casado,26/10/1999,Barranquilla,Bucaramanga,Centro Democrático
+Carmen Dolores,Rozo Parra,Consejo,1098320628,F,Soltero,18/05/1996,Cúcuta,Bucaramanga,Centro Democrático
+Pilar Vanessa,Espitia Castro,Consejo,1334050314,F,Casado,14/10/1991,Cúcuta,Pereira,Conservador Colombiano
+Sofia Claudia,Montoya Castro,Consejo,1636644657,F,Soltero,03/12/1980,Pereira,Pereira,Conservador Colombiano
+Valeria ,Cruz Sanchez,Consejo,1500331662,F,Soltero,14/02/1983,Barranquilla,Pereira,Conservador Colombiano
+Lorena Marta,Rozo Sanchez,Consejo,1935585015,F,Casado,26/07/2002,Cali,Pereira,Conservador Colombiano
+Lorena Rosa,Espitia Castro,Consejo,1804787584,F,Casado,06/05/1970,Bogota,Pereira,Conservador Colombiano
+Angie Kelly,Ramírez Moya,Consejo,1188850403,F,Soltero,25/10/1994,Manizales,Pereira,Nuevo Liberalismo
+Teresa Ángeles,Pérez Parra,Consejo,1340845699,F,Casado,23/08/1996,Medellín,Pereira,Nuevo Liberalismo
+Pilar Antonela,Ramírez Zambrano,Consejo,1762819007,F,Casado,06/10/1970,Cúcuta,Pereira,Nuevo Liberalismo
+Carmen Ana,Gómez Castro,Consejo,1931874158,F,Casado,24/02/1977,Bogota,Pereira,Nuevo Liberalismo
+Josefa Lucia,Rozo Castillo,Consejo,1458049593,F,Soltero,01/11/1971,Cúcuta,Pereira,Nuevo Liberalismo
+Camila Cristina,López Parra,Consejo,1898267259,F,Casado,08/01/1963,Cali,Pereira,Cambio Radical
+Yeimi Marta,Sánchez Castillo,Consejo,1261247659,F,Casado,11/05/2003,Pereira,Pereira,Cambio Radical
+Lorena Georgina,Rodríguez Morales,Consejo,1796374680,F,Casado,03/06/1985,Bucaramanga,Pereira,Cambio Radical
+Sofia Antonia,Pulido Mora,Consejo,1429950634,F,Soltero,02/12/2000,Villavicencio,Pereira,Cambio Radical
+Juliet Ana,Espitia Castillo,Consejo,1609970811,F,Casado,18/04/1993,Medellín,Pereira,Cambio Radical
+Laura Claudia,Ramírez Morales,Consejo,1776535967,F,Soltero,27/08/1967,Barranquilla,Pereira,Colombia Humana
+Josefa Ángeles,Flores Puerto,Consejo,1298363210,F,Casado,17/01/1971,Barranquilla,Pereira,Colombia Humana
+Laura Cristina,García Muñoz,Consejo,1283616366,F,Soltero,02/04/1997,Bogota,Pereira,Colombia Humana
+Lorena Rosa,Arredondo Sanchez,Consejo,1616444175,F,Soltero,12/12/1984,Bucaramanga,Pereira,Colombia Humana
+Teresa Ángeles,Hernández Sanchez,Consejo,1806710831,F,Soltero,19/04/1998,Santa Marta,Pereira,Colombia Humana
+Valeria Lucia,Martínez Contreras,Consejo,1785076900,F,Soltero,19/10/1977,Bucaramanga,Pereira,Centro Democrático
+Juliet Vanessa,Cruz Rivas,Consejo,1956300628,F,Casado,06/04/1969,Barranquilla,Pereira,Centro Democrático
+Valeria Ana,García Rojas,Consejo,1284055637,F,Soltero,28/02/1974,Barranquilla,Pereira,Centro Democrático
+María Marta,Flores Rivera,Consejo,1899566323,F,Casado,05/03/1987,Medellín,Pereira,Centro Democrático
+Gabriela Claudia,Cruz Rojas,Consejo,1082232365,F,Soltero,17/07/1963,Manizales,Pereira,Centro Democrático
+Lorena Claudia,Arredondo Suarez,Consejo,1972166082,F,Soltero,08/05/1980,Manizales,Manizales,Conservador Colombiano
+Yeimi Jennifer,Martínez Castro,Consejo,1762260236,F,Casado,03/08/1964,Bucaramanga,Manizales,Conservador Colombiano
+Isabel Socorro,González Suarez,Consejo,1273436774,F,Casado,27/07/1964,Bucaramanga,Manizales,Conservador Colombiano
+Josefa Antonela,Martínez Muñoz,Consejo,1692134684,F,Soltero,23/10/1969,Manizales,Manizales,Conservador Colombiano
+Josefa Marta,González Rivera,Consejo,1832027856,F,Casado,12/08/1973,Cali,Manizales,Conservador Colombiano
+Juliet Lucia,Sánchez Suarez,Consejo,1054661191,F,Soltero,05/08/1998,Medellín,Manizales,Nuevo Liberalismo
+Lorena Lucia,Espitia Vargas,Consejo,1805522987,F,Soltero,25/05/1977,Villavicencio,Manizales,Nuevo Liberalismo
+Catalina Claudia,Gómez Moya,Consejo,1643683668,F,Casado,11/08/1996,Santa Marta,Manizales,Nuevo Liberalismo
+Lilly José,Rodríguez Rojas,Consejo,1507531998,F,Soltero,06/03/1974,Santa Marta,Manizales,Nuevo Liberalismo
+Yeimi Socorro,Gómez Pinzon,Consejo,1360707529,F,Casado,02/06/2000,Manizales,Manizales,Nuevo Liberalismo
+Juliet Socorro,Montoya Suarez,Consejo,1844325100,F,Casado,06/11/1968,Cúcuta,Manizales,Cambio Radical
+Sofia Ángeles,Flores Mora,Consejo,1190202491,F,Casado,18/09/1980,Manizales,Manizales,Cambio Radical
+Sofia Cristina,Ramírez Rivas,Consejo,1977324402,F,Soltero,25/01/1968,Medellín,Manizales,Cambio Radical
+Catalina Diana,González Zambrano,Consejo,1258824054,F,Soltero,07/08/1966,Bucaramanga,Manizales,Cambio Radical
+Gabriela Ángeles,Gómez Vargas,Consejo,1566560042,F,Soltero,18/02/1999,Barranquilla,Manizales,Cambio Radical
+Catalina Socorro,Rodríguez Castro,Consejo,1410777514,F,Casado,06/09/1964,Manizales,Manizales,Colombia Humana
+Lilly Cristina,López Rivas,Consejo,1564041694,F,Soltero,24/06/1982,Cúcuta,Manizales,Colombia Humana
+Daniela ,Martínez Sanchez,Consejo,1546431865,F,Casado,05/04/1966,Barranquilla,Manizales,Colombia Humana
+Catalina Antonela,Flores Puerto,Consejo,1853647870,F,Casado,15/10/1995,Bucaramanga,Manizales,Colombia Humana
+Lorena Ana,Flores Rivera,Consejo,1497718239,F,Soltero,17/10/1982,Cúcuta,Manizales,Colombia Humana
+Juliet Dolores,Martínez Castro,Consejo,1705875479,F,Casado,20/05/1966,Bucaramanga,Manizales,Centro Democrático
+Sofia Kelly,Espitia Moya,Consejo,1394506369,F,Casado,15/01/1970,Barranquilla,Manizales,Centro Democrático
+Carmen Lucia,Cruz Zambrano,Consejo,1966128358,F,Soltero,20/11/1963,Manizales,Manizales,Centro Democrático
+Laura Antonela,Arredondo Mora,Consejo,1922543738,F,Soltero,17/06/1968,Manizales,Manizales,Centro Democrático
+Gabriela Dolores,Sánchez Puerto,Consejo,1034589583,F,Soltero,09/10/1969,Medellín,Manizales,Centro Democrático
+Daniela Diana,Ramírez Parra,Consejo,1280044152,F,Casado,17/09/1984,Villavicencio,Santa Marta,Conservador Colombiano
+Yeimi Ana,Rozo Vargas,Consejo,1506983906,F,Soltero,02/12/1981,Santa Marta,Santa Marta,Conservador Colombiano
+Camila Antonela,Cruz Contreras,Consejo,1784346344,F,Casado,12/09/1968,Medellín,Santa Marta,Conservador Colombiano
+Josefa Claudia,Pulido Rivera,Consejo,1973717865,F,Casado,16/07/1968,Barranquilla,Santa Marta,Conservador Colombiano
+Juliet Dolores,González Mora,Consejo,1119689338,F,Casado,04/05/1971,Manizales,Santa Marta,Conservador Colombiano
+Valeria José,Cruz Moya,Consejo,1922924137,F,Soltero,23/10/1997,Pereira,Santa Marta,Nuevo Liberalismo
+Angie Dolores,Espitia Puerto,Consejo,1868799959,F,Casado,14/03/1966,Santa Marta,Santa Marta,Nuevo Liberalismo
+Yeimi Rosa,Martínez Zambrano,Consejo,1151860528,F,Casado,28/06/1993,Cúcuta,Santa Marta,Nuevo Liberalismo
+Isabel Francisca,Pulido Rivera,Consejo,1275109076,F,Casado,06/04/2002,Pereira,Santa Marta,Nuevo Liberalismo
+Lilly Dolores,González Suarez,Consejo,1668612316,F,Soltero,10/10/1965,Bucaramanga,Santa Marta,Nuevo Liberalismo
+Isabel Rosa,González Rojas,Consejo,1123636781,F,Casado,26/02/1975,Bogota,Santa Marta,Cambio Radical
+Lilly Cristina,Martínez Contreras,Consejo,1113005318,F,Casado,17/01/1968,Bucaramanga,Santa Marta,Cambio Radical
+Pilar Marta,López Castro,Consejo,1875091344,F,Soltero,22/04/1986,Medellín,Santa Marta,Cambio Radical
+Josefa Vanessa,Pérez Mora,Consejo,1654543504,F,Casado,07/12/1973,Medellín,Santa Marta,Cambio Radical
+Sofia Antonela,González Castillo,Consejo,1512323032,F,Soltero,27/11/1974,Pereira,Santa Marta,Cambio Radical
+Yeimi Cristina,Arredondo Parra,Consejo,1001519728,F,Soltero,09/08/1975,Bucaramanga,Santa Marta,Colombia Humana
+Sofia Marta,Rodríguez Moya,Consejo,1191840424,F,Soltero,14/07/2000,Bucaramanga,Santa Marta,Colombia Humana
+Sofia Ángeles,Hernández Moya,Consejo,1545936221,F,Casado,18/04/1985,Manizales,Santa Marta,Colombia Humana
+Camila Antonela,Gómez Pinzon,Consejo,1842063620,F,Soltero,27/01/1971,Villavicencio,Santa Marta,Colombia Humana
+Carmen ,González Sanchez,Consejo,1160321341,F,Soltero,24/11/1981,Pereira,Santa Marta,Colombia Humana
+Laura Dolores,López Mora,Consejo,1844621059,F,Casado,03/08/1965,Bogota,Santa Marta,Centro Democrático
+Lorena Lucia,López Parra,Consejo,1285844793,F,Casado,23/02/1992,Pereira,Santa Marta,Centro Democrático
+Teresa José,Montoya Parra,Consejo,1823742305,F,Soltero,17/11/2002,Barranquilla,Santa Marta,Centro Democrático
+Camila Cristina,Rodríguez Morales,Consejo,1106065113,F,Soltero,05/06/1976,Bucaramanga,Santa Marta,Centro Democrático
+Carmen Dolores,Arredondo Contreras,Consejo,1582690847,F,Casado,24/01/1997,Cali,Santa Marta,Centro Democrático
+Camila Vanessa,Montoya Suarez,Consejo,1864556288,F,Casado,18/07/1985,Villavicencio,Cúcuta,Conservador Colombiano
+Juliet Vanessa,Pulido Parra,Consejo,1950479384,F,Casado,25/08/1966,Santa Marta,Cúcuta,Conservador Colombiano
+Yeimi Cristina,Ramírez Vargas,Consejo,1687555440,F,Casado,24/09/1978,Medellín,Cúcuta,Conservador Colombiano
+María Georgina,Martínez Zambrano,Consejo,1007833827,F,Soltero,03/12/1982,Pereira,Cúcuta,Conservador Colombiano
+Pilar Rosa,Pulido Suarez,Consejo,1804510790,F,Soltero,22/01/1999,Villavicencio,Cúcuta,Conservador Colombiano
+Isabel ,Pulido Castillo,Consejo,1979290686,F,Casado,15/04/1981,Bucaramanga,Cúcuta,Nuevo Liberalismo
+Lilly Vanessa,Montoya Rivas,Consejo,1966033858,F,Casado,23/12/1980,Santa Marta,Cúcuta,Nuevo Liberalismo
+Camila Claudia,Pérez Vargas,Consejo,1250792374,F,Casado,11/10/1982,Pereira,Cúcuta,Nuevo Liberalismo
+Isabel Cristina,Rozo Castro,Consejo,1950190540,F,Casado,22/02/1999,Manizales,Cúcuta,Nuevo Liberalismo
+María Diana,Gómez Castro,Consejo,1152761737,F,Soltero,02/10/1983,Villavicencio,Cúcuta,Nuevo Liberalismo
+Juliet Dolores,Martínez Castillo,Consejo,1671592456,F,Casado,09/01/1988,Manizales,Cúcuta,Cambio Radical
+Yeimi Antonia,García Puerto,Consejo,1656402647,F,Casado,19/03/1986,Cali,Cúcuta,Cambio Radical
+Catalina Marta,Sánchez Mora,Consejo,1730551144,F,Casado,20/10/1970,Bogota,Cúcuta,Cambio Radical
+Yeimi Lucia,Flores Muñoz,Consejo,1884825629,F,Casado,04/06/1991,Bucaramanga,Cúcuta,Cambio Radical
+María Ángeles,López Morales,Consejo,1893191796,F,Soltero,17/01/1970,Bogota,Cúcuta,Cambio Radical
+Gabriela Jennifer,Pulido Puerto,Consejo,1153071766,F,Soltero,10/12/1996,Cali,Cúcuta,Colombia Humana
+Camila José,García Contreras,Consejo,1269150022,F,Casado,14/01/1998,Cali,Cúcuta,Colombia Humana
+María Claudia,Gómez Vargas,Consejo,1193336784,F,Soltero,05/12/1991,Cúcuta,Cúcuta,Colombia Humana
+Carmen Diana,Hernández Pinzon,Consejo,1088885108,F,Soltero,19/09/1973,Pereira,Cúcuta,Colombia Humana
+Isabel Socorro,Pérez Contreras,Consejo,1290952356,F,Soltero,05/02/2001,Villavicencio,Cúcuta,Colombia Humana
+Angie Cristina,Hernández Contreras,Consejo,1511996161,F,Soltero,23/03/1969,Cali,Cúcuta,Centro Democrático
+Yeimi Claudia,Martínez Parra,Consejo,1753720502,F,Soltero,06/03/1975,Cúcuta,Cúcuta,Centro Democrático
+Juliet Rosa,Hernández Zambrano,Consejo,1737896039,F,Soltero,09/10/1977,Santa Marta,Cúcuta,Centro Democrático
+Pilar Georgina,Rozo Zambrano,Consejo,1973913097,F,Soltero,09/07/1999,Manizales,Cúcuta,Centro Democrático
+Juliet Antonia,Hernández Pinzon,Consejo,1387792334,F,Soltero,20/11/1993,Medellín,Cúcuta,Centro Democrático
