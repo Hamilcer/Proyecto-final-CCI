@@ -1,6 +1,4 @@
 #include <string>
-#include "Archivos.h"
-
 
 class OpcionesListas{
 	private:

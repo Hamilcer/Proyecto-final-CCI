@@ -1,16 +1,14 @@
-#include <stdlib.h> //Libreria para limpiar pantalla
-#include "OpcionesListas.cpp"
-#include "OpcionesSimulacion.cpp"
-#include "OpcionesConsultas.cpp"
+#include <stdlib.h>  //Libreria para limpiar pantalla
+#include "Clases Principales/Inicializar.cpp"
 
-class Simulacion
-{
-private:
-	Lista<Ciudad> *ciudades;
-	Lista<Partido> *partidos;
-	Lista<Candidato> *candidatos;
-    Lista<Elecciones> *elecciones;
-
+class Simulacion{
+	private:
+		Lista<Ciudad>* ciudades;
+		Lista<Partido>* partidos;
+		Lista<Candidato>* candidatos;
+		Lista<Elecciones>* elecciones;
+		
+		Inicializar inicializar;
 	public:
 		int Opcion;
 		void SubMenuListas();
@@ -339,6 +337,182 @@ void Simulacion::Menu()
 					partidos->insertar(NuevoPartido);
 
 					Opcion = 0;
+				{
+					system("cls");
+					SubMenuInsercion();
+					cin>>Opcion;
+					
+					string caso;
+					
+					switch(Opcion){
+						case 1:
+						{ //Opciones para insertar
+							EleccionSubMenuInsercion();
+							cin>>Opcion;
+							switch(Opcion){
+								case 1:
+								{  
+									//Creaci�n del Objeto partido
+									Partido NuevoPartido = inicializar.inicializarPartido(partidos);
+									//Inserci�n en la lista de partidos
+									partidos->insertar(NuevoPartido);
+									
+									Opcion = 0;
+									break;
+								}
+								case 2:
+								{ // Insertar Candidato (Se necesita validaci�n de puesto, fecha nacimiento, estado civil)
+								
+									//Creacion del objeto candidato para a�adirlo en la lista
+									Candidato nuevoCandidato = inicializar.inicializarCandidato(partidos,ciudades,candidatos);
+									//Inserci�n en la lista de candidatos
+									candidatos->insertar(nuevoCandidato);
+									break;
+								}
+								case 3:
+								{
+									//Se ingresan los datos de la nueva ciudad (Se necesita validaci�n cuando la ciudad ya existe)
+									//Creaci�n del Objeto Ciudad
+									Ciudad NuevaCiudad = inicializar.inicializarCiudad();
+									//Insercion en la lista de ciudades
+									ciudades->insertar(NuevaCiudad);
+									break;
+								}
+							}
+						  break;
+						}
+						case 2:
+						{ //Opciones para Modificar
+							EleccionSubMenuInsercion();
+							cin>>Opcion;
+							switch(Opcion){
+								case 1:{ 
+									//Encontrar el partido a modificar
+									string NombrePartido, RepresentanteLegal;
+									cout<<"�Que partido deseas modificar?"<<endl;
+									opcionLista.mostrarPartidos(partidos);
+									cin>>Opcion;
+									//Inicializar Partido
+									Partido NuevoPartido = inicializar.inicializarPartido(partidos);
+									
+									partidos->modificar(NuevoPartido,Opcion);
+									
+									break;
+								}
+								case 2:{ //Modificar Candidato
+									
+									// Encontrar el candidato a modificar
+									int Opcion;
+									
+									cout << "Selecciona el candidato que deseas modificar" << endl;
+									opcionLista.mostrarCandidatos(candidatos);
+									cin >> Opcion;
+									
+									// Creaci�n del objeto candidato para a�adirlo en la lista
+									Candidato nuevoCandidato = inicializar.inicializarCandidato(partidos, ciudades,candidatos);
+									
+									// Inserci�n en la lista de candidatos
+									candidatos->modificar(nuevoCandidato, Opcion);
+									break;
+								}
+								case 3:{ //Modificar Ciudad
+								
+									//Enconntrar la ciudad a modificar (Se necesita validaci�n cuando la ciudad ya existe)
+									string nombre, departamento;
+									int tamConcejo, censoElectoral, ciudad;
+									cout<<"Selecciona la ciudad que desea modificar"<<endl;
+									opcionLista.mostrarCiudades(ciudades);
+									cin>>ciudad;
+									
+									//Creaci�n del Objeto Ciudad
+									Ciudad NuevaCiudad = inicializar.inicializarCiudad();
+									//Insercion en la lista de ciudades
+									ciudades->modificar(NuevaCiudad,ciudad);
+									break;
+								}
+							}
+							break;
+						}
+						case 3:
+						{ //Opciones para Eliminar //Validaci�n, Si se eliminan partido, los Candidatos con ese partido quedan sin partido
+							EleccionSubMenuInsercion();
+							cin>>Opcion;
+							switch(Opcion){
+								case 1:{//Eliminar Partido
+									int Eleccion;
+									cout<<"�Que partido deseas Eliminar?"<<endl;
+									opcionLista.mostrarPartidos(partidos);
+									cin>>Eleccion;
+									
+									partidos->borrar(Eleccion);
+									break;
+								}
+								case 2:{//Eliminar Candidato
+									
+									cout<<"�Que candidato deseas Eliminar?"<<endl;
+									opcionLista.mostrarCandidatos(candidatos);
+									cin>>Opcion;
+									
+									candidatos->borrar(Opcion);
+									
+									break;
+								}
+								case 3:{ // Eliminar Ciudades
+									
+									cout<<"�Que ciudades deseas Eliminar?"<<endl;
+									opcionLista.mostrarCiudades(ciudades);
+									cin>>Opcion;
+									
+									ciudades->borrar(Opcion);
+									
+									break;
+								}
+							}
+							break;
+						}
+					}
+				  Opcion = 0;
+				  break;	
+				}
+			case 6:
+				{
+					system("cls");
+					//FINALIZAR Y GUARDAR EN LOS ARCHIVOS PLANOS
+					
+					//Escribir en el archivo plano los partidos de la lista
+					Archivos Partidos("Partidos");
+					string textoPartidos;
+					
+					for (int i = 0; i < partidos->getTam(); i++){
+						Partido partido = partidos->buscar(i); // Declaraci�n del partido de la lista para a�adir su informaci�n al texto plano
+						textoPartidos += partido.getNombre()+","+partido.getRepresentanteLegal()+"\n";
+					}
+					
+					Partidos.escribir(textoPartidos);
+					
+					//Escribir en el archivo plano las ciudades de la lista
+					
+					Archivos Ciudades("Ciudades");
+					string textoCiudades;
+					
+					for (int i = 0; i < ciudades->getTam(); i++){
+						Ciudad ciudad = ciudades->buscar(i);
+						textoCiudades += ciudad.getNombre()+","+ciudad.getDepartamento()+","+to_string(ciudad.getTamConcejo())+","+to_string(ciudad.getCensoElectoral())+"\n";
+					}
+					
+					Ciudades.escribir(textoCiudades);
+					
+					//Escribir en el archivo plano los candidatos de la lista
+					
+					Archivos Candidatos("Candidatos");
+					string textoCandidatos;
+					
+					for(int i =0; i<ciudades->getTam(); i++){
+						Candidato candidato = candidatos->buscar(i);
+						textoCandidatos += candidato.getNombre()+","+candidato.getApellido()+","+candidato.getPuesto()+","+candidato.getNumIdentificacion()+","+candidato.getSexo()+","+candidato.getEstadoCivil()+","+candidato.getFechaNacimiento()+","+candidato.getCiudadNacimiento().getNombre()+","+candidato.getCiudadResidencia().getNombre()+","+candidato.getPartido().getNombre();
+					}
+									
+					programa = false;
 					break;
 				}
 				case 2:
@@ -512,18 +686,16 @@ void Simulacion::Menu()
 		}
 	}
 }
-void Simulacion::MostrarMenu()
-{
-	cout << "Registraduria Nacional del Estado Civil" << endl;
-	cout << "Menu Principal" << endl;
-	cout << "--------------------------------------------------" << endl;
-	cout << "1. Buscar listas por categoria" << endl;
-	cout << "2. Realizar consultas" << endl;
-	cout << "3. Obtener Estadisticas" << endl;
-	cout << "4. Simular Proceso electoral" << endl;
-	cout << "5. Finalizar Simulacion y guardar" << endl;
-	cout << "6. Insertar, Modificar y Eliminar" << endl;
-	cout << "7. Salir" << endl;
+void Simulacion::MostrarMenu(){
+	cout<<"Registraduria Nacional del Estado Civil"<<endl;
+	cout<<"Menu Principal"<<endl;
+	cout<<"--------------------------------------------------"<<endl;
+	cout<<"1. Buscar listas por categoria"<<endl;
+	cout<<"2. Realizar consultas"<<endl;
+	cout<<"3. Obtener Estadisticas"<<endl;
+	cout<<"4. Simular Proceso electoral"<<endl;
+	cout<<"5. Insertar, Modificar y Eliminar"<<endl;
+	cout<<"6. Salir"<<endl;
 }
 
 void Simulacion::SubMenuListas()
