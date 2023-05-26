@@ -8,4 +8,3 @@ Pereira, Risaralda,01,366
 Manizales, Caldas,0,300
 Santa Marta, Magdalena,0,600
 Cúcuta, Norte de Santander,0,200
-

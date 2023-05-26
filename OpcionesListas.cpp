@@ -4,7 +4,7 @@ class OpcionesListas {
 private:
 
 public:
-    //1. Ciudades para las cuales se realizará el proceso electoral.
+    //1. Ciudades para las cuales se realizarï¿½ el proceso electoral.
     void mostrarCiudades(Lista < Ciudad > * ciudades) {
 
         for (int i = 0; i < ciudades -> getTam(); i++) {
@@ -13,7 +13,7 @@ public:
             cout << i << ". " << ciudad.getNombre() << endl;
         }
 
-        system("Pause"); // Pausa el programa y espera a que se presione una tecla
+        
     }
 
     //2. Partidos legalmente reconocidos.
@@ -24,7 +24,7 @@ public:
             cout << i << ". " << partido.getNombre() << " /--/ Representante Legal = " << partido.getRepresentanteLegal() << endl;
         }
 
-        system("Pause"); // Pausa el programa y espera a que se presione una tecla
+        
     }
 
     void mostrarCandidatos(Lista < Candidato > * candidatos) {
@@ -56,7 +56,7 @@ public:
         system("Pause"); // Pausa el programa y espera a que se presione una tecla
     }
 
-    //4. Todos los candidatos a la alcaldía de una ciudad.
+    //4. Todos los candidatos a la alcaldï¿½a de una ciudad.
 
     void candidatosAlcaldia(string ciudad, Lista < Candidato > * candidatos) {
         int cantidad = 0;
@@ -76,7 +76,7 @@ public:
         system("Pause"); // Pausa el programa y espera a que se presione una tecla
     }
 
-    //5. Candidatos a cada una de las alcaldías, por partido.
+    //5. Candidatos a cada una de las alcaldï¿½as, por partido.
     //6. Candidatos a cada uno de los concejos, por partido.
 
     void candidatosAlcaldiaConsejoPartido(string partido, string puesto, Lista < Candidato > * candidatos) {
@@ -98,7 +98,7 @@ public:
     }
 
     //7. Por cada partido, la lista de candidatos a los consejos.
-    //8. Por cada partido, la lista de candidatos a las alcaldías.
+    //8. Por cada partido, la lista de candidatos a las alcaldï¿½as.
     void candidatosAlcaldiaConsejoPartidoLista(string cargo, Lista < Candidato > * candidatos, Lista < Partido > * partidos) {
         for (int j = 0; j < 2; j++) {
             cout << "Lista de nombres de candidatos del partido " + partidos -> buscar(j).getNombre() + " para el cargo " + cargo << endl;

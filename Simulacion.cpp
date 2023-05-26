@@ -11,6 +11,7 @@ private:
     Lista <int> *otrosVotos;
 
     Inicializar inicializar;
+    OpcionesListas opcionLista; // Inicializa el objeto de la clase Opciones Listas
 public:
 
     int Opcion;
@@ -22,6 +23,8 @@ public:
     void SubMenuEstadisticas();
     void SubMenuInsercion();
     void EleccionSubMenuInsercion();
+    string elegirPartido(); 
+    string elegirCiudad(); 
 
     //Bloque de ejecuci�n
     void Menu();
@@ -47,7 +50,7 @@ void Simulacion::Menu() {
 
     leerArchivos();
 
-    OpcionesListas opcionLista; // Inicializa el objeto de la clase Opciones Listas
+    
     OpcionesConsultas opcionConsultas(ciudades, partidos, candidatos); // Inicializa el objeto de la clase Opciones Consultas
     OpcionesSimulacion opcionesSimulacion(ciudades, partidos, candidatos, otrosVotos);
 
@@ -55,6 +58,7 @@ void Simulacion::Menu() {
         system("cls");
         MostrarMenu();
         cin >> Opcion;
+        //Opcion = 2;
 
         switch (Opcion) {
             case 1: {
@@ -64,10 +68,12 @@ void Simulacion::Menu() {
                 switch (Opcion) {
                     case 1: {
                         opcionLista.mostrarCiudades(ciudades);
+                        system("Pause"); // Pausa el programa y espera a que se presione una tecla
                         break;
                     }
                     case 2: {
                         opcionLista.mostrarPartidos(partidos);
+                        system("Pause"); // Pausa el programa y espera a que se presione una tecla
                         break;
                     }
                     case 3: {
@@ -115,9 +121,13 @@ void Simulacion::Menu() {
                 system("cls");
                 SubMenuConsultas();
                 cin >> Opcion;
+                //Opcion = 1;
                 switch (Opcion) {
                     case 1: {
-                        opcionConsultas.consulta1("Unión Patriótica", "Cali");
+                        string partido, ciudad;
+                        partido = elegirPartido();
+                        ciudad = elegirCiudad();
+                        opcionConsultas.consulta1(partido, ciudad);
                         break;
                     }
                     case 2: {
@@ -129,15 +139,21 @@ void Simulacion::Menu() {
                         break;
                     }
                     case 4: {
-                        opcionConsultas.consulta4("Manizales");
+                        string ciudad;
+                        ciudad = elegirCiudad();
+                        opcionConsultas.consulta4(ciudad);
                         break;
                     }
                     case 5: {
-                        opcionConsultas.consulta5("Villavicencio");
+                        string ciudad;
+                        ciudad = elegirCiudad();
+                        opcionConsultas.consulta5(ciudad);
                         break;
                     }
                     case 6: {
-                        opcionConsultas.consulta6("Villavicencio");
+                        string ciudad;
+                        ciudad = elegirCiudad();
+                        opcionConsultas.consulta6(ciudad);
                         break;
                     }
                     case 7: {
@@ -145,6 +161,7 @@ void Simulacion::Menu() {
                         break;
                     }
                 }
+                break;
             }
             case 3: {
                 system("cls");
@@ -166,8 +183,8 @@ void Simulacion::Menu() {
 
                         break;
                     }
-                        break;
                 }
+                break;
             }
             case 4: {
                 system("cls");
@@ -403,3 +420,36 @@ void Simulacion::EleccionSubMenuInsercion() {
     cout << "2. Candidato" << endl;
     cout << "3. Ciudad" << endl;
 }
+
+string Simulacion::elegirPartido()
+{
+    int pos = 0;
+    cout << "Escriba el número del partido que desea elegir: " << endl;
+    opcionLista.mostrarPartidos(partidos);
+    cin.ignore();
+    cin >> pos;
+    while (pos < 0 || pos > partidos->getTam()-1)
+    {
+        cout << "Ingrese un número válido: " << endl;
+        cin >> pos;
+    }
+    
+    return partidos->buscar(pos).getNombre();
+}
+
+string Simulacion::elegirCiudad()
+{
+    int pos = 0;
+    cout << "Escriba el número de la ciudad que desea elegir: " << endl;
+    opcionLista.mostrarCiudades(ciudades);
+    cin.ignore();
+    cin >> pos;
+    while (pos < 0 || pos > ciudades->getTam()-1)
+    {
+        cout << "Ingrese un número válido: " << endl;
+        cin >> pos;
+    }
+    return ciudades->buscar(pos).getNombre();
+}
+
+
