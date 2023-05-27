@@ -8,7 +8,7 @@ private:
     Lista < Partido > * partidos;
     Lista < Candidato > * candidatos;
 
-    Lista <int> *otrosVotos;
+    Lista <Elecciones> *totalElecciones;
 
     Inicializar inicializar;
 public:
@@ -37,7 +37,7 @@ public:
         partidos = Partidos.leerPartidos();
         candidatos = Candidatos.leerCandidatos();
 
-        otrosVotos = new Lista <int>;
+        totalElecciones = new Lista<Elecciones>;
 
     }
 };
@@ -49,7 +49,8 @@ void Simulacion::Menu() {
 
     OpcionesListas opcionLista; // Inicializa el objeto de la clase Opciones Listas
     OpcionesConsultas opcionConsultas(ciudades, partidos, candidatos); // Inicializa el objeto de la clase Opciones Consultas
-    OpcionesSimulacion opcionesSimulacion(ciudades, partidos, candidatos, otrosVotos);
+    OpcionesSimulacion opcionesSimulacion(ciudades, partidos, candidatos, totalElecciones);
+    OpcionesEstadisticas opcionesEstadisticas(ciudades, partidos, candidatos, totalElecciones);
 
     while (programa) { // Bucle infinito del programa
         system("cls");
@@ -152,22 +153,40 @@ void Simulacion::Menu() {
                 cin >> Opcion;
                 switch (Opcion) {
                     case 1: {
-                        for (int i = 0; otrosVotos->getTam(); i++){
-                            int actual = otrosVotos->buscar(i);
-                            cout << i+1 << "es : " << actual << endl;
-                        }
+                        opcionesEstadisticas.estadisticaPorCiudad();
+                        system("pause");
                         break;
                     }
                     case 2: {
+                        cout << "Ingrese el tipo de eleccion: 1.Alcaldia 2.Concejo" << endl;
+                        cin >> Opcion;
+                        if (Opcion == 1) {
+                            opcionesEstadisticas.estadisticaEleccion("Alcaldia");
+
+                        } else if (Opcion == 2) {
+                            opcionesEstadisticas.estadisticaEleccion("Concejo");
+
+                        }
+                        system("pause");
 
                         break;
                     }
                     case 3: {
+                        cout << "Ingrese el tipo de eleccion: 1.Alcaldia 2.Concejo" << endl;
+                        cin >> Opcion;
+                        if (Opcion == 1) {
+                            opcionesEstadisticas.estadisticaNacional("Alcaldia");
+
+                        } else if (Opcion == 2) {
+                            opcionesEstadisticas.estadisticaNacional("Concejo");
+
+                        }
+                        system("pause");
 
                         break;
                     }
-                        break;
                 }
+                break;
             }
             case 4: {
                 system("cls");

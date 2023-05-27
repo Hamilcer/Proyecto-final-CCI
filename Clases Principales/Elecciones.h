@@ -6,41 +6,92 @@
 #include "Candidato.h"
 
 class Elecciones {
-private: int numEleccion;
-    Candidato candidato;
-    int votos;
+private:
+    string nomCiudad;
+    string tipoEleccion;
+    int votosTotales;
+    int votosBlancos;
+    int votosNulos;
+    int votosAbstencion;
+    string fecha;
 
 public: Elecciones() {
-        numEleccion = 0;
-        votos = 0;
+        nomCiudad = "";
+        string tipoEleccion;
+        votosTotales = 0;
+        votosBlancos = 0;
+        votosNulos = 0;
+        votosAbstencion = 0;
+        fecha = "";
     }
 
-    Elecciones(int numEleccion, Candidato candidato, int votos) {
-        this -> numEleccion = numEleccion;
-        this -> candidato = candidato;
-        this -> votos = votos;
+    Elecciones(string nomCiudad,string tipoEleccion, int votosTotales, int votosBlancos, int votosNulos, int votosAbstencion, string fecha) {
+        this -> nomCiudad = nomCiudad;
+        this -> tipoEleccion = tipoEleccion;
+        this -> votosTotales = votosTotales;
+        this -> votosBlancos = votosBlancos;
+        this -> votosNulos = votosNulos;
+        this -> votosAbstencion = votosAbstencion;
+        this -> fecha = fecha;
     }
 
 
-    int getNumEleccion() {
-        return numEleccion;
-    }
-    Candidato getCandidatos() {
-        return candidato;
-    }
-    int getVotos() {
-        return votos;
+    const string &getNomCiudad() const {
+        return nomCiudad;
     }
 
-    void setNumEleccion(int numEleccion) {
-        Elecciones::numEleccion = numEleccion;
+    void setNomCiudad(const string &nomCiudad) {
+        Elecciones::nomCiudad = nomCiudad;
     }
-    void setCandidato(const Candidato & candidato) {
-        Elecciones::candidato = candidato;
+
+    const string &getTipoEleccion() const {
+        return tipoEleccion;
     }
-    void setVotos(int votos) {
-        Elecciones::votos = votos;
+
+    void setTipoEleccion(const string &tipoEleccion) {
+        Elecciones::tipoEleccion = tipoEleccion;
     }
+
+    int getVotosTotales() const {
+        return votosTotales;
+    }
+
+    void setVotosTotales(int votosTotales) {
+        Elecciones::votosTotales = votosTotales;
+    }
+
+    int getVotosBlancos() const {
+        return votosBlancos;
+    }
+
+    void setVotosBlancos(int votosBlancos) {
+        Elecciones::votosBlancos = votosBlancos;
+    }
+
+    int getVotosNulos() const {
+        return votosNulos;
+    }
+
+    void setVotosNulos(int votosNulos) {
+        Elecciones::votosNulos = votosNulos;
+    }
+
+    int getVotosAbstencion() const {
+        return votosAbstencion;
+    }
+
+    void setVotosAbstencion(int votosAbstencion) {
+        Elecciones::votosAbstencion = votosAbstencion;
+    }
+
+    const string &getFecha() const {
+        return fecha;
+    }
+
+    void setFecha(const string &fecha) {
+        Elecciones::fecha = fecha;
+    }
+
 
 };
 

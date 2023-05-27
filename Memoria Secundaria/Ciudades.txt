@@ -1,11 +1,11 @@
-Villavicencio,Meta,15,300
-Bogota,Cundinamarca,15,2000
-Medellín, Antioquia,0,1000
-Cali, Valle del Cauca,0,1500
-Barranquilla, Atlántico,0,522
-Bucaramanga, Santander,0,400
-Pereira, Risaralda,01,366
-Manizales, Caldas,0,300
-Santa Marta, Magdalena,0,600
-Cúcuta, Norte de Santander,0,200
+Villavicencio,Meta,15,552010
+Bogota,Cundinamarca,15,5935722
+Medellin, Antioquia,10,1407617
+Cali, Valle del Cauca,10,1549820
+Barranquilla, Atlantico,10,1132782
+Bucaramanga, Santander,10,474833
+Pereira, Risaralda,12,723490
+Manizales, Caldas,11,811180
+Santa Marta, Magdalena,13,297561
+Cucuta, Norte de Santander,9,507243
 

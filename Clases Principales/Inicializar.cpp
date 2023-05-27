@@ -3,6 +3,7 @@
 #include "../OpcionesListas.cpp"
 #include "../OpcionesConsultas.cpp"
 #include "../OpcionesSimulacion.cpp"
+#include "../OpcionesEstadisticas.cpp"
 
 class Inicializar {
 private: OpcionesListas opcionLista;
