@@ -1,5 +1,5 @@
-Conservador Colombiano,Efraín Cepeda
-Nuevo Liberalismo,Juan Manuel Galán
-Cambio Radical,Germán Córdoba
+Conservador Colombiano,Efrain Cepeda
+Nuevo Liberalismo,Juan Manuel Galan
+Cambio Radical,German Cordoba
 Colombia Humana,Gustavo Petro
-Centro Democrático,Nubia Stella Martínez
+Centro Democratico,Nubia Stella Martinez

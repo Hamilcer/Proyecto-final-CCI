@@ -43,7 +43,7 @@ public:
         for (int i = 0; i < candidatos -> getTam(); i++) {
             //Guardar el candidato buscado y devolver los atributos necesarios dada la validacion
             Candidato candidato = candidatos -> buscar(i);
-            if (candidato.getCiudadResidencia().getNombre() == ciudad && candidato.getPuesto() == "Consejo") {
+            if (candidato.getCiudadResidencia().getNombre() == ciudad && candidato.getPuesto() == "Concejo") {
                 cout << candidato.getNombre() << endl;
                 cantidad++;
             }

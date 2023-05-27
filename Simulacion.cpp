@@ -3,12 +3,11 @@
 #include "Clases Principales/Inicializar.cpp"
 
 class Simulacion {
-private:
-    Lista < Ciudad > * ciudades;
+private: Lista < Ciudad > * ciudades;
     Lista < Partido > * partidos;
     Lista < Candidato > * candidatos;
 
-    Lista <int> *otrosVotos;
+    Lista < Elecciones > * totalElecciones;
 
     Inicializar inicializar;
     OpcionesListas opcionLista; // Inicializa el objeto de la clase Opciones Listas
@@ -40,7 +39,7 @@ public:
         partidos = Partidos.leerPartidos();
         candidatos = Candidatos.leerCandidatos();
 
-        otrosVotos = new Lista <int>;
+        totalElecciones = new Lista < Elecciones > ;
 
     }
 };
@@ -52,7 +51,8 @@ void Simulacion::Menu() {
 
     
     OpcionesConsultas opcionConsultas(ciudades, partidos, candidatos); // Inicializa el objeto de la clase Opciones Consultas
-    OpcionesSimulacion opcionesSimulacion(ciudades, partidos, candidatos, otrosVotos);
+    OpcionesSimulacion opcionesSimulacion(ciudades, partidos, candidatos, totalElecciones);
+    OpcionesEstadisticas opcionesEstadisticas(ciudades, partidos, candidatos, totalElecciones);
 
     while (programa) { // Bucle infinito del programa
         system("cls");
@@ -78,7 +78,7 @@ void Simulacion::Menu() {
                     }
                     case 3: {
                         string ciudad;
-                        cout << "Ingrese la ciudad en la que desea buscar candidatos al consejo" << endl;
+                        cout << "Ingrese la ciudad en la que desea buscar candidatos al concejo" << endl;
                         cin >> ciudad;
                         opcionLista.candidatosConcejo(ciudad, candidatos);
 
@@ -100,14 +100,14 @@ void Simulacion::Menu() {
                     }
                     case 6: {
                         string partido;
-                        cout << "Ingrese el partido en la que desea buscar candidatos al Consejo" << endl;
+                        cout << "Ingrese el partido en la que desea buscar candidatos al concejo" << endl;
                         cin >> partido;
-                        opcionLista.candidatosAlcaldiaConsejoPartido(partido, "Consejo", candidatos);
+                        opcionLista.candidatosAlcaldiaConsejoPartido(partido, "concejo", candidatos);
 
                         break;
                     }
                     case 7: {
-                        opcionLista.candidatosAlcaldiaConsejoPartidoLista("Consejo", candidatos, partidos);
+                        opcionLista.candidatosAlcaldiaConsejoPartidoLista("concejo", candidatos, partidos);
                         break;
                     }
                     case 8: {
@@ -169,17 +169,35 @@ void Simulacion::Menu() {
                 cin >> Opcion;
                 switch (Opcion) {
                     case 1: {
-                        for (int i = 0; otrosVotos->getTam(); i++){
-                            int actual = otrosVotos->buscar(i);
-                            cout << i+1 << "es : " << actual << endl;
-                        }
+                        opcionesEstadisticas.estadisticaPorCiudad();
+                        system("pause");
                         break;
                     }
                     case 2: {
+                        cout << "Ingrese el tipo de eleccion: 1.Alcaldia 2.Concejo" << endl;
+                        cin >> Opcion;
+                        if (Opcion == 1) {
+                            opcionesEstadisticas.estadisticaEleccion("Alcaldia");
+
+                        } else if (Opcion == 2) {
+                            opcionesEstadisticas.estadisticaEleccion("Concejo");
+
+                        }
+                        system("pause");
 
                         break;
                     }
                     case 3: {
+                        cout << "Ingrese el tipo de eleccion: 1.Alcaldia 2.Concejo" << endl;
+                        cin >> Opcion;
+                        if (Opcion == 1) {
+                            opcionesEstadisticas.estadisticaNacional("Alcaldia");
+
+                        } else if (Opcion == 2) {
+                            opcionesEstadisticas.estadisticaNacional("Concejo");
+
+                        }
+                        system("pause");
 
                         break;
                     }
@@ -356,7 +374,7 @@ void Simulacion::Menu() {
                 Archivos Candidatos("Candidatos");
                 string textoCandidatos;
 
-                for (int i = 0; i < ciudades -> getTam(); i++) {
+                for (int i = 0; i < candidatos -> getTam(); i++) {
                     Candidato candidato = candidatos -> buscar(i);
                     textoCandidatos += candidato.getNombre() + "," + candidato.getApellido() + "," + candidato.getPuesto() + "," + candidato.getNumIdentificacion() + "," + candidato.getSexo() + "," + candidato.getEstadoCivil() + "," + candidato.getFechaNacimiento() + "," + candidato.getCiudadNacimiento().getNombre() + "," + candidato.getCiudadResidencia().getNombre() + "," + candidato.getPartido().getNombre();
                 }
@@ -387,7 +405,7 @@ void Simulacion::SubMenuListas() {
     cout << "4. Todos los candidatos a la alcald�a de una ciudad." << endl;
     cout << "5. Candidatos a cada una de las alcald�as, por partido." << endl;
     cout << "6. Candidatos a cada uno de los concejos, por partido." << endl;
-    cout << "7. Por cada partido, la lista de candidatos a los consejos." << endl;
+    cout << "7. Por cada partido, la lista de candidatos a los concejos." << endl;
     cout << "8. Por cada partido, la lista de candidatos a las alcald�as." << endl;
 
 }
@@ -405,7 +423,7 @@ void Simulacion::SubMenuConsultas() {
 void Simulacion::SubMenuEstadisticas() {
     cout << "Estadisticas" << endl;
     cout << "1. Ver el reporte por ciudad" << endl;
-    cout << "2. Ver el reporte por consejo" << endl;
+    cout << "2. Ver el reporte por alcaldia o concejo" << endl;
     cout << "3. Ver el reporte total nacional" << endl;
 }
 
