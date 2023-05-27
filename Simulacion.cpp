@@ -73,7 +73,7 @@ void Simulacion::Menu() {
                     }
                     case 3: {
                         string ciudad;
-                        cout << "Ingrese la ciudad en la que desea buscar candidatos al consejo" << endl;
+                        cout << "Ingrese la ciudad en la que desea buscar candidatos al concejo" << endl;
                         cin >> ciudad;
                         opcionLista.candidatosConcejo(ciudad, candidatos);
 
@@ -95,14 +95,14 @@ void Simulacion::Menu() {
                     }
                     case 6: {
                         string partido;
-                        cout << "Ingrese el partido en la que desea buscar candidatos al Consejo" << endl;
+                        cout << "Ingrese el partido en la que desea buscar candidatos al concejo" << endl;
                         cin >> partido;
-                        opcionLista.candidatosAlcaldiaConsejoPartido(partido, "Consejo", candidatos);
+                        opcionLista.candidatosAlcaldiaConsejoPartido(partido, "concejo", candidatos);
 
                         break;
                     }
                     case 7: {
-                        opcionLista.candidatosAlcaldiaConsejoPartidoLista("Consejo", candidatos, partidos);
+                        opcionLista.candidatosAlcaldiaConsejoPartidoLista("concejo", candidatos, partidos);
                         break;
                     }
                     case 8: {
@@ -389,7 +389,7 @@ void Simulacion::SubMenuListas() {
     cout << "4. Todos los candidatos a la alcald�a de una ciudad." << endl;
     cout << "5. Candidatos a cada una de las alcald�as, por partido." << endl;
     cout << "6. Candidatos a cada uno de los concejos, por partido." << endl;
-    cout << "7. Por cada partido, la lista de candidatos a los consejos." << endl;
+    cout << "7. Por cada partido, la lista de candidatos a los concejos." << endl;
     cout << "8. Por cada partido, la lista de candidatos a las alcald�as." << endl;
 
 }
@@ -407,7 +407,7 @@ void Simulacion::SubMenuConsultas() {
 void Simulacion::SubMenuEstadisticas() {
     cout << "Estadisticas" << endl;
     cout << "1. Ver el reporte por ciudad" << endl;
-    cout << "2. Ver el reporte por consejo" << endl;
+    cout << "2. Ver el reporte por alcaldia o concejo" << endl;
     cout << "3. Ver el reporte total nacional" << endl;
 }
 
