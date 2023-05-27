@@ -3,7 +3,6 @@
 #include <ctime>
 
 #include "Estructuras de Datos/ArbolConsultas.h"
-#include "Estructuras de Datos/ArbolConsultasP.h"
 
 #include "Clases Principales/Candidato.h"
 
