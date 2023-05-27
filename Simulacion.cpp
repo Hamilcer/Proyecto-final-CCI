@@ -409,6 +409,7 @@ void Simulacion::SubMenuListas() {
     cout << "8. Por cada partido, la lista de candidatos a las alcald�as." << endl;
 
 }
+
 void Simulacion::SubMenuConsultas() {
     cout << "Realizar una consulta" << endl;
     cout << "1. Dado un partido y una ciudad, mostrar la lista de sus candidatos al Concejo y el candidato a la alcald�a." << endl;

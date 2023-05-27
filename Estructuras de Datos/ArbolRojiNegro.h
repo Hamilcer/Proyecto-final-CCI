@@ -1,43 +1,42 @@
 #include <iostream>
 #include "colaTemplates.h"
 #include "pila.h"
-#include "ArbolConsultas.h"
 
-template <class T>
+template <class T, class S>
 struct NodoArbol
 {
-    T info;
-    ArbolConsultas *arbol;
-    NodoArbol<T> *padre;
-    NodoArbol<T> *izq;
-    NodoArbol<T> *der;
+    T clave; //Es la clave que se utilizar para organizar el arbol
+    S *data; // Son los datos con los que se trabaja 
+    NodoArbol<T, S> *padre;
+    NodoArbol<T, S> *izq;
+    NodoArbol<T, S> *der;
     int color;
 };
 
-template <class T>
+template <class T, class S>
 class ArbolRojiNegro
 {
 private:
-    NodoArbol<T> *raiz;
-    NodoArbol<T> *TNULO;
+    NodoArbol<T, S> *raiz;
+    NodoArbol<T, S> *TNULO;
 
-    void inicializarNodoNULL(NodoArbol<T> *nodo, NodoArbol<T> *padre)
+    void inicializarNodoNULL(NodoArbol<T, S> *nodo, NodoArbol<T, S> *padre)
     {
-        nodo->info = 0;
+        nodo->clave = 0;
         nodo->padre = padre;
         nodo->izq = nullptr;
         nodo->der = nullptr;
         nodo->color = 0;
     }
 
-    NodoArbol<T> *buscar(NodoArbol<T> *nodo, T llave)
+    NodoArbol<T, S> *buscar(NodoArbol<T, S> *nodo, T llave)
     {
-        if (nodo == TNULO || llave == nodo->info)
+        if (nodo == TNULO || llave == nodo->clave)
         {
             return nodo;
         }
 
-        if (llave < nodo->info)
+        if (llave < nodo->clave)
         {
             return buscar(nodo->izq, llave);
         }
@@ -45,9 +44,9 @@ private:
     }
 
     // Ajusta el arbol tars eliminar un nodo
-    void ajusteEliminar(NodoArbol<T> *x)
+    void ajusteEliminar(NodoArbol<T, S> *x)
     {
-        NodoArbol<T> *h;
+        NodoArbol<T, S> *h;
         while (x != raiz && x->color == 0)
         {
 
@@ -136,7 +135,7 @@ private:
         x->color = 0;
     }
 
-    void transplantar(NodoArbol<T> *u, NodoArbol<T> *v)
+    void transplantar(NodoArbol<T, S> *u, NodoArbol<T, S> *v)
     {
         if (u->padre == nullptr)
         {
@@ -153,18 +152,18 @@ private:
         v->padre = u->padre;
     }
 
-    void eliminarNodo(NodoArbol<T> *nodo, T llave)
+    void eliminarNodo(NodoArbol<T, S> *nodo, T llave)
     {
-        NodoArbol<T> *z = TNULO;
-        NodoArbol<T> *x, *y;
+        NodoArbol<T, S> *z = TNULO;
+        NodoArbol<T, S> *x, *y;
         while (nodo != TNULO)
         {
-            if (nodo->info == llave)
+            if (nodo->clave == llave)
             {
                 z = nodo;
             }
 
-            if (nodo->info <= llave)
+            if (nodo->clave <= llave)
             {
                 nodo = nodo->der;
             }
@@ -227,9 +226,9 @@ private:
     }
 
     // Ajustar el árbol después de una inserción
-    void ajusteInsercion(NodoArbol<T> *k)
+    void ajusteInsercion(NodoArbol<T, S> *k)
     {
-        NodoArbol<T> *u;
+        NodoArbol<T, S> *u;
         while (k->padre->color == 1)
         {
 
@@ -295,7 +294,7 @@ private:
         raiz->color = 0;
     }
 
-    void imprimir(NodoArbol<T> *raiz, std::string indentacion, bool ultimo)
+    void imprimir(NodoArbol<T, S> *raiz, std::string indentacion, bool ultimo)
     {
         if (raiz != TNULO)
         {
@@ -312,7 +311,7 @@ private:
             }
 
             std::string sColor = raiz->color ? "ROJO" : "NEGRO";
-            std::cout << raiz->info << "(" << sColor << ")" << std::endl;
+            std::cout << raiz->clave << "(" << sColor << ")" << std::endl;
             imprimir(raiz->izq, indentacion, false);
             imprimir(raiz->der, indentacion, true);
         }
@@ -321,22 +320,22 @@ private:
 public:
     ArbolRojiNegro()
     {
-        TNULO = new NodoArbol<T>;
+        TNULO = new NodoArbol<T, S>;
         TNULO->color = 0;
         TNULO->izq = nullptr;
         TNULO->der = nullptr;
         raiz = TNULO;
     }
 
-    void agregarArbol(NodoArbol<T> *nodoParametro, ArbolConsultas arbolC)
+    void agregarArbol(NodoArbol<T, S> *nodoParametro, S arbolC)
     {
-        nodoParametro->arbol = arbolC;
+        nodoParametro->data = arbolC;
     }
 
-    Cola<NodoArbol<T> *> obtenerPreOrden(NodoArbol<T> *nodo)
+    Cola<NodoArbol<T, S> *> obtenerPreOrden(NodoArbol<T, S> *nodo)
     {
-        Cola<NodoArbol<T> *> retorno;
-        Pila<NodoArbol<T> *> antepasados;
+        Cola<NodoArbol<T, S> *> retorno;
+        Pila<NodoArbol<T, S> *> antepasados;
 
         while (!antepasados.vacia() || nodo != TNULO)
         {
@@ -357,10 +356,10 @@ public:
         return retorno;
     }
 
-    Cola<NodoArbol<T> *> obtenerInOrden(NodoArbol<T> *nodo)
+    Cola<NodoArbol<T, S> *> obtenerInOrden(NodoArbol<T, S> *nodo)
     {
-        Cola<NodoArbol<T> *> retorno;
-        Pila<NodoArbol<T> *> antepasados;
+        Cola<NodoArbol<T, S> *> retorno;
+        Pila<NodoArbol<T, S> *> antepasados;
         while (nodo != TNULO || !antepasados.vacia())
         {
             while (nodo != TNULO)
@@ -376,12 +375,12 @@ public:
         return retorno;
     }
 
-    Cola<NodoArbol<T> *> obtenerNiveles(NodoArbol<T> *nodo)
+    Cola<NodoArbol<T, S> *> obtenerNiveles(NodoArbol<T, S> *nodo)
     {
-        Cola<NodoArbol<T> *> retorno;
-        Cola<NodoArbol<T> *> antepasados;
+        Cola<NodoArbol<T, S> *> retorno;
+        Cola<NodoArbol<T, S> *> antepasados;
 
-        NodoArbol<T> *aux = nodo;
+        NodoArbol<T, S> *aux = nodo;
 
         antepasados.enqueue(aux);
 
@@ -402,11 +401,11 @@ public:
         return retorno;
     }
 
-    Cola<NodoArbol<T> *> obtenerPostOrden(NodoArbol<T> *nodo)
+    Cola<NodoArbol<T, S> *> obtenerPostOrden(NodoArbol<T, S> *nodo)
     {
-        Cola<NodoArbol<T> *> retorno;
-        Pila<NodoArbol<T> *> antepasados;
-        NodoArbol<T> *aux, *ultimo;
+        Cola<NodoArbol<T, S> *> retorno;
+        Pila<NodoArbol<T, S> *> antepasados;
+        NodoArbol<T, S> *aux, *ultimo;
 
         while (!antepasados.vacia() || nodo != TNULO)
         {
@@ -434,12 +433,12 @@ public:
         return retorno;
     }
 
-    NodoArbol<T> *buscar(T llave)
+    NodoArbol<T, S> *buscar(T llave)
     {
         return buscar(this->raiz, llave);
     }
 
-    NodoArbol<T> *minimo(NodoArbol<T> *nodo)
+    NodoArbol<T, S> *minimo(NodoArbol<T, S> *nodo)
     {
         while (nodo->izq != TNULO)
         {
@@ -448,7 +447,7 @@ public:
         return nodo;
     }
 
-    NodoArbol<T> *maximo(NodoArbol<T> *nodo)
+    NodoArbol<T, S> *maximo(NodoArbol<T, S> *nodo)
     {
         while (nodo->der != TNULO)
         {
@@ -457,9 +456,9 @@ public:
         return nodo;
     }
 
-    void rotarIzq(NodoArbol<T> *x)
+    void rotarIzq(NodoArbol<T, S> *x)
     {
-        NodoArbol<T> *y = x->der;
+        NodoArbol<T, S> *y = x->der;
         x->der = y->izq;
         if (y->izq != TNULO)
         {
@@ -482,9 +481,9 @@ public:
         x->padre = y;
     }
 
-    void rotarDer(NodoArbol<T> *x)
+    void rotarDer(NodoArbol<T, S> *x)
     {
-        NodoArbol<T> *y = x->izq;
+        NodoArbol<T, S> *y = x->izq;
         x->izq = y->der;
         if (y->der != TNULO)
         {
@@ -509,20 +508,20 @@ public:
 
     void insertarNodo(T llave)
     {
-        NodoArbol<T> *nodo = new NodoArbol<T>;
+        NodoArbol<T, S> *nodo = new NodoArbol<T, S>;
         nodo->padre = nullptr;
-        nodo->info = llave;
+        nodo->clave = llave;
         nodo->izq = TNULO;
         nodo->der = TNULO;
         nodo->color = 1;
 
-        NodoArbol<T> *y = nullptr;
-        NodoArbol<T> *x = this->raiz;
+        NodoArbol<T, S> *y = nullptr;
+        NodoArbol<T, S> *x = this->raiz;
 
         while (x != TNULO)
         {
             y = x;
-            if (nodo->info < x->info)
+            if (nodo->clave < x->clave)
             {
                 x = x->izq;
             }
@@ -537,7 +536,7 @@ public:
         {
             raiz = nodo;
         }
-        else if (nodo->info < y->info)
+        else if (nodo->clave < y->clave)
         {
             y->izq = nodo;
         }
@@ -560,7 +559,7 @@ public:
         ajusteInsercion(nodo);
     }
 
-    NodoArbol<T> *obtenerRaiz()
+    NodoArbol<T, S> *obtenerRaiz()
     {
         return this->raiz;
     }

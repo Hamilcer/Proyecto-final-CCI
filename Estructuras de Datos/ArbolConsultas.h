@@ -14,7 +14,7 @@ using namespace std;
 struct NodoPartido
 {
     string nombre;
-    Queue<Candidato> *candidatos;
+    Queue<Candidato> *candidatos; // Cola doble
 };
 
 struct NodoRaiz
@@ -43,7 +43,7 @@ public:
     };
     NodoPartido *crearNodoPartido(string nombre);
     void agregarPartido(Partido partido);
-    void agregarCandidato(Candidato candidato);
+    void agregarCandidato(Candidato *candidato);
     NodoPartido getPartido(string partido);
 };
 
@@ -69,14 +69,14 @@ void ArbolConsultas::agregarPartido(Partido partido)
     raiz->partidos.insertar(*crearNodoPartido(partido.getNombre()));
 }
 
-void ArbolConsultas::agregarCandidato(Candidato candidato)
+void ArbolConsultas::agregarCandidato(Candidato *candidato)
 {
     for (int i = 0; i < raiz->partidos.getTam(); i++)
     {
         NodoPartido aux = raiz->partidos.buscar(i);
-        if (aux.nombre == candidato.getPartido().getNombre())
+        if (aux.nombre == candidato->getPartido().getNombre())
         {
-            if (candidato.getPuesto() == "Consejo")
+            if (candidato->getPuesto() == "Consejo")
                 raiz->partidos.buscar(i).candidatos->Enqueue(candidato, 'I');
             else
                 raiz->partidos.buscar(i).candidatos->Enqueue(candidato, 'F');

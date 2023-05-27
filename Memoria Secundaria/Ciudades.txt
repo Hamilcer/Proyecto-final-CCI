@@ -8,4 +8,3 @@ Pereira, Risaralda,12,700000
 Manizales, Caldas,11,800000
 Santa Marta, Magdalena,13,450000
 Cucuta, Norte de Santander,9,400000
-

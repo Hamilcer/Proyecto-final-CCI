@@ -130,6 +130,23 @@ public:
         return actual -> valor;
     }
 
+    T * buscarApuntador(int pos) {
+        if (pos < 0 || pos >= tam) {
+            cout << "Posición inválida al buscar" << endl;
+            // Aqu� puedes retornar un valor predeterminado o lanzar una excepci�n, seg�n tus necesidades
+        }
+
+        Nodo < T > * actual = this -> inicio;
+        if (pos == 0)
+            return &actual -> valor;
+
+        for (int i = 0; i < pos; i++) {
+            actual = actual -> siguiente;
+        }
+
+        return &actual -> valor;
+    }
+
     bool existe(T valor) {
         Nodo < T > * actual = inicio;
         while (actual != nullptr) {
