@@ -51,7 +51,7 @@ OpcionesConsultas::OpcionesConsultas(Lista<Ciudad> *ciudades, Lista<Partido> *pa
         ciudadesArbolRN.insertar(nodoAux);
     }
 
-    for (int i = 0; i < ciudadesArbolRN.getTam(); i++) // Se crean arboles 
+    for (int i = 0; i < ciudadesArbolRN.getTam(); i++) // Se crean arboles
     {
         nodoAux = ciudadesArbolRN.buscar(i);
         nodoAux->data = new ArbolConsultas;
@@ -105,7 +105,7 @@ void OpcionesConsultas::consulta1(string partido, string ciudad)
 
     int cAldalde = 0; // esto es para saber si se imprimió un alcalde, se usa en el for de abajo
 
-    Queue<Candidato> *auxPartido = nodoAux->data->getPartido(partido).candidatos;
+    Queue<Candidato> *auxPartido = nodoAux->data->getPartido(partido).candidatos; // cola de candidatos
 
     if (auxPartido->getTam() > 0)
     {
@@ -134,6 +134,10 @@ void OpcionesConsultas::consulta1(string partido, string ciudad)
             }
         }
     }
+    else
+    {
+        cout << "No se encontraron candidatos para la ciudad: " << ciudad << ", y partido: " << partido << endl;
+    }
     system("pause");
     return;
 }
@@ -152,22 +156,34 @@ void OpcionesConsultas::consulta4(string ciudad)
             cout << endl
                  << auxPartidos.buscar(i).nombre << endl;
             Queue<Candidato> *auxCandidatos = auxPartidos.buscar(i).candidatos;
-            int cAldalde = 0;
-            if (auxCandidatos->retornarElemento(0, 'I')->getPuesto() == "Alcaldia")
+            if (auxCandidatos->getTam() > 0)
             {
-                cAldalde++;
-                cout << "   Candidato alcaldia:" << endl;
-                cout << "       - " << auxCandidatos->retornarElemento(0, 'I')->getNombre() << endl;
-            }
-            if (auxPartidos.getTam() > 0)
-            {
-                cout << "   Candidatos consejo:" << endl;
 
-                for (int j = 0 + cAldalde; j < auxCandidatos->getTam(); j++)
+                int cAldalde = 0;
+                if (auxCandidatos->retornarElemento(0, 'I')->getPuesto() == "Alcaldia")
                 {
-                    cout << "       - " << auxCandidatos->retornarElemento(j, 'I')->getNombre() << endl;
+                    cAldalde++;
+                    cout << "   Candidato alcaldia:" << endl;
+                    cout << "       - " << auxCandidatos->retornarElemento(0, 'I')->getNombre() << endl;
+                }
+                if (auxPartidos.getTam() > 0)
+                {
+                    cout << "   Candidatos consejo:" << endl;
+
+                    for (int j = 0 + cAldalde; j < auxCandidatos->getTam(); j++)
+                    {
+                        cout << "       - " << auxCandidatos->retornarElemento(j, 'I')->getNombre() << endl;
+                    }
                 }
             }
+            else
+            {
+                cout << "   No se encontraron candidatos para el partido" << endl;
+            }
+        }
+        else
+        {
+            cout << "No se encontraron candidatos para la ciudad: " << ciudad << endl;
         }
     }
 
@@ -185,14 +201,31 @@ void OpcionesConsultas::consulta5(string ciudad)
     NodoArbol<string, ArbolConsultas> *nodoAux = arbolCiudades->buscar(ciudad);
 
     Lista<NodoPartido> auxPartidos = nodoAux->data->getRaiz()->partidos;
+    if (auxPartidos.getTam() > 0)
+    {
+        
+    
+    
     for (int i = 0; i < auxPartidos.getTam(); i++) // Mirar cada partido
     {
         Queue<Candidato> *auxCandidatos = auxPartidos.buscar(i).candidatos;
-        if (auxCandidatos->retornarElemento(0, 'I')->getPuesto() == "Alcaldia")
+        if (auxCandidatos->getTam() > 0)
         {
-            Candidato *c = auxCandidatos->retornarElemento(0, 'I');
-            cout << "   " << i + 1 << ". " << c->getNombre() << " - partido: " << c->getPartido().getNombre() << endl;
+
+            if (auxCandidatos->retornarElemento(0, 'I')->getPuesto() == "Alcaldia")
+            {
+                Candidato *c = auxCandidatos->retornarElemento(0, 'I');
+                cout << "   " << i + 1 << ". " << c->getNombre() << " - partido: " << c->getPartido().getNombre() << endl;
+            }
         }
+        else
+        {
+            cout << "   No se encontraron candidatos para el partido: " << auxPartidos.buscar(i).nombre << endl;
+        }
+    }}
+    else
+    {
+        cout << "   No se encontraron partidos para la ciudad: " << ciudad << endl;
     }
 
     system("pause");
@@ -209,15 +242,30 @@ void OpcionesConsultas::consulta6(string ciudad)
     NodoArbol<string, ArbolConsultas> *nodoAux = arbolCiudades->buscar(ciudad);
 
     Lista<NodoPartido> auxPartidos = nodoAux->data->getRaiz()->partidos;
-    for (int i = 0; i < auxPartidos.getTam(); i++) // Mirar cada partido
+    if (auxPartidos.getTam() > 0)
     {
-        cout << "   " << i + 1 << ". " << auxPartidos.buscar(i).nombre << endl;
-        Queue<Candidato> *auxCandidatos = auxPartidos.buscar(i).candidatos;
 
-        for (int j = 1; j < auxCandidatos->getTam(); j++)
+        for (int i = 0; i < auxPartidos.getTam(); i++) // Mirar cada partido
         {
-            cout << "       " << i + 1 << "." << j << " " << auxCandidatos->retornarElemento(j, 'I')->getNombre() << endl;
+            Queue<Candidato> *auxCandidatos = auxPartidos.buscar(i).candidatos;
+            if (auxCandidatos->getTam() > 0)
+            {
+                cout << "   " << i + 1 << ". " << auxPartidos.buscar(i).nombre << endl;
+
+                for (int j = 1; j < auxCandidatos->getTam(); j++)
+                {
+                    cout << "       " << i + 1 << "." << j << " " << auxCandidatos->retornarElemento(j, 'I')->getNombre() << endl;
+                }
+            }
+            else
+            {
+                cout << "   No se encontraron candidatos para el partido: " << auxPartidos.buscar(i).nombre << endl;
+            }
         }
+    }
+    else
+    {
+        cout << "No se encontraron partidos para la ciudad: " << ciudad << endl;
     }
 
     system("pause");
@@ -227,10 +275,18 @@ void OpcionesConsultas::consulta6(string ciudad)
 // Consulta 7. Censo electoral. Por cada ciudad, mostrar la cantidad de personas habilitadas para votar.
 void OpcionesConsultas::consulta7(Lista<Ciudad> ciudades)
 {
-    for (int i = 0; i < ciudades.getTam(); i++)
+    if (ciudades.getTam() > 0)
     {
-        Ciudad ciudad = ciudades.buscar(i);
-        cout << ciudad.getNombre() << ": " << ciudad.getCensoElectoral() << endl;
+
+        for (int i = 0; i < ciudades.getTam(); i++)
+        {
+            Ciudad ciudad = ciudades.buscar(i);
+            cout << ciudad.getNombre() << ": " << ciudad.getCensoElectoral() << endl;
+        }
+    }
+    else
+    {
+        cout << "No se ciudaddes." << endl;
     }
     system("pause");
     return;

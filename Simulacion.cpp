@@ -121,7 +121,7 @@ void Simulacion::Menu() {
                 system("cls");
                 SubMenuConsultas();
                 cin >> Opcion;
-                //Opcion = 1;
+                // Opcion = 1;
                 switch (Opcion) {
                     case 1: {
                         string partido, ciudad;
