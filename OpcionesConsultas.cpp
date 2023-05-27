@@ -22,6 +22,7 @@ public:
 
     // Funcion que calcula la edad
     int calcularEdad(Candidato *auxCandidato);
+    void actualizar(Lista<Ciudad> *ciudades, Lista<Partido> *partidos, Lista<Candidato> *candidatos);
     void agregarDatosArbolCiudades(Lista<Ciudad> *ciudades, Lista<Partido> *partidos, Lista<Candidato> *candidatos);
     void agregarDatosArbolPartidos(Lista<Ciudad> *ciudades, Lista<Partido> *partidos, Lista<Candidato> *candidatos);
 
@@ -36,6 +37,11 @@ public:
 
 // Constrctor
 OpcionesConsultas::OpcionesConsultas(Lista<Ciudad> *ciudades, Lista<Partido> *partidos, Lista<Candidato> *candidatos)
+{
+    actualizar(ciudades, partidos, candidatos);
+}
+
+void OpcionesConsultas::actualizar(Lista<Ciudad> *ciudades, Lista<Partido> *partidos, Lista<Candidato> *candidatos)
 {
     agregarDatosArbolCiudades(ciudades, partidos, candidatos);
     agregarDatosArbolPartidos(ciudades, partidos, candidatos);

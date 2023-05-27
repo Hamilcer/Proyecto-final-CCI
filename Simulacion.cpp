@@ -345,6 +345,7 @@ void Simulacion::Menu() {
                     }
                 }
                 Opcion = 0;
+                opcionConsultas.actualizar(ciudades, partidos, candidatos);
                 break;
             }
             case 6: {
