@@ -11,7 +11,7 @@
 
 using namespace std;
 
-struct NodoPartido
+struct NodoConsulta
 {
     string nombre;
     Queue<Candidato> *candidatos; // Cola doble
@@ -20,9 +20,10 @@ struct NodoPartido
 struct NodoRaiz
 {
     string nombre;
-    Lista<NodoPartido> partidos;
+    Lista<NodoConsulta> listaConsulta;
 };
 
+template <class T>
 class ArbolConsultas
 {
     NodoRaiz *raiz;
@@ -41,61 +42,66 @@ public:
     {
         return raiz;
     };
-    NodoPartido *crearNodoPartido(string nombre);
-    void agregarPartido(Partido partido);
-    void agregarCandidato(Candidato *candidato);
-    NodoPartido getPartido(string partido);
+    NodoConsulta *crearNodoConsulta(string nombre);
+    void agregarNodoConsulta(T objeto);
+    void agregarCandidato(Candidato *candidato, string nodoObjetivo);
+    NodoConsulta getPartido(string partido);
 };
 
-NodoPartido *ArbolConsultas::crearNodoPartido(string nombre)
+template <class T>
+NodoConsulta *ArbolConsultas<T>::crearNodoConsulta(string nombre)
 {
-    NodoPartido *nuevo = new NodoPartido;
+    NodoConsulta *nuevo = new NodoConsulta;
     nuevo->candidatos = new Queue<Candidato>;
     nuevo->nombre = nombre;
     return nuevo;
 }
 
-void ArbolConsultas::agregarPartido(Partido partido)
+template <class T>
+void ArbolConsultas<T>::agregarNodoConsulta(T objeto)
 {
-    // Verifica que el partido no exista
-    for (int i = 0; i < raiz->partidos.getTam(); i++)
+    // Verifica que el objeto no exista
+    for (int i = 0; i < raiz->listaConsulta.getTam(); i++)
     {
-        if (raiz->partidos.buscar(i).nombre == partido.getNombre())
+        if (raiz->listaConsulta.buscar(i).nombre == objeto.getNombre())
         {
             return;
         }
     }
 
-    raiz->partidos.insertar(*crearNodoPartido(partido.getNombre()));
+    raiz->listaConsulta.insertar(*crearNodoConsulta(objeto.getNombre()));
 }
 
-void ArbolConsultas::agregarCandidato(Candidato *candidato)
+
+template <class T>
+void ArbolConsultas<T>::agregarCandidato(Candidato *candidato, string nodoObjetivo)
 {
-    for (int i = 0; i < raiz->partidos.getTam(); i++)
+    for (int i = 0; i < raiz->listaConsulta.getTam(); i++)
     {
-        NodoPartido aux = raiz->partidos.buscar(i);
-        if (aux.nombre == candidato->getPartido().getNombre())
+        NodoConsulta aux = raiz->listaConsulta.buscar(i);
+        if (aux.nombre == nodoObjetivo)
         {
             if (candidato->getPuesto() == "Consejo")
-                raiz->partidos.buscar(i).candidatos->Enqueue(candidato, 'I');
+                raiz->listaConsulta.buscar(i).candidatos->Enqueue(candidato, 'I');
             else
-                raiz->partidos.buscar(i).candidatos->Enqueue(candidato, 'F');
+                raiz->listaConsulta.buscar(i).candidatos->Enqueue(candidato, 'F');
 
             return;
         }
     }
 }
 
-NodoPartido ArbolConsultas::getPartido(string partido)
+template <class T>
+NodoConsulta ArbolConsultas<T>::getPartido(string partido)
 {
-    for (int i = 0; i < raiz->partidos.getTam(); i++)
+    for (int i = 0; i < raiz->listaConsulta.getTam(); i++)
     {
-        if (raiz->partidos.buscar(i).nombre == partido)
+        if (raiz->listaConsulta.buscar(i).nombre == partido)
         {
-            return raiz->partidos.buscar(i);
+            return raiz->listaConsulta.buscar(i);
         }
     }
-    return raiz->partidos.buscar(0);
+    return raiz->listaConsulta.buscar(0);
 }
 
 #endif

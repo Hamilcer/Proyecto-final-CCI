@@ -28,9 +28,9 @@ public:
 		final = NULL;
 		tam = 0;
 	}
-	T* retornarElemento(int pos, char cabeza);
+	T *retornarElemento(int pos, char cabeza);
 	int getTam() { return tam; }
-	void Enqueue(T * infoNueva, char cabeza);
+	void Enqueue(T *infoNueva, char cabeza);
 	void Dequeue(char cabeza);
 	bool queue_vacia();
 	~Queue();
@@ -42,7 +42,8 @@ T *Queue<T>::retornarElemento(int pos, char cabeza)
 {
 	if (queue_vacia() || pos > tam || pos < 0)
 	{
-		//return T();
+		cout << "Posición inválida al buscar" << endl;
+		// Aqu� puedes retornar un valor predeterminado o lanzar una excepci�n, seg�n tus necesidades
 	}
 	else
 	{
@@ -74,7 +75,7 @@ T *Queue<T>::retornarElemento(int pos, char cabeza)
 
 // Función para agregar un elemento a la cola
 template <class T>
-void Queue<T>::Enqueue(T * infoNueva, char cabeza)
+void Queue<T>::Enqueue(T *infoNueva, char cabeza)
 { // cabeza indica si se va a operar en la cabeza ("I" de inicio) o en la cola ("F" de final) de la cola
 	NodoQueue<T> *aux = new NodoQueue<T>;
 	aux->dato = infoNueva;

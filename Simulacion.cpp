@@ -131,11 +131,16 @@ void Simulacion::Menu() {
                         break;
                     }
                     case 2: {
-
+                        string partido;
+                        partido = elegirPartido();
+                        opcionConsultas.consulta2(partido);
                         break;
                     }
                     case 3: {
-
+                        string partido;
+                        partido = elegirPartido();
+                        opcionConsultas.consulta3(partido);
+                        break;
                         break;
                     }
                     case 4: {
