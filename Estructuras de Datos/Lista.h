@@ -130,8 +130,6 @@ public:
         return actual -> valor;
     }
 
-
-
     bool existe(T valor) {
         Nodo < T > * actual = inicio;
         while (actual != nullptr) {

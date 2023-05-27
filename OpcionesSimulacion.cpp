@@ -1,27 +1,28 @@
 #include "Archivos.h"
+
 #include "iostream"
 
 #include <string>
 
 #include <random>
-#include <stack>
 
 class OpcionesSimulacion {
 
-private:
-    Lista < Candidato > * candidatos;
+private: Lista < Candidato > * candidatos;
     Lista < Ciudad > * ciudades;
     Lista < Partido > * partidos;
-    Lista <Elecciones> *totalElecciones;
+    Lista < Elecciones > * totalElecciones;
 
-    Lista <Candidato> listaCandidatosFiltrada;
-    Lista <int> posiciones;
-    int ganador[2] = { -1, 0};
-
+    Lista < Candidato > listaCandidatosFiltrada;
+    Lista < int > posiciones;
+    int ganador[2] = {
+            -1,
+            0
+    };
 
 public: OpcionesListas opcionLista;
 
-    OpcionesSimulacion(Lista < Ciudad > * ciudades, Lista < Partido > * partidos, Lista < Candidato > * candidatos, Lista<Elecciones> *totalElecciones) {
+    OpcionesSimulacion(Lista < Ciudad > * ciudades, Lista < Partido > * partidos, Lista < Candidato > * candidatos, Lista < Elecciones > * totalElecciones) {
         this -> ciudades = ciudades;
         this -> candidatos = candidatos;
         this -> partidos = partidos;
@@ -55,7 +56,7 @@ public: OpcionesListas opcionLista;
             tipoEleccion = "Concejo";
         }
 
-        cout << "Elecciones a " <<tipoEleccion<< " para "<<ciudadEleccion.getNombre()<< endl;
+        cout << "Elecciones a " << tipoEleccion << " para " << ciudadEleccion.getNombre() << endl;
         cout << "---------------------------------------------------------------------------------------" << endl;
         asignacionVotos(votosRestantes, votosBlanco, votosNulos, abstencion, sumaVotos, totalVotos, ciudadEleccion, tipoEleccion);
         //cout << votosRestantes << endl;
@@ -85,56 +86,54 @@ public: OpcionesListas opcionLista;
         return (dato / total) * 100.0;
     }
 
-    void asignacionVotos(int votosRestantes, int votosBlanco, int votosNulos, int abstencion, int sumaVotos, int totalVotos, Ciudad ciudadEleccion, string tipoEleccion){
-
+    void asignacionVotos(int votosRestantes, int votosBlanco, int votosNulos, int abstencion, int sumaVotos, int totalVotos, Ciudad ciudadEleccion, string tipoEleccion) {
 
         for (int i = 0; i < listaCandidatosFiltrada.getTam(); i++) {
 
-            int votos = numeroAleatorio(votosRestantes / (listaCandidatosFiltrada.getTam()/2));
+            int votos = numeroAleatorio(votosRestantes / (listaCandidatosFiltrada.getTam() / 2));
             int posicionActual = posiciones.buscar(i);
             Candidato candidato = listaCandidatosFiltrada.buscar(i);
             candidato.setVotos(votos);
-            if(votos > ganador[1]){
+            if (votos > ganador[1]) {
                 ganador[1] = votos; //Guarda la cantidad de votos.
                 ganador[0] = i; //Pos en la lista filtrada.
             }
             candidatos -> modificar(candidato, posicionActual);
             votosRestantes -= votos;
             sumaVotos += votos;
-            cout << candidato.getPartido().getNombre() <<"  | "<< candidato.getNombre() + "  " + candidato.getApellido() << "  | " << candidato.getVotos() << " | " << porcentaje(candidato.getVotos(), ciudadEleccion.getCensoElectoral())<< " %" << endl;
+            cout << candidato.getPartido().getNombre() << "  | " << candidato.getNombre() + "  " + candidato.getApellido() << "  | " << candidato.getVotos() << " | " << porcentaje(candidato.getVotos(), ciudadEleccion.getCensoElectoral()) << " %" << endl;
         }
 
-        if(tipoEleccion == "Alcaldia" ){
+        if (tipoEleccion == "Alcaldia") {
             Candidato canGanador = listaCandidatosFiltrada.buscar(ganador[0]);
             cout << "---------*****---------" << endl;
-            cout << "EL GANADOR ES " << canGanador.getNombre()+" "+canGanador.getApellido() <<endl;
+            cout << "EL GANADOR ES " << canGanador.getNombre() + " " + canGanador.getApellido() << endl;
             cout << "---------*****---------" << endl;
         }
 
         //Limpiar lista
         int tamano = listaCandidatosFiltrada.getTam(); //revisar porque queda tam -1
-        for ( tamano; tamano > 0; tamano--){
-            listaCandidatosFiltrada.borrar(tamano-1);
-            posiciones.borrar(tamano-1);
+        for (tamano; tamano > 0; tamano--) {
+            listaCandidatosFiltrada.borrar(tamano - 1);
+            posiciones.borrar(tamano - 1);
         }
 
-        cout << "Total entre candidatos: "<<  sumaVotos << endl;
+        cout << "Total entre candidatos: " << sumaVotos << endl;
         votosBlanco = numeroAleatorio(votosRestantes / 2);
-        cout << "Votos blancos: " << votosBlanco << "  | " << porcentaje(votosBlanco, ciudadEleccion.getCensoElectoral())<< " %" << endl;
+        cout << "Votos blancos: " << votosBlanco << "  | " << porcentaje(votosBlanco, ciudadEleccion.getCensoElectoral()) << " %" << endl;
 
         votosNulos = numeroAleatorio(votosRestantes - votosBlanco);
-        cout << "Votos nulos: " << votosNulos << "  | " << porcentaje(votosNulos, ciudadEleccion.getCensoElectoral())<< " %" << endl;
+        cout << "Votos nulos: " << votosNulos << "  | " << porcentaje(votosNulos, ciudadEleccion.getCensoElectoral()) << " %" << endl;
 
         abstencion = votosRestantes - votosBlanco - votosNulos;
-        cout << "Votos abstencion: " << abstencion << "  | " << porcentaje(abstencion, ciudadEleccion.getCensoElectoral())<< " %" << endl;
+        cout << "Votos abstencion: " << abstencion << "  | " << porcentaje(abstencion, ciudadEleccion.getCensoElectoral()) << " %" << endl;
 
         cout << "Total de votos(censo ciudad): " << totalVotos << endl;
-        cout << "Total de votos(suma): " << sumaVotos + votosBlanco + votosNulos + abstencion << "  | " << porcentaje(sumaVotos+votosBlanco+votosNulos+abstencion, ciudadEleccion.getCensoElectoral())<< " %" << endl;
+        cout << "Total de votos(suma): " << sumaVotos + votosBlanco + votosNulos + abstencion << "  | " << porcentaje(sumaVotos + votosBlanco + votosNulos + abstencion, ciudadEleccion.getCensoElectoral()) << " %" << endl;
         cout << "---------------------------------------------------------------------------------------" << endl;
 
-        Elecciones eleccion (ciudadEleccion.getNombre(), tipoEleccion, sumaVotos, votosBlanco, votosNulos, abstencion, "12/3/42");
-        totalElecciones ->insertar(eleccion);
+        Elecciones eleccion(ciudadEleccion.getNombre(), tipoEleccion, sumaVotos, votosBlanco, votosNulos, abstencion, "12/3/42");
+        totalElecciones -> insertar(eleccion);
     }
-
 
 };

@@ -3,12 +3,11 @@
 #include "Clases Principales/Inicializar.cpp"
 
 class Simulacion {
-private:
-    Lista < Ciudad > * ciudades;
+private: Lista < Ciudad > * ciudades;
     Lista < Partido > * partidos;
     Lista < Candidato > * candidatos;
 
-    Lista <Elecciones> *totalElecciones;
+    Lista < Elecciones > * totalElecciones;
 
     Inicializar inicializar;
 public:
@@ -37,7 +36,7 @@ public:
         partidos = Partidos.leerPartidos();
         candidatos = Candidatos.leerCandidatos();
 
-        totalElecciones = new Lista<Elecciones>;
+        totalElecciones = new Lista < Elecciones > ;
 
     }
 };

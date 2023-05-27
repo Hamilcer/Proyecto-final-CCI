@@ -1,8 +1,11 @@
 #include "../Archivos.h"
 
 #include "../OpcionesListas.cpp"
+
 #include "../OpcionesConsultas.cpp"
+
 #include "../OpcionesSimulacion.cpp"
+
 #include "../OpcionesEstadisticas.cpp"
 
 class Inicializar {

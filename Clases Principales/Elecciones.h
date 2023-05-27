@@ -6,8 +6,7 @@
 #include "Candidato.h"
 
 class Elecciones {
-private:
-    string nomCiudad;
+private: string nomCiudad;
     string tipoEleccion;
     int votosTotales;
     int votosBlancos;
@@ -25,7 +24,7 @@ public: Elecciones() {
         fecha = "";
     }
 
-    Elecciones(string nomCiudad,string tipoEleccion, int votosTotales, int votosBlancos, int votosNulos, int votosAbstencion, string fecha) {
+    Elecciones(string nomCiudad, string tipoEleccion, int votosTotales, int votosBlancos, int votosNulos, int votosAbstencion, string fecha) {
         this -> nomCiudad = nomCiudad;
         this -> tipoEleccion = tipoEleccion;
         this -> votosTotales = votosTotales;
@@ -35,20 +34,19 @@ public: Elecciones() {
         this -> fecha = fecha;
     }
 
-
-    const string &getNomCiudad() const {
+    const string & getNomCiudad() const {
         return nomCiudad;
     }
 
-    void setNomCiudad(const string &nomCiudad) {
+    void setNomCiudad(const string & nomCiudad) {
         Elecciones::nomCiudad = nomCiudad;
     }
 
-    const string &getTipoEleccion() const {
+    const string & getTipoEleccion() const {
         return tipoEleccion;
     }
 
-    void setTipoEleccion(const string &tipoEleccion) {
+    void setTipoEleccion(const string & tipoEleccion) {
         Elecciones::tipoEleccion = tipoEleccion;
     }
 
@@ -84,14 +82,13 @@ public: Elecciones() {
         Elecciones::votosAbstencion = votosAbstencion;
     }
 
-    const string &getFecha() const {
+    const string & getFecha() const {
         return fecha;
     }
 
-    void setFecha(const string &fecha) {
+    void setFecha(const string & fecha) {
         Elecciones::fecha = fecha;
     }
-
 
 };
 
