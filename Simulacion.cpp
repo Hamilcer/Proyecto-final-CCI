@@ -358,7 +358,7 @@ void Simulacion::Menu() {
                 Archivos Candidatos("Candidatos");
                 string textoCandidatos;
 
-                for (int i = 0; i < ciudades -> getTam(); i++) {
+                for (int i = 0; i < candidatos -> getTam(); i++) {
                     Candidato candidato = candidatos -> buscar(i);
                     textoCandidatos += candidato.getNombre() + "," + candidato.getApellido() + "," + candidato.getPuesto() + "," + candidato.getNumIdentificacion() + "," + candidato.getSexo() + "," + candidato.getEstadoCivil() + "," + candidato.getFechaNacimiento() + "," + candidato.getCiudadNacimiento().getNombre() + "," + candidato.getCiudadResidencia().getNombre() + "," + candidato.getPartido().getNombre();
                 }

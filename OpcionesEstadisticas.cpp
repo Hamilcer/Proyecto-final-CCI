@@ -213,9 +213,10 @@ public:
         for (int i = 0; i < listaPartidoVotos.getTam(); i++){
             PartidoVotos pv = listaPartidoVotos.buscar(i);
             if (pv.partido == nombrePartido){
-                pv.votos += cantVotos;
+                int aux = pv.votos + cantVotos;
+                pv.votos = aux;
+                listaPartidoVotos.modificar(pv, i);
             }
-            listaPartidoVotos.modificar(pv, i);
         }
     }
 

@@ -29,14 +29,17 @@ public: OpcionesListas opcionLista;
     }
 
     void simularVotos() {
+
         int Opcion;
+
         opcionLista.mostrarCiudades(ciudades);
         cout << "Ingrese el id de la ciudad a la cual desea simular" << endl;
         cin >> Opcion;
+
         Ciudad ciudadEleccion = ciudades -> buscar(Opcion);
+
         cout << "Ingrese el tipo de eleccion: 1.Alcaldia 2.Concejo" << endl;
         cin >> Opcion;
-        //system("cls");
 
         int totalVotos = ciudadEleccion.getCensoElectoral();
         int votosBlanco, votosNulos, abstencion, votosRestantes;
@@ -66,7 +69,6 @@ public: OpcionesListas opcionLista;
             Candidato candidato = candidatos -> buscar(i);
             if (candidato.getCiudadResidencia().getNombre() == ciudad && candidato.getPuesto() == puesto) {
                 listaCandidatosFiltrada.insertar(candidato);
-                // Mauesquerraamienta misteriosa que nos ayudará más adelante.
                 posiciones.insertar(i);
             }
         }
@@ -93,8 +95,8 @@ public: OpcionesListas opcionLista;
             Candidato candidato = listaCandidatosFiltrada.buscar(i);
             candidato.setVotos(votos);
             if(votos > ganador[1]){
-                ganador[1] = votos;
-                ganador[0] = i;
+                ganador[1] = votos; //Guarda la cantidad de votos.
+                ganador[0] = i; //Pos en la lista filtrada.
             }
             candidatos -> modificar(candidato, posicionActual);
             votosRestantes -= votos;
@@ -111,8 +113,9 @@ public: OpcionesListas opcionLista;
 
         //Limpiar lista
         int tamano = listaCandidatosFiltrada.getTam(); //revisar porque queda tam -1
-        for ( tamano; tamano >= 0; tamano--){
-            listaCandidatosFiltrada.borrar(tamano);
+        for ( tamano; tamano > 0; tamano--){
+            listaCandidatosFiltrada.borrar(tamano-1);
+            posiciones.borrar(tamano-1);
         }
 
         cout << "Total entre candidatos: "<<  sumaVotos << endl;
