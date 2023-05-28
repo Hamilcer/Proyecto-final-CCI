@@ -26,10 +26,12 @@ Partido Inicializar::inicializarPartido(Lista < Partido > * partidos) {
     int i = 0;
 
     while (!partidoValido) {
-        cout << "Ingrese el nombre del Partido" << endl;
-        cin >> NombrePartido;
-        cout << "Ingrese el nombre del Representante legal" << endl;
-        cin >> RepresentanteLegal;
+	    cout << "Ingrese el nombre del Partido: ";
+	    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	    getline(std::cin, NombrePartido);
+	
+	    cout << "Ingrese el nombre del Representante legal: ";
+	    getline(std::cin, RepresentanteLegal);
 
         for (i = 0; i < partidos -> getTam(); i++) {
             Partido partidoAuxiliar = partidos -> buscar(i);

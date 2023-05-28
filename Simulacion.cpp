@@ -3,10 +3,11 @@
 #include "Clases Principales/Inicializar.cpp"
 
 class Simulacion {
-private: Lista < Ciudad > * ciudades;
+private: 
+
+	Lista < Ciudad > * ciudades;
     Lista < Partido > * partidos;
     Lista < Candidato > * candidatos;
-
     Lista < Elecciones > * totalElecciones;
 
     Inicializar inicializar;
@@ -76,17 +77,19 @@ void Simulacion::Menu() {
                     }
                     case 3: {
                         string ciudad;
-                        cout << "Ingrese la ciudad en la que desea buscar candidatos al concejo" << endl;
-                        cin >> ciudad;
-                        opcionLista.candidatosConcejo(ciudad, candidatos);
+                        cout << "Elige la ciudad que desees ver los candidatos al concejo" << endl;
+                    	opcionLista.mostrarCiudades(ciudades);
+                    	cin >> Opcion;
+                        opcionLista.candidatosConcejo(ciudades->buscar(Opcion).getNombre(), candidatos);
 
                         break;
                     }
                     case 4: {
                         string ciudad;
-                        cout << "Ingrese la ciudad en la que desea buscar candidatos a la alcaldia" << endl;
-                        cin >> ciudad;
-                        opcionLista.candidatosAlcaldia(ciudad, candidatos);
+                        cout << "Elige la ciudad que desees ver los candidatos a la alcaldia" << endl;
+                    	opcionLista.mostrarCiudades(ciudades);
+                    	cin >> Opcion;
+                        opcionLista.candidatosAlcaldia(ciudades->buscar(Opcion).getNombre(), candidatos);
                         break;
                     }
                     case 5: {
@@ -317,13 +320,9 @@ void Simulacion::Menu() {
                                 		candidatos->borrar(i);
 									}
 								}
-								/*
-								for(int i= 0; i < candidatos->getTam(); i++){
-									cout<<candidatos->buscar(i).getNombre()<<" "<<candidatos->buscar(i).getApellido()<<endl;
-								}
-								
+
 								system("Pause");
-								*/
+								
                                 break;
                             }
                             case 2: { //Eliminar Candidato
@@ -355,15 +354,6 @@ void Simulacion::Menu() {
 									}
 								}
 								
-								/* VER CANDIDATOS
-								
-								for(int i= 0; i < candidatos->getTam(); i++){
-									cout<<candidatos->buscar(i).getNombre()<<" "<<candidatos->buscar(i).getApellido()<<endl;
-								}
-								
-								system("Pause");
-								
-								*/
                                 break;
                             }
                         }
@@ -408,8 +398,10 @@ void Simulacion::Menu() {
 
                 for (int i = 0; i < candidatos -> getTam(); i++) {
                     Candidato candidato = candidatos -> buscar(i);
-                    textoCandidatos += candidato.getNombre() + "," + candidato.getApellido() + "," + candidato.getPuesto() + "," + candidato.getNumIdentificacion() + "," + candidato.getSexo() + "," + candidato.getEstadoCivil() + "," + candidato.getFechaNacimiento() + "," + candidato.getCiudadNacimiento().getNombre() + "," + candidato.getCiudadResidencia().getNombre() + "," + candidato.getPartido().getNombre();
+                    textoCandidatos += candidato.getNombre() + "," + candidato.getApellido() + "," + candidato.getPuesto() + "," + candidato.getNumIdentificacion() + "," + candidato.getSexo() + "," + candidato.getEstadoCivil() + "," + candidato.getFechaNacimiento() + "," + candidato.getCiudadNacimiento().getNombre() + "," + candidato.getCiudadResidencia().getNombre() + "," + candidato.getPartido().getNombre()+"\n";
                 }
+                
+                Candidatos.escribir(textoCandidatos);
 
                 programa = false;
                 break;
