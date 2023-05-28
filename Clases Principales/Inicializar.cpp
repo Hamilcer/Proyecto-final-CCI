@@ -78,7 +78,7 @@ Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista 
     int i = 0;
 
     while (!candidatoValido) {
-
+		bool encontrado = false;
         //Buscar el partido perteneciente de la lista de partidos y guardarla en el objeto partido
 
         cout << "De los siguientes partidos constituidos ,¿ cual de ellos pertenece el candidato ?";
@@ -119,15 +119,14 @@ Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista 
             Candidato candidatoAuxiliar = candidatos -> buscar(i);
             if (candidatoAuxiliar.getNumIdentificacion() == numIdentificacion) {
                 cout << "Ya hay un candidato con este numero de identificación" << endl;
+                encontrado = true;
                 break;
             }
         }
 
-        // Si el bucle for se completó sin encontrar coincidencias, el partido es válido
-        if (i == candidatos -> getTam()) {
-            candidatoValido = true;
-        }
-
+	    if (!encontrado) {
+	        candidatoValido = true;
+	    }
     }
 
     //Creacion del objeto candidato para añadirlo en la lista

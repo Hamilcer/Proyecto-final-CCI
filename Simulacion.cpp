@@ -78,7 +78,7 @@ void Simulacion::Menu() {
                     }
                     case 3: {
                         string ciudad;
-                        cout << "Ingrese la ciudad en la que desea buscar candidatos al concejo" << endl;
+                        cout << "Ingrese la ciudad en la que desea buscar candidatos al consejo" << endl;
                         cin >> ciudad;
                         opcionLista.candidatosConcejo(ciudad, candidatos);
 
@@ -92,22 +92,16 @@ void Simulacion::Menu() {
                         break;
                     }
                     case 5: {
-                        string partido;
-                        cout << "Ingrese el partido en la que desea buscar candidatos a la alcaldia" << endl;
-                        cin >> partido;
-                        opcionLista.candidatosAlcaldiaConsejoPartido(partido, "Alcaldia", candidatos);
+                        opcionLista.candidatosAlcaldiaConsejoPartido("Alcaldia", candidatos, partidos);
                         break;
                     }
                     case 6: {
-                        string partido;
-                        cout << "Ingrese el partido en la que desea buscar candidatos al concejo" << endl;
-                        cin >> partido;
-                        opcionLista.candidatosAlcaldiaConsejoPartido(partido, "concejo", candidatos);
+                        opcionLista.candidatosAlcaldiaConsejoPartido("Consejo", candidatos, partidos);
 
                         break;
                     }
                     case 7: {
-                        opcionLista.candidatosAlcaldiaConsejoPartidoLista("concejo", candidatos, partidos);
+                        opcionLista.candidatosAlcaldiaConsejoPartidoLista("Consejo", candidatos, partidos);
                         break;
                     }
                     case 8: {
@@ -270,7 +264,6 @@ void Simulacion::Menu() {
                                 Partido NuevoPartido = inicializar.inicializarPartido(partidos);
 
                                 partidos -> modificar(NuevoPartido, Opcion);
-
                                 break;
                             }
                             case 2: { //Modificar Candidato
@@ -316,8 +309,24 @@ void Simulacion::Menu() {
                                 cout << "�Que partido deseas Eliminar?" << endl;
                                 opcionLista.mostrarPartidos(partidos);
                                 cin >> Eleccion;
-
+                                //Guardar un partido auxiliar para eliminar los candidatos con ese partido
+								Partido partidoAux = partidos->buscar(Eleccion);
+								
                                 partidos -> borrar(Eleccion);
+                                
+                                for(int i = 0; i < candidatos->getTam(); i++){
+                                	Candidato candidatoAux = candidatos->buscar(i);
+                                	if(candidatoAux.getPartido().getNombre() == partidoAux.getNombre()){
+                                		candidatos->borrar(i);
+									}
+								}
+								/*
+								for(int i= 0; i < candidatos->getTam(); i++){
+									cout<<candidatos->buscar(i).getNombre()<<" "<<candidatos->buscar(i).getApellido()<<endl;
+								}
+								
+								system("Pause");
+								*/
                                 break;
                             }
                             case 2: { //Eliminar Candidato
@@ -335,9 +344,29 @@ void Simulacion::Menu() {
                                 cout << "�Que ciudades deseas Eliminar?" << endl;
                                 opcionLista.mostrarCiudades(ciudades);
                                 cin >> Opcion;
-
+								
+								Ciudad ciudadAux = ciudades->buscar(Opcion);
+								
                                 ciudades -> borrar(Opcion);
-
+                                
+                                //Borrar los candidatos que residan en esa ciudad
+                                
+                                for(int i = 0; i < candidatos->getTam(); i++){
+                                	Candidato candidatoAux = candidatos->buscar(i);
+                                	if(candidatoAux.getCiudadResidencia().getNombre() == ciudadAux.getNombre()){
+                                		candidatos->borrar(i);
+									}
+								}
+								
+								/* VER CANDIDATOS
+								
+								for(int i= 0; i < candidatos->getTam(); i++){
+									cout<<candidatos->buscar(i).getNombre()<<" "<<candidatos->buscar(i).getApellido()<<endl;
+								}
+								
+								system("Pause");
+								
+								*/
                                 break;
                             }
                         }
