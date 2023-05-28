@@ -89,7 +89,7 @@ public:
             //Guardar el candidato buscado y devolver los atributos necesarios dada la validacion
             Candidato candidato = candidatos -> buscar(i);
             if (candidato.getPartido().getNombre() == nombrePartido && candidato.getPuesto() == puesto) {
-                cout << candidatos -> buscar(i).getNombre() << endl;
+                cout << candidato.getNombre() <<" "<<candidato.getNumIdentificacion()<<endl;
                 cantidad++;
             }
         }
