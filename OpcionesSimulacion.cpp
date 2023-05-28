@@ -35,12 +35,12 @@ public: OpcionesListas opcionLista;
 
         opcionLista.mostrarCiudades(ciudades);
         cout << "Ingrese el id de la ciudad a la cual desea simular" << endl;
-        cin >> Opcion;
+        Opcion = leerEntrada(0,ciudades->getTam()-1);
 
         Ciudad ciudadEleccion = ciudades -> buscar(Opcion);
 
         cout << "Ingrese el tipo de eleccion: 1.Alcaldia 2.Concejo" << endl;
-        cin >> Opcion;
+        Opcion = leerEntrada(1,2);
 
         int totalVotos = ciudadEleccion.getCensoElectoral();
         int votosBlanco, votosNulos, abstencion, votosRestantes;

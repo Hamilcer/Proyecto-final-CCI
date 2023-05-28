@@ -81,7 +81,7 @@ void ArbolConsultas<T>::agregarCandidato(Candidato *candidato, string nodoObjeti
         NodoConsulta aux = raiz->listaConsulta.buscar(i);
         if (aux.nombre == nodoObjetivo)
         {
-            if (candidato->getPuesto() == "Consejo")
+            if (candidato->getPuesto() == "Concejo")
                 raiz->listaConsulta.buscar(i).candidatos->Enqueue(candidato, 'I');
             else
                 raiz->listaConsulta.buscar(i).candidatos->Enqueue(candidato, 'F');

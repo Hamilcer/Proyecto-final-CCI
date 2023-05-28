@@ -49,7 +49,6 @@ void Simulacion::Menu() {
 
     leerArchivos();
 
-    
     OpcionesConsultas opcionConsultas(ciudades, partidos, candidatos); // Inicializa el objeto de la clase Opciones Consultas
     OpcionesSimulacion opcionesSimulacion(ciudades, partidos, candidatos, totalElecciones);
     OpcionesEstadisticas opcionesEstadisticas(ciudades, partidos, candidatos, totalElecciones);
@@ -57,14 +56,13 @@ void Simulacion::Menu() {
     while (programa) { // Bucle infinito del programa
         system("cls");
         MostrarMenu();
-        cin >> Opcion;
-        //Opcion = 2;
+        Opcion = leerEntrada(1,6);
 
         switch (Opcion) {
             case 1: {
                 system("cls"); // Limpia pantalla
                 SubMenuListas(); // Muestra men�
-                cin >> Opcion;
+                Opcion = leerEntrada(1,8);
                 switch (Opcion) {
                     case 1: {
                         opcionLista.mostrarCiudades(ciudades);
@@ -78,7 +76,7 @@ void Simulacion::Menu() {
                     }
                     case 3: {
                         string ciudad;
-                        cout << "Ingrese la ciudad en la que desea buscar candidatos al consejo" << endl;
+                        cout << "Ingrese la ciudad en la que desea buscar candidatos al concejo" << endl;
                         cin >> ciudad;
                         opcionLista.candidatosConcejo(ciudad, candidatos);
 
@@ -96,12 +94,12 @@ void Simulacion::Menu() {
                         break;
                     }
                     case 6: {
-                        opcionLista.candidatosAlcaldiaConsejoPartido("Consejo", candidatos, partidos);
+                        opcionLista.candidatosAlcaldiaConsejoPartido("Concejo", candidatos, partidos);
 
                         break;
                     }
                     case 7: {
-                        opcionLista.candidatosAlcaldiaConsejoPartidoLista("Consejo", candidatos, partidos);
+                        opcionLista.candidatosAlcaldiaConsejoPartidoLista("Concejo", candidatos, partidos);
                         break;
                     }
                     case 8: {
@@ -114,8 +112,7 @@ void Simulacion::Menu() {
             case 2: {
                 system("cls");
                 SubMenuConsultas();
-                cin >> Opcion;
-                // Opcion = 1;
+                Opcion = leerEntrada(1,7);
                 switch (Opcion) {
                     case 1: {
                         string partido, ciudad;
@@ -165,7 +162,7 @@ void Simulacion::Menu() {
             case 3: {
                 system("cls");
                 SubMenuEstadisticas();
-                cin >> Opcion;
+                Opcion = leerEntrada(1,3);
                 switch (Opcion) {
                     case 1: {
                         opcionesEstadisticas.estadisticaPorCiudad();
@@ -174,7 +171,7 @@ void Simulacion::Menu() {
                     }
                     case 2: {
                         cout << "Ingrese el tipo de eleccion: 1.Alcaldia 2.Concejo" << endl;
-                        cin >> Opcion;
+                        Opcion = leerEntrada(1,2);
                         if (Opcion == 1) {
                             opcionesEstadisticas.estadisticaEleccion("Alcaldia");
 
@@ -188,7 +185,7 @@ void Simulacion::Menu() {
                     }
                     case 3: {
                         cout << "Ingrese el tipo de eleccion: 1.Alcaldia 2.Concejo" << endl;
-                        cin >> Opcion;
+                        Opcion = leerEntrada(1,2);
                         if (Opcion == 1) {
                             opcionesEstadisticas.estadisticaNacional("Alcaldia");
 
@@ -213,14 +210,14 @@ void Simulacion::Menu() {
             case 5: {
                 system("cls");
                 SubMenuInsercion();
-                cin >> Opcion;
+                Opcion = leerEntrada(1,3);
 
                 string caso;
 
                 switch (Opcion) {
                     case 1: { //Opciones para insertar
                         EleccionSubMenuInsercion();
-                        cin >> Opcion;
+                        Opcion = leerEntrada(1,3);
                         switch (Opcion) {
                             case 1: {
                                 //Creaci�n del Objeto partido
@@ -252,14 +249,14 @@ void Simulacion::Menu() {
                     }
                     case 2: { //Opciones para Modificar
                         EleccionSubMenuInsercion();
-                        cin >> Opcion;
+                        Opcion = leerEntrada(1,3);
                         switch (Opcion) {
                             case 1: {
                                 //Encontrar el partido a modificar
                                 string NombrePartido, RepresentanteLegal;
                                 cout << "�Que partido deseas modificar?" << endl;
                                 opcionLista.mostrarPartidos(partidos);
-                                cin >> Opcion;
+                                Opcion = leerEntrada(0,partidos->getTam()-1);
                                 //Inicializar Partido
                                 Partido NuevoPartido = inicializar.inicializarPartido(partidos);
 
@@ -273,7 +270,7 @@ void Simulacion::Menu() {
 
                                 cout << "Selecciona el candidato que deseas modificar" << endl;
                                 opcionLista.mostrarCandidatos(candidatos);
-                                cin >> Opcion;
+                                Opcion = leerEntrada(0,candidatos->getTam()-1);
 
                                 // Creaci�n del objeto candidato para a�adirlo en la lista
                                 Candidato nuevoCandidato = inicializar.inicializarCandidato(partidos, ciudades, candidatos);
@@ -289,7 +286,7 @@ void Simulacion::Menu() {
                                 int tamConcejo, censoElectoral, ciudad;
                                 cout << "Selecciona la ciudad que desea modificar" << endl;
                                 opcionLista.mostrarCiudades(ciudades);
-                                cin >> ciudad;
+                                ciudad = leerEntrada(0,ciudades->getTam()-1);
 
                                 //Creaci�n del Objeto Ciudad
                                 Ciudad NuevaCiudad = inicializar.inicializarCiudad();
@@ -302,13 +299,13 @@ void Simulacion::Menu() {
                     }
                     case 3: { //Opciones para Eliminar //Validaci�n, Si se eliminan partido, los Candidatos con ese partido quedan sin partido
                         EleccionSubMenuInsercion();
-                        cin >> Opcion;
+                        Opcion = leerEntrada(1,3);
                         switch (Opcion) {
                             case 1: { //Eliminar Partido
                                 int Eleccion;
                                 cout << "�Que partido deseas Eliminar?" << endl;
                                 opcionLista.mostrarPartidos(partidos);
-                                cin >> Eleccion;
+                                Eleccion = leerEntrada(0,partidos->getTam()-1);
                                 //Guardar un partido auxiliar para eliminar los candidatos con ese partido
 								Partido partidoAux = partidos->buscar(Eleccion);
 								
@@ -333,7 +330,7 @@ void Simulacion::Menu() {
 
                                 cout << "�Que candidato deseas Eliminar?" << endl;
                                 opcionLista.mostrarCandidatos(candidatos);
-                                cin >> Opcion;
+                                Opcion = leerEntrada(0,candidatos->getTam()-1);
 
                                 candidatos -> borrar(Opcion);
 
@@ -343,7 +340,7 @@ void Simulacion::Menu() {
 
                                 cout << "�Que ciudades deseas Eliminar?" << endl;
                                 opcionLista.mostrarCiudades(ciudades);
-                                cin >> Opcion;
+                                Opcion = leerEntrada(0, ciudades->getTam()-1);
 								
 								Ciudad ciudadAux = ciudades->buscar(Opcion);
 								
@@ -480,14 +477,7 @@ string Simulacion::elegirPartido()
     int pos = 0;
     cout << "Escriba el número del partido que desea elegir: " << endl;
     opcionLista.mostrarPartidos(partidos);
-    cin.ignore();
-    cin >> pos;
-    while (pos < 0 || pos > partidos->getTam()-1)
-    {
-        cout << "Ingrese un número válido: " << endl;
-        cin >> pos;
-    }
-    
+    pos = leerEntrada(0,partidos->getTam()-1);
     return partidos->buscar(pos).getNombre();
 }
 
@@ -496,13 +486,7 @@ string Simulacion::elegirCiudad()
     int pos = 0;
     cout << "Escriba el número de la ciudad que desea elegir: " << endl;
     opcionLista.mostrarCiudades(ciudades);
-    cin.ignore();
-    cin >> pos;
-    while (pos < 0 || pos > ciudades->getTam()-1)
-    {
-        cout << "Ingrese un número válido: " << endl;
-        cin >> pos;
-    }
+    pos = leerEntrada(0,ciudades->getTam()-1);
     return ciudades->buscar(pos).getNombre();
 }
 

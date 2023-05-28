@@ -82,7 +82,8 @@ void OpcionesConsultas::agregarDatosArbolCiudades(Lista<Ciudad> *ciudades, Lista
     {
         Candidato *auxCandidato = candidatos->buscarApuntador(i);
         nodoAux = arbolCiudades->buscar(auxCandidato->getCiudadResidencia().getNombre()); // busca la ciudad la cual debe agregar el cadidato
-        nodoAux->data->agregarCandidato(auxCandidato, auxCandidato->getPartido().getNombre());
+        if(nodoAux->clave == auxCandidato->getCiudadResidencia().getNombre()) // valida que la ciudad corresponda
+            nodoAux->data->agregarCandidato(auxCandidato, auxCandidato->getPartido().getNombre());
     }
 }
 
@@ -121,7 +122,8 @@ void OpcionesConsultas::agregarDatosArbolPartidos(Lista<Ciudad> *ciudades, Lista
     {
         Candidato *auxCandidato = candidatos->buscarApuntador(i);
         nodoAux = arbolPartidos->buscar(auxCandidato->getPartido().getNombre()); // busca la ciudad la cual debe agregar el cadidato
-        nodoAux->data->agregarCandidato(auxCandidato, auxCandidato->getCiudadResidencia().getNombre());
+        if(nodoAux->clave == auxCandidato->getPartido().getNombre()) // valida que el partido corresponda
+            nodoAux->data->agregarCandidato(auxCandidato, auxCandidato->getCiudadResidencia().getNombre());
     }
 }
 
@@ -175,7 +177,7 @@ void OpcionesConsultas::consulta1(string partido, string ciudad)
 
         if (auxPartido->getTam() > 1)
         {
-            cout << "Candidatos consejo:" << endl;
+            cout << "Candidatos concejo:" << endl;
 
             for (int j = 0 + cAldalde; j < auxPartido->getTam(); j++)
             {
@@ -300,7 +302,7 @@ void OpcionesConsultas::consulta4(string ciudad)
                 }
                 if (auxPartidos.getTam() > 0)
                 {
-                    cout << "   Candidatos consejo:" << endl;
+                    cout << "   Candidatos concejo:" << endl;
 
                     for (int j = 0 + cAldalde; j < auxCandidatos->getTam(); j++)
                     {

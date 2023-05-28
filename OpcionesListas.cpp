@@ -80,7 +80,7 @@ public:
         cout<<"Seleccione el partido"<<endl;
         //Se muestra la lista de los partidos existentes a seleccionar
         mostrarPartidos(partidos);
-        cin>>Opcion;
+        Opcion = leerEntrada(0,partidos->getTam()-1);
         //Se guarda el nombre del partido en una variable local para no repetir el proceso de busqueda
         string nombrePartido = partidos->buscar(Opcion).getNombre();
         

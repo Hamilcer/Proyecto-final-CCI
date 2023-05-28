@@ -53,7 +53,7 @@ class OpcionesEstadisticas {
     int Opcion;
     opcionLista.mostrarCiudades(ciudades);
     cout << "Ingrese el id de la ciudad a mostrar la estadistica" << endl;
-    cin >> Opcion;
+    Opcion = leerEntrada(0,ciudades->getTam()-1);
     Ciudad ciudadEleccion = ciudades -> buscar(Opcion);
     system("cls");
     cout << "Reporte de votos de la ciudad " << ciudadEleccion.getNombre() << endl;
@@ -78,7 +78,7 @@ class OpcionesEstadisticas {
 
       opcionLista.mostrarPartidos(partidos);
       cout << "Ingrese el id del partido a mostrar la estadistica" << endl;
-      cin >> Opcion;
+      Opcion = leerEntrada(0,partidos->getTam()-1);
       Partido partidoEleccion = partidos -> buscar(Opcion);
       system("cls");
       cout << "Reporte de votos de Consejo para el partido " << partidoEleccion.getNombre() << endl;
@@ -111,7 +111,7 @@ class OpcionesEstadisticas {
 
     opcionLista.mostrarCiudades(ciudades);
     cout << "Ingrese el id de la ciudad para la estadistica" << endl;
-    cin >> Opcion;
+    Opcion = leerEntrada(0, ciudades->getTam()-1);
     Ciudad ciudadEleccion = ciudades -> buscar(Opcion);
     system("cls");
     cout << "Reporte de votos para la ciudad " << ciudadEleccion.getNombre() << endl;

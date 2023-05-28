@@ -12,6 +12,8 @@
 
 #include "Clases Principales/Elecciones.h"
 
+#include "LeerEntradas.h"
+
 class Archivos {
 private: string nombreArchivo;
     string rutaArchivo;
