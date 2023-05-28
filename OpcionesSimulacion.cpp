@@ -86,10 +86,9 @@ public: OpcionesListas opcionLista;
         return (dato / total) * 100.0;
     }
     
-    void guardarSimulacion(string textoArchivo, string fechaSimulacion){
+    void guardarSimulacion(string textoArchivo){
     	Archivos Simulacion("Simulación");
-    	
-    	Simulacion.anadir("La fecha de la siguiente simulación se dio el "+fechaSimulacion);
+    
     	Simulacion.anadir(textoArchivo);
 			
 	}
@@ -121,8 +120,6 @@ public: OpcionesListas opcionLista;
             cout << "---------*****---------" << endl;
             cout << "EL GANADOR ES " << canGanador.getNombre() + " " + canGanador.getApellido() << endl;
             cout << "---------*****---------" << endl;
-            
-            textoArchivo+= "EL GANADOR DE LA ALCALDIA ES "+canGanador.getNombre()+ " " +canGanador.getApellido()+"\n";
         }
 
         //Limpiar lista
@@ -133,30 +130,24 @@ public: OpcionesListas opcionLista;
         }
 
         cout << "Total entre candidatos: " << sumaVotos << endl;
-        textoArchivo += "Total entre candidatos: "+to_string(sumaVotos)+"\n";
         
         votosBlanco = numeroAleatorio(votosRestantes / 2);
         cout << "Votos blancos: " << votosBlanco << "  | " << porcentaje(votosBlanco, ciudadEleccion.getCensoElectoral()) << " %" << endl;
-        textoArchivo += "Votos blancos: "+to_string(votosBlanco)+"  | "+to_string(porcentaje(votosBlanco, ciudadEleccion.getCensoElectoral()))+" % \n";
+        
 
         votosNulos = numeroAleatorio(votosRestantes - votosBlanco);
         cout << "Votos nulos: " << votosNulos << "  | " << porcentaje(votosNulos, ciudadEleccion.getCensoElectoral()) << " %" << endl;
-		textoArchivo += "Votos nulos: "+to_string(votosNulos)+ "  | "+to_string(porcentaje(votosNulos, ciudadEleccion.getCensoElectoral()))+" % \n";
 		
         abstencion = votosRestantes - votosBlanco - votosNulos;
         cout << "Votos abstencion: " << abstencion << "  | " << porcentaje(abstencion, ciudadEleccion.getCensoElectoral()) << " %" << endl;
-		textoArchivo += "Votos abstencion: "+to_string(abstencion)+"  | "+to_string(porcentaje(abstencion, ciudadEleccion.getCensoElectoral()))+" % \n";
-		
+	
         cout << "Total de votos(censo ciudad): " << totalVotos << endl;
-        textoArchivo += "Total de votos(censo ciudad): "+to_string(totalVotos)+"\n";
         cout << "Total de votos(suma): " << sumaVotos + votosBlanco + votosNulos + abstencion<< "  | " << porcentaje(sumaVotos + votosBlanco + votosNulos + abstencion, ciudadEleccion.getCensoElectoral()) << " %" << endl;
-        textoArchivo += "Total de votos(suma): "+to_string(sumaVotos + votosBlanco + votosNulos + abstencion)+"  | "+to_string(porcentaje(sumaVotos + votosBlanco + votosNulos + abstencion, ciudadEleccion.getCensoElectoral()))+" % \n";
         cout << "---------------------------------------------------------------------------------------" << endl;
-		textoArchivo += "---------------------------------------------------------------------------------------  \n";
         Elecciones eleccion(ciudadEleccion.getNombre(), tipoEleccion, sumaVotos, votosBlanco, votosNulos, abstencion, "12/3/42");
         totalElecciones -> insertar(eleccion);
         
-        guardarSimulacion(textoArchivo, "12/3/42");
+        guardarSimulacion(eleccion.toString());
         
     }
     
