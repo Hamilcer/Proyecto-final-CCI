@@ -12,8 +12,6 @@ private: string nomCiudad;
     int votosBlancos;
     int votosNulos;
     int votosAbstencion;
-    string fecha;
-
 public: Elecciones() {
         nomCiudad = "";
         string tipoEleccion;
@@ -21,17 +19,15 @@ public: Elecciones() {
         votosBlancos = 0;
         votosNulos = 0;
         votosAbstencion = 0;
-        fecha = "";
     }
 
-    Elecciones(string nomCiudad, string tipoEleccion, int votosTotales, int votosBlancos, int votosNulos, int votosAbstencion, string fecha) {
+    Elecciones(string nomCiudad, string tipoEleccion, int votosTotales, int votosBlancos, int votosNulos, int votosAbstencion) {
         this -> nomCiudad = nomCiudad;
         this -> tipoEleccion = tipoEleccion;
         this -> votosTotales = votosTotales;
         this -> votosBlancos = votosBlancos;
         this -> votosNulos = votosNulos;
         this -> votosAbstencion = votosAbstencion;
-        this -> fecha = fecha;
     }
 
     const string & getNomCiudad() const {
@@ -82,23 +78,16 @@ public: Elecciones() {
         Elecciones::votosAbstencion = votosAbstencion;
     }
 
-    const string & getFecha() const {
-        return fecha;
-    }
 
-    void setFecha(const string & fecha) {
-        Elecciones::fecha = fecha;
-    }
-    
+
 	string toString() const{
 	    stringstream ss;
 	    ss << "Nombre de la ciudad: " << nomCiudad << std::endl;
-	    ss << "Tipo de elección: " << tipoEleccion << std::endl;
+	    ss << "Tipo de elecciï¿½n: " << tipoEleccion << std::endl;
 	    ss << "Votos totales: " << votosTotales << std::endl;
 	    ss << "Votos en blanco: " << votosBlancos << std::endl;
 	    ss << "Votos nulos: " << votosNulos << std::endl;
-	    ss << "Votos de abstención: " << votosAbstencion << std::endl;
-	    ss << "Fecha: " << fecha << std::endl;
+	    ss << "Votos de abstenciï¿½n: " << votosAbstencion << std::endl;
 	    return ss.str();
 	}
 

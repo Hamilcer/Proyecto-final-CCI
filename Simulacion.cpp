@@ -316,9 +316,18 @@ void Simulacion::Menu() {
                                 
                                 for(int i = 0; i < candidatos->getTam(); i++){
                                 	Candidato candidatoAux = candidatos->buscar(i);
+                                    string aux1 = candidatoAux.getPartido().getNombre();
+                                    string aux2 = partidoAux.getNombre();
+
                                 	if(candidatoAux.getPartido().getNombre() == partidoAux.getNombre()){
                                 		candidatos->borrar(i);
 									}
+                                    candidatoAux = candidatos->buscar(i);
+                                    while(candidatoAux.getPartido().getNombre() == partidoAux.getNombre())
+                                    {
+                                        candidatos->borrar(i);
+                                        candidatoAux = candidatos->buscar(i);
+                                    }
 								}
 
 								system("Pause");
@@ -352,6 +361,13 @@ void Simulacion::Menu() {
                                 	if(candidatoAux.getCiudadResidencia().getNombre() == ciudadAux.getNombre()){
                                 		candidatos->borrar(i);
 									}
+                                    candidatoAux = candidatos->buscar(i);
+                                    while(candidatoAux.getCiudadResidencia().getNombre() == ciudadAux.getNombre())
+                                    {
+                                        candidatos->borrar(i);
+                                        candidatoAux = candidatos->buscar(i);
+                                    }
+
 								}
 								
                                 break;
