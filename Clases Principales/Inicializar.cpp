@@ -100,6 +100,7 @@ Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista 
         // A�adir los dem�s datos del candidato
 
         cout << "Ingrese el nombre de candidato" << endl;
+        cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         getline(std::cin, nombre);
 
         cout << "Ingrese el apellido del candidato" << endl;
@@ -110,13 +111,29 @@ Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista 
         puesto = (opcion==1)?"Alcaldia":"Concejo";
 
         cout << "Ingrese el documento de identidad del candidato" << endl;
-        cin >> numIdentificacion;
+        numIdentificacion = leerEntrada(0, 9999999999);
 
-        cout << "ingrese el estado civil del candidato" << endl;
-        cin >> estadoCivil;
+        cout << "ingrese el estado civil del candidato 1.Casado 2.Soltero 3.Union libre 4.Divorciado" << endl;
+        opcion = leerEntrada(1,4);
+        if(opcion == 1)
+        {
+            estadoCivil = "Casado";
+        }
+        else if (opcion == 2)
+        {
+            estadoCivil = "Soltero";
+        }
+        else if (opcion == 3)
+        {
+            estadoCivil = "Union libre";
+        }
+        else if (opcion == 4)
+        {
+            estadoCivil = "Divorciado";
+        }
 
         cout << "Ingrese la fecha de nacimiento de candidato (Ejemplo : 02/01/1980 dia,mes,a�o)" << endl;
-        cin >> fechaNacimiento;
+        fechaNacimiento = "02/01/1980";
 
         for (int i = 0; i < candidatos -> getTam(); i++) {
             Candidato candidatoAuxiliar = candidatos -> buscar(i);
