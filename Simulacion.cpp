@@ -260,10 +260,25 @@ void Simulacion::Menu() {
                                 cout << "�Que partido deseas modificar?" << endl;
                                 opcionLista.mostrarPartidos(partidos);
                                 Opcion = leerEntrada(0,partidos->getTam()-1);
+
+                                string auxNombrePartido = partidos->buscar(Opcion).getNombre();
+
                                 //Inicializar Partido
                                 Partido NuevoPartido = inicializar.inicializarPartido(partidos);
 
                                 partidos -> modificar(NuevoPartido, Opcion);
+
+                                for(int i = 0; i < candidatos->getTam(); i++)
+                                {
+                                    Candidato auxCandidato = candidatos->buscar(i);
+                                    if(auxCandidato.getPartido().getNombre() == auxNombrePartido)
+                                    {
+                                        auxCandidato.setPartido(NuevoPartido);
+                                        candidatos->modificar(auxCandidato,i);
+                                    }
+
+                                }
+
                                 break;
                             }
                             case 2: { //Modificar Candidato
@@ -291,10 +306,28 @@ void Simulacion::Menu() {
                                 opcionLista.mostrarCiudades(ciudades);
                                 ciudad = leerEntrada(0,ciudades->getTam()-1);
 
+                                string auxNombreCiudad = ciudades->buscar(ciudad).getNombre();
+
                                 //Creaci�n del Objeto Ciudad
                                 Ciudad NuevaCiudad = inicializar.inicializarCiudad();
                                 //Insercion en la lista de ciudades
                                 ciudades -> modificar(NuevaCiudad, ciudad);
+
+                                for(int i = 0; i < candidatos->getTam(); i++)
+                                {
+                                    Candidato auxCandidato = candidatos->buscar(i);
+                                    if(auxCandidato.getCiudadNacimiento().getNombre() == auxNombreCiudad)
+                                    {
+                                        auxCandidato.setCiudadNacimiento(NuevaCiudad);
+                                        candidatos->modificar(auxCandidato,i);
+                                    }
+                                    if(auxCandidato.getCiudadResidencia().getNombre() == auxNombreCiudad)
+                                    {
+                                        auxCandidato.setCiudadResidencia(NuevaCiudad);
+                                        candidatos->modificar(auxCandidato,i);
+                                    }
+
+                                }
                                 break;
                             }
                         }

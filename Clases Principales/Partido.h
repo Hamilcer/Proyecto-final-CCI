@@ -7,21 +7,29 @@ class Partido {
 
     public:
     	
-    	Partido() {} // Constructor vacío
+    	Partido() {} // Constructor vacï¿½o
     	
         Partido(std::string nombre, std::string representanteLegal) {
             this->nombre = nombre;
             this->representanteLegal = representanteLegal;
         }
 
-        // Métodos getter para acceder a los atributos
+        // Mï¿½todos getter para acceder a los atributos
         std::string getNombre() { return nombre; }
         std::string getRepresentanteLegal() { return representanteLegal; }
         
-        // Método toString para la clase Partido
+        // Mï¿½todo toString para la clase Partido
 	    std::string toString() {
 	        std::string datos;
 	        datos = getNombre()+ "," + getRepresentanteLegal();
 	        return datos;
 	    }
+
+    void setNombre(const string &nombre) {
+        Partido::nombre = nombre;
+    }
+
+    void setRepresentanteLegal(const string &representanteLegal) {
+        Partido::representanteLegal = representanteLegal;
+    }
 };

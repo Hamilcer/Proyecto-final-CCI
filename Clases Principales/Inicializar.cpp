@@ -56,13 +56,14 @@ Ciudad Inicializar::inicializarCiudad() {
     string nombre, departamento;
     int tamConcejo, censoElectoral;
     cout << "Ingrese el nombre de la ciudad" << endl;
-    cin >> nombre;
+    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    getline(std::cin, nombre);
     cout << "Ingrese el departamento de la ciudad" << endl;
-    cin >> departamento;
+    getline(std::cin, departamento);
     cout << "Ingrese el tama�o del concejo" << endl;
-    cin >> tamConcejo;
+    tamConcejo = leerEntrada(7,21);
     cout << "Ingrese el tama�o el censo electoral" << endl;
-    cin >> censoElectoral;
+    censoElectoral = leerEntrada(1,5000000);
 
     Ciudad ciudad(nombre, departamento, tamConcejo, censoElectoral);
 
@@ -132,8 +133,17 @@ Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista 
             estadoCivil = "Divorciado";
         }
 
-        cout << "Ingrese la fecha de nacimiento de candidato (Ejemplo : 02/01/1980 dia,mes,a�o)" << endl;
-        fechaNacimiento = "02/01/1980";
+        cout << "Ingrese la fecha de nacimiento de candidato " << endl;
+        cout << "Dia: " << endl;
+        int dia = leerEntrada(1,31);
+        cout << "Mes: " << endl;
+        int mes = leerEntrada(1,12);
+        cout << "Año: " << endl;
+        int anio = leerEntrada(1950, 2005);
+        string sdia = (dia>9)? to_string(dia):"0"+to_string(dia);
+        string smes = (mes>9)? to_string(mes):"0"+to_string(mes);
+        string sanio = to_string(anio);
+        fechaNacimiento = sdia+"/"+smes+"/"+sanio;
 
         for (int i = 0; i < candidatos -> getTam(); i++) {
             Candidato candidatoAuxiliar = candidatos -> buscar(i);
