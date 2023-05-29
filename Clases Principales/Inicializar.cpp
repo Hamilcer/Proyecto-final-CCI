@@ -84,19 +84,19 @@ Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista 
 		bool encontrado = false;
         //Buscar el partido perteneciente de la lista de partidos y guardarla en el objeto partido
 
-        cout << "De los siguientes partidos constituidos ,� cual de ellos pertenece el candidato ?";
+        cout << "De los siguientes partidos constituidos ,� cual de ellos pertenece el candidato ?" << endl;
         opcionLista.mostrarPartidos(partidos);
-        cin >> OpcionPartido;
+        OpcionPartido = leerEntrada(0,partidos->getTam()-1);
 
         // Buscar la ciudad de nacimiento y residencia de la lista de ciudades y guardarla en los objetos propios
 
         cout << "De las siguientes ciudades, �Cual de ella naci� el candidato?" << endl;
         opcionLista.mostrarCiudades(ciudades);
-        cin >> OpcionNacimiento;
+        OpcionNacimiento = leerEntrada(0,ciudades->getTam()-1);
 
         cout << "De las siguientes ciudades, �Cual de ellas reside el candidato?" << endl;
         opcionLista.mostrarCiudades(ciudades);
-        cin >> OpcionResidencia;
+        OpcionResidencia = leerEntrada(0,ciudades->getTam()-1);
 
         // A�adir los dem�s datos del candidato
 
@@ -112,7 +112,7 @@ Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista 
         puesto = (opcion==1)?"Alcaldia":"Concejo";
 
         cout << "Ingrese el documento de identidad del candidato" << endl;
-        numIdentificacion = leerEntrada(0, 9999999999);
+        numIdentificacion = to_string(leerEntrada(0, 9999999999));
 
         cout << "ingrese el estado civil del candidato 1.Casado 2.Soltero 3.Union libre 4.Divorciado" << endl;
         opcion = leerEntrada(1,4);
@@ -144,6 +144,14 @@ Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista 
         string smes = (mes>9)? to_string(mes):"0"+to_string(mes);
         string sanio = to_string(anio);
         fechaNacimiento = sdia+"/"+smes+"/"+sanio;
+
+        cout << "Ingrese el sexo del candidato 1.F 2.M " << endl;
+        int genero = leerEntrada(1, 2);
+        if (genero == 1) {
+            sexo = 'F';
+        } else {
+            sexo = 'M';
+        }
 
         for (int i = 0; i < candidatos -> getTam(); i++) {
             Candidato candidatoAuxiliar = candidatos -> buscar(i);
