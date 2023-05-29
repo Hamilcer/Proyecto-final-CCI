@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 #include <ctime>
 
@@ -129,6 +130,8 @@ void OpcionesConsultas::agregarDatosArbolPartidos(Lista<Ciudad> *ciudades, Lista
 
 int OpcionesConsultas::calcularEdad(Candidato *auxCandidato)
 {
+    if(auxCandidato->getFechaNacimiento().length() != 10)
+        return 0;
 
     // Se calcular la edad partiendo en sub string con las posiciones necesarias para obtener dia, mes, anio
     int diaNacimiento = stoi(auxCandidato->getFechaNacimiento().substr(0, 2));

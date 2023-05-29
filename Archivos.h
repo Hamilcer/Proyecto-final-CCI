@@ -158,7 +158,8 @@ public: Archivos(string nombre) {
                 std::getline(ss, sexoStr, ',') && std::getline(ss, estadoCivil, ',') &&
                 std::getline(ss, fechaNacimiento, ',') && std::getline(ss, ciudadNacimientoNombre, ',') &&
                 std::getline(ss, ciudadResidenciaNombre, ',') && std::getline(ss, partidoNombre, ',') &&
-                std::getline(ss, votos)) {
+                std::getline(ss, votos))
+            {
                 if (!nombre.empty() && !apellido.empty() && !puesto.empty() && !numIdentificacion.empty() &&
                     !sexoStr.empty() && !estadoCivil.empty() && !fechaNacimiento.empty() &&
                     !ciudadNacimientoNombre.empty() && !ciudadResidenciaNombre.empty() && !partidoNombre.empty() && !votos.empty()) {

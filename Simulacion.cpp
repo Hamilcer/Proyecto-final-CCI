@@ -79,7 +79,7 @@ void Simulacion::Menu() {
                         string ciudad;
                         cout << "Elige la ciudad que desees ver los candidatos al concejo" << endl;
                     	opcionLista.mostrarCiudades(ciudades);
-                    	cin >> Opcion;
+                    	Opcion = leerEntrada(0,ciudades->getTam()-1);
                         opcionLista.candidatosConcejo(ciudades->buscar(Opcion).getNombre(), candidatos);
 
                         break;
@@ -88,7 +88,7 @@ void Simulacion::Menu() {
                         string ciudad;
                         cout << "Elige la ciudad que desees ver los candidatos a la alcaldia" << endl;
                     	opcionLista.mostrarCiudades(ciudades);
-                    	cin >> Opcion;
+                        Opcion = leerEntrada(0,ciudades->getTam()-1);
                         opcionLista.candidatosAlcaldia(ciudades->buscar(Opcion).getNombre(), candidatos);
                         break;
                     }

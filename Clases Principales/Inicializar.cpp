@@ -41,7 +41,7 @@ Partido Inicializar::inicializarPartido(Lista < Partido > * partidos) {
             }
         }
 
-        // Si el bucle for se completó sin encontrar coincidencias, el partido es válido
+        // Si el bucle for se completï¿½ sin encontrar coincidencias, el partido es vï¿½lido
         if (i == partidos -> getTam()) {
             partidoValido = true;
         }
@@ -52,16 +52,16 @@ Partido Inicializar::inicializarPartido(Lista < Partido > * partidos) {
 }
 
 Ciudad Inicializar::inicializarCiudad() {
-    //Se ingresan los datos de la nueva ciudad (Se necesita validación cuando la ciudad ya existe)
+    //Se ingresan los datos de la nueva ciudad (Se necesita validaciï¿½n cuando la ciudad ya existe)
     string nombre, departamento;
     int tamConcejo, censoElectoral;
     cout << "Ingrese el nombre de la ciudad" << endl;
     cin >> nombre;
     cout << "Ingrese el departamento de la ciudad" << endl;
     cin >> departamento;
-    cout << "Ingrese el tamaño del concejo" << endl;
+    cout << "Ingrese el tamaï¿½o del concejo" << endl;
     cin >> tamConcejo;
-    cout << "Ingrese el tamaño el censo electoral" << endl;
+    cout << "Ingrese el tamaï¿½o el censo electoral" << endl;
     cin >> censoElectoral;
 
     Ciudad ciudad(nombre, departamento, tamConcejo, censoElectoral);
@@ -70,7 +70,7 @@ Ciudad Inicializar::inicializarCiudad() {
 }
 
 Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista < Ciudad > * ciudades, Lista < Candidato > * candidatos) {
-    // Insertar Candidato (Se necesita validación de puesto, fecha nacimiento, estado civil)
+    // Insertar Candidato (Se necesita validaciï¿½n de puesto, fecha nacimiento, estado civil)
 
     int OpcionPartido, OpcionNacimiento, OpcionResidencia;
     string nombre, apellido, puesto, numIdentificacion, estadoCivil, fechaNacimiento;
@@ -83,30 +83,31 @@ Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista 
 		bool encontrado = false;
         //Buscar el partido perteneciente de la lista de partidos y guardarla en el objeto partido
 
-        cout << "De los siguientes partidos constituidos ,¿ cual de ellos pertenece el candidato ?";
+        cout << "De los siguientes partidos constituidos ,ï¿½ cual de ellos pertenece el candidato ?";
         opcionLista.mostrarPartidos(partidos);
         cin >> OpcionPartido;
 
         // Buscar la ciudad de nacimiento y residencia de la lista de ciudades y guardarla en los objetos propios
 
-        cout << "De las siguientes ciudades, ¿Cual de ella nació el candidato?" << endl;
+        cout << "De las siguientes ciudades, ï¿½Cual de ella naciï¿½ el candidato?" << endl;
         opcionLista.mostrarCiudades(ciudades);
         cin >> OpcionNacimiento;
 
-        cout << "De las siguientes ciudades, ¿Cual de ellas reside el candidato?" << endl;
+        cout << "De las siguientes ciudades, ï¿½Cual de ellas reside el candidato?" << endl;
         opcionLista.mostrarCiudades(ciudades);
         cin >> OpcionResidencia;
 
-        // Añadir los demás datos del candidato
+        // Aï¿½adir los demï¿½s datos del candidato
 
         cout << "Ingrese el nombre de candidato" << endl;
-        cin >> nombre;
+        getline(std::cin, nombre);
 
         cout << "Ingrese el apellido del candidato" << endl;
-        cin >> apellido;
+        getline(std::cin, apellido);
 
-        cout << "ingrese el puesto al que el candidato quiere postularse" << endl;
-        cin >> puesto;
+        cout << "ingrese el puesto al que el candidato quiere postularse 1.Alcaldia - 2.Concejo " << endl;
+        int opcion = leerEntrada(1,2);
+        puesto = (opcion==1)?"Alcaldia":"Concejo";
 
         cout << "Ingrese el documento de identidad del candidato" << endl;
         cin >> numIdentificacion;
@@ -114,13 +115,13 @@ Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista 
         cout << "ingrese el estado civil del candidato" << endl;
         cin >> estadoCivil;
 
-        cout << "Ingrese la fecha de nacimiento de candidato (Ejemplo : 02/01/1980 dia,mes,año)" << endl;
+        cout << "Ingrese la fecha de nacimiento de candidato (Ejemplo : 02/01/1980 dia,mes,aï¿½o)" << endl;
         cin >> fechaNacimiento;
 
         for (int i = 0; i < candidatos -> getTam(); i++) {
             Candidato candidatoAuxiliar = candidatos -> buscar(i);
             if (candidatoAuxiliar.getNumIdentificacion() == numIdentificacion) {
-                cout << "Ya hay un candidato con este numero de identificación" << endl;
+                cout << "Ya hay un candidato con este numero de identificaciï¿½n" << endl;
                 encontrado = true;
                 break;
             }
@@ -131,7 +132,7 @@ Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista 
 	    }
     }
 
-    //Creacion del objeto candidato para añadirlo en la lista
+    //Creacion del objeto candidato para aï¿½adirlo en la lista
     Partido partido = partidos -> buscar(OpcionPartido);
     int votos = 0;
 
