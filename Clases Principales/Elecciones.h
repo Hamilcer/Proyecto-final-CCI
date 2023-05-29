@@ -89,6 +89,18 @@ public: Elecciones() {
     void setFecha(const string & fecha) {
         Elecciones::fecha = fecha;
     }
+    
+	string toString() const{
+	    stringstream ss;
+	    ss << "Nombre de la ciudad: " << nomCiudad << std::endl;
+	    ss << "Tipo de elección: " << tipoEleccion << std::endl;
+	    ss << "Votos totales: " << votosTotales << std::endl;
+	    ss << "Votos en blanco: " << votosBlancos << std::endl;
+	    ss << "Votos nulos: " << votosNulos << std::endl;
+	    ss << "Votos de abstención: " << votosAbstencion << std::endl;
+	    ss << "Fecha: " << fecha << std::endl;
+	    return ss.str();
+	}
 
 };
 
