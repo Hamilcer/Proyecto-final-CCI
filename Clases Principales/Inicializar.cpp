@@ -111,6 +111,26 @@ Candidato Inicializar::inicializarCandidato(Lista < Partido > * partidos, Lista 
         int opcion = leerEntrada(1,2);
         puesto = (opcion==1)?"Alcaldia":"Concejo";
 
+        if(puesto == "Alcaldia")
+            for(int i = 0; i < candidatos->getTam(); i++)
+                if(candidatos->buscar(i).getCiudadResidencia().getNombre() == ciudades->buscar(OpcionResidencia).getNombre() &&
+                    candidatos->buscar(i).getPartido().getNombre() == partidos->buscar(OpcionPartido).getNombre()
+                )
+                {
+                    cout << "Ya existe un candadto a la alcaldia para esa ciudad y partido" << endl;
+                    cout << "1. Postular a Concejo - 2. calcelar insercion" << endl;
+                    int existe = leerEntrada(1,2);
+                    if(existe == 1)
+                    {
+                        puesto = "Concejo";
+                        break;
+                    }
+                    else
+                        return Candidato();
+                }
+
+
+
         cout << "Ingrese el documento de identidad del candidato" << endl;
         numIdentificacion = to_string(leerEntrada(0, 9999999999));
 

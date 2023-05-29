@@ -238,7 +238,8 @@ void Simulacion::Menu() {
                                 //Creacion del objeto candidato para a�adirlo en la lista
                                 Candidato nuevoCandidato = inicializar.inicializarCandidato(partidos, ciudades, candidatos);
                                 //Inserci�n en la lista de candidatos
-                                candidatos -> insertar(nuevoCandidato);
+                                if(!(nuevoCandidato.getNombre() == ""))
+                                    candidatos -> insertar(nuevoCandidato);
                                 break;
                             }
                             case 3: {
